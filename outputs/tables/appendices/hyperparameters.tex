@@ -1,0 +1,40 @@
+\scriptsize
+\begin{tabular}{@{}p{0.17\linewidth} p{0.23\linewidth} p{0.17\linewidth} p{0.35\linewidth}@{}}
+\toprule
+parameter & values tried & operating value & selection criterion \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{ATTACK PARAMETERS}} \\
+attack budget $\epsilon$ & $\{2,4,8,16\}/255$ & $8/255$ & swept and reported (configs A1 to A3); standard L-inf budget \\
+PGD steps & $\{5,15,30,60\}$ & $15$ & swept and reported (configs A4 to A6 and the 60-step ladder) \\
+PGD step size $\alpha$ & $\epsilon/4$ & $\epsilon/4$ & fixed by convention; standard PGD step size, not swept \\
+random restarts & $1$ & $1$ & fixed by convention; a single answer-preserving descent per item \\
+attack norm & L-inf, two L2 budgets & L-inf & swept and reported (configs B1, B2) \\
+$\tau_{\rm safe}$ (answer-preservation margin) & $\{0,0.25,0.5,1,2.5,5,10\}$ & $1.0$ & swept both ways and reported; stricter than argmax (Appendix \ref{app:frontier}) \\
+image domain / projection & raw RGB $[0,1]$ & $[x-\epsilon,x+\epsilon]\cap[0,1]$ each step; 8-bit stored endpoint & fixed by threat model \\
+margin band & $\{0.25,0.5,1.0,\text{unbounded}\}$ & unbounded & swept and reported as a control; all bands reported (Appendix \ref{app:frontier}) \\
+invariance sweep configurations & $12$ (A1-A6, B1-B2, C1-C2, D1-D2) & n/a & swept and reported; pass = mean-drift aligned to the correctness axis, 12 of 12 cells (Appendix \ref{app:frontier}) \\
+EOT noise draws (smoothing attack) & $m=8$ per PGD step & $8$ & fixed by convention; adaptive attack on the smoothed estimator \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{ESTIMATOR AND PROBE PARAMETERS}} \\
+probe architecture & Linear(in,256)-ReLU-Linear(256,128)-ReLU-Linear(128,64)-ReLU-Linear(64,1) & fixed & fixed by convention; identical for every probe, model, cell and channel; input dim is the model hidden size (2048/2560/3584/3840) or the estimator subspace dim \\
+probe loss & class-balanced BCE-with-logits (pos\_weight $=n_0/n_1$) & fixed & fixed by convention; not tuned \\
+optimizer & Adam, lr $10^{-3}$, weight decay $0$, batch $32$ & fixed & fixed by convention; not tuned \\
+epochs / early stopping & max $200$ epochs, patience $20$ & select on $0.6\cdot$AUROC$+0.4\cdot(1-$ECE$)$ & selected on the clean validation split (5000 items), never on adversarial discrimination \\
+gradient clipping & max-norm $1.0$ & $1.0$ & fixed by convention \\
+COUPLED subspace rank $k$ & $\{4,8,16\}$ & $8$ & swept and reported (headline $k=8$); derived subspace dimension equals $k$ exactly \\
+distance-preserving probe rank & $\{8,32,128,512\}$ & $8$ & swept and reported; dimension-matched to COUPLED ($k=8$) \\
+coupled-rank SVD tolerance & $10^{-6}$ (relative) & $10^{-6}$ & fixed by convention; numerical singular-value threshold for the per-item rank, not swept \\
+self-consistency sampling & $40$ completions, $T=0.7$, top-$k$ $40$ & fixed & fixed by convention; channel definition, not tuned \\
+steering injection $\alpha$ & $11$ values $\{-96,\dots,+96\}$ plus down-drift candidates $\{32,24,16,12,8,4\}$ & $32$ & fixed by convention; LLaVA's operating point applied uniformly under the preservation constraint (preservation rate $0.86$ to $0.99$ per cell, mean $0.96$) \\
+smoothing $\sigma$ & $\{0.08,0.16\}$ & both reported & swept and reported \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{ANALYSIS PARAMETERS}} \\
+distance-preserving split & 50/50 of byte-identical items (A estimate, B evaluate) & fixed & fixed by convention; probe on a separate 2500-item GQA pool, all three sets disjoint, seed 23, subspace uses no labels \\
+noise-floor random draws & $15$ same-$\epsilon$ L-inf draws per probe & $15$ & fixed by convention, not swept; amplitude is the two-sided best-up-minus-best-down range \\
+separation threshold $|g|$ & $\{0,0.05\}$ & $0.05$ & swept and reported; excludes near-zero-$g$ cells where $\Delta/g$ is unstable, both reported (Appendix \ref{app:mech-certificate}) \\
+bootstrap resamples & $10{,}000$ at seed $23$ & $10{,}000$ & fixed by convention; everywhere for reported CIs (item-level, paired-item, pair-level) \\
+multi-seed runs & seeds $\{23,24,25\}$ & $\{23,24,25\}$ & fixed three-seed set; seed 23 is the canonical draw, 24 and 25 the additional seeds for reported standard deviations \\
+judge decoding & gpt-5.4-mini, max $1500$ tokens, default temperature & fixed & fixed by convention; external correctness grader, no sampling parameters set beyond the token cap \\
+main answer decoding & greedy (argmax) & greedy & fixed by convention, not swept; the answer the attack pins \\
+\bottomrule
+\end{tabular}

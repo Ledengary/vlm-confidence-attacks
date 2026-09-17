@@ -1,0 +1,441 @@
+{
+  "cells": {
+    "internvl3_5_2b": {
+      "gqa_val_eval": {
+        "grid": {
+          "0.3": {
+            "clean": 0.6427,
+            "attacked": 0.1975
+          },
+          "1": {
+            "clean": 0.6404,
+            "attacked": 0.2497
+          },
+          "3": {
+            "clean": 0.6236,
+            "attacked": 0.2053
+          },
+          "10": {
+            "clean": 0.6067,
+            "attacked": 0.2152
+          }
+        },
+        "peak_beta": "1",
+        "peak_att": 0.20656666666666668,
+        "peak_clean": 0.6288999999999999,
+        "clean_threshold": 0.8623000000000001,
+        "peak_att_seeds": [
+          0.2497,
+          0.1717,
+          0.1983
+        ],
+        "peak_att_sd": 0.03965164981855526,
+        "best_attacked": 0.2497,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      },
+      "pope_ood": {
+        "grid": {
+          "0.3": {
+            "clean": 0.8453,
+            "attacked": 0.0261
+          },
+          "1": {
+            "clean": 0.8085,
+            "attacked": 0.0
+          },
+          "3": {
+            "clean": 0.7097,
+            "attacked": 0.257
+          },
+          "10": {
+            "clean": 0.6641,
+            "attacked": 0.3179
+          }
+        },
+        "peak_beta": "10",
+        "peak_att": 0.3159,
+        "peak_clean": 0.6459,
+        "clean_threshold": 0.6024,
+        "peak_att_seeds": [
+          0.3179,
+          0.3143,
+          0.3155
+        ],
+        "peak_att_sd": 0.001833030277982334,
+        "best_attacked": 0.3179,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      },
+      "vqav2_ood": {
+        "grid": {
+          "0.3": {
+            "clean": 0.6456,
+            "attacked": 0.263
+          },
+          "1": {
+            "clean": 0.6336,
+            "attacked": 0.189
+          },
+          "3": {
+            "clean": 0.621,
+            "attacked": 0.3074
+          },
+          "10": {
+            "clean": 0.6182,
+            "attacked": 0.2784
+          }
+        },
+        "peak_beta": "3",
+        "peak_att": 0.29796666666666666,
+        "peak_clean": 0.6275666666666667,
+        "clean_threshold": 0.9087000000000001,
+        "peak_att_seeds": [
+          0.3074,
+          0.3135,
+          0.273
+        ],
+        "peak_att_sd": 0.02183582682962413,
+        "best_attacked": 0.3135,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      }
+    },
+    "molmo2_4b": {
+      "gqa_val_eval": {
+        "grid": {
+          "0.3": {
+            "clean": 0.6436,
+            "attacked": 0.2138
+          },
+          "1": {
+            "clean": 0.6489,
+            "attacked": 0.2099
+          },
+          "3": {
+            "clean": 0.6188,
+            "attacked": 0.3038
+          },
+          "10": {
+            "clean": 0.6075,
+            "attacked": 0.3841
+          }
+        },
+        "peak_beta": "10",
+        "peak_att": 0.35939999999999994,
+        "peak_clean": 0.5999333333333333,
+        "clean_threshold": 0.8578,
+        "peak_att_seeds": [
+          0.3841,
+          0.3361,
+          0.358
+        ],
+        "peak_att_sd": 0.024030605485505348,
+        "best_attacked": 0.3841,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      },
+      "pope_ood": {
+        "grid": {
+          "0.3": {
+            "clean": 0.8455,
+            "attacked": 0.0207
+          },
+          "1": {
+            "clean": 0.8347,
+            "attacked": 0.0419
+          },
+          "3": {
+            "clean": 0.7714,
+            "attacked": 0.2441
+          },
+          "10": {
+            "clean": 0.6685,
+            "attacked": 0.4123
+          }
+        },
+        "peak_beta": "10",
+        "peak_att": 0.42366666666666664,
+        "peak_clean": 0.6610333333333334,
+        "clean_threshold": 0.6278,
+        "peak_att_seeds": [
+          0.4123,
+          0.4028,
+          0.4559
+        ],
+        "peak_att_sd": 0.028316132033406934,
+        "best_attacked": 0.4559,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      },
+      "vqav2_ood": {
+        "grid": {
+          "0.3": {
+            "clean": 0.7239,
+            "attacked": 0.2698
+          },
+          "1": {
+            "clean": 0.6806,
+            "attacked": 0.3779
+          },
+          "3": {
+            "clean": 0.6507,
+            "attacked": 0.439
+          },
+          "10": {
+            "clean": 0.6097,
+            "attacked": 0.4373
+          }
+        },
+        "peak_beta": "3",
+        "peak_att": 0.37693333333333334,
+        "peak_clean": 0.6546333333333333,
+        "clean_threshold": 0.8906000000000001,
+        "peak_att_seeds": [
+          0.439,
+          0.3094,
+          0.3824
+        ],
+        "peak_att_sd": 0.06497271222084955,
+        "best_attacked": 0.439,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "grid": {
+          "0.3": {
+            "clean": 0.7206,
+            "attacked": 0.1264
+          },
+          "1": {
+            "clean": 0.7067,
+            "attacked": 0.1555
+          },
+          "3": {
+            "clean": 0.6829,
+            "attacked": 0.2658
+          },
+          "10": {
+            "clean": 0.6688,
+            "attacked": 0.2629
+          }
+        },
+        "peak_beta": "3",
+        "peak_att": 0.22929999999999998,
+        "peak_clean": 0.6918333333333333,
+        "clean_threshold": 0.8931,
+        "peak_att_seeds": [
+          0.2658,
+          0.2256,
+          0.1965
+        ],
+        "peak_att_sd": 0.03479784476084689,
+        "best_attacked": 0.2658,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      },
+      "pope_ood": {
+        "grid": {
+          "0.3": {
+            "clean": 0.8181,
+            "attacked": 0.2901
+          },
+          "1": {
+            "clean": 0.8275,
+            "attacked": 0.194
+          },
+          "3": {
+            "clean": 0.827,
+            "attacked": 0.1903
+          },
+          "10": {
+            "clean": 0.768,
+            "attacked": 0.5442
+          }
+        },
+        "peak_beta": "10",
+        "peak_att": 0.5358999999999999,
+        "peak_clean": 0.7551666666666668,
+        "clean_threshold": 0.7336,
+        "peak_att_seeds": [
+          0.5442,
+          0.5277,
+          0.5358
+        ],
+        "peak_att_sd": 0.008250454532933356,
+        "best_attacked": 0.5442,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": true
+      },
+      "vqav2_ood": {
+        "grid": {
+          "0.3": {
+            "clean": 0.754,
+            "attacked": 0.2094
+          },
+          "1": {
+            "clean": 0.7309,
+            "attacked": 0.3212
+          },
+          "3": {
+            "clean": 0.7096,
+            "attacked": 0.4257
+          },
+          "10": {
+            "clean": 0.6741,
+            "attacked": 0.521
+          }
+        },
+        "peak_beta": "10",
+        "peak_att": 0.5169333333333332,
+        "peak_clean": 0.6777000000000001,
+        "clean_threshold": 0.9088,
+        "peak_att_seeds": [
+          0.521,
+          0.5164,
+          0.5134
+        ],
+        "peak_att_sd": 0.0038279672586548517,
+        "best_attacked": 0.521,
+        "escape": false,
+        "is_anchor": true,
+        "is_nearest_miss": false
+      }
+    },
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "grid": {
+          "0.3": {
+            "clean": 0.693,
+            "attacked": 0.1739
+          },
+          "1": {
+            "clean": 0.6465,
+            "attacked": 0.2547
+          },
+          "3": {
+            "clean": 0.6515,
+            "attacked": 0.3157
+          },
+          "10": {
+            "clean": 0.611,
+            "attacked": 0.4487
+          }
+        },
+        "peak_beta": "10",
+        "peak_att": 0.37246666666666667,
+        "peak_clean": 0.6363,
+        "clean_threshold": 0.8737,
+        "peak_att_seeds": [
+          0.4487,
+          0.4117,
+          0.257
+        ],
+        "peak_att_sd": 0.10169396901160527,
+        "best_attacked": 0.4487,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      },
+      "pope_ood": {
+        "grid": {
+          "0.3": {
+            "clean": 0.8651,
+            "attacked": 0.0606
+          },
+          "1": {
+            "clean": 0.8624,
+            "attacked": 0.059
+          },
+          "3": {
+            "clean": 0.829,
+            "attacked": 0.1029
+          },
+          "10": {
+            "clean": 0.6294,
+            "attacked": 0.3846
+          }
+        },
+        "peak_beta": "10",
+        "peak_att": 0.3852333333333333,
+        "peak_clean": 0.6151,
+        "clean_threshold": 0.54,
+        "peak_att_seeds": [
+          0.3846,
+          0.3893,
+          0.3818
+        ],
+        "peak_att_sd": 0.0037898988552906455,
+        "best_attacked": 0.3893,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      },
+      "vqav2_ood": {
+        "grid": {
+          "0.3": {
+            "clean": 0.7062,
+            "attacked": 0.2382
+          },
+          "1": {
+            "clean": 0.7237,
+            "attacked": 0.3594
+          },
+          "3": {
+            "clean": 0.7125,
+            "attacked": 0.5401
+          },
+          "10": {
+            "clean": 0.6698,
+            "attacked": 0.5368
+          }
+        },
+        "peak_beta": "3",
+        "peak_att": 0.5114666666666666,
+        "peak_clean": 0.7193,
+        "clean_threshold": 0.9035,
+        "peak_att_seeds": [
+          0.5401,
+          0.4945,
+          0.4998
+        ],
+        "peak_att_sd": 0.02493839075267957,
+        "best_attacked": 0.5401,
+        "escape": false,
+        "is_anchor": false,
+        "is_nearest_miss": false
+      }
+    }
+  },
+  "beta_labels": [
+    "0.3",
+    "1",
+    "3",
+    "10"
+  ],
+  "n_cells": 12,
+  "n_escape": 0,
+  "gradpen_clean": 0.7631,
+  "gradpen_attacked": 0.2008,
+  "nearest": {
+    "peak_clean": 0.7551666666666668,
+    "clean_threshold": 0.7336,
+    "peak_att": 0.5358999999999999,
+    "peak_att_sd": 0.008250454532933356,
+    "peak_att_seeds": [
+      0.5442,
+      0.5277,
+      0.5358
+    ]
+  }
+}

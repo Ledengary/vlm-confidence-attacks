@@ -1,0 +1,22 @@
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}llrrrrrrrr@{}}
+\toprule
+model & $\delta$ & top-1 & top-5 & top-10 & TV(pos0) & samp.\ TV & real.\ KL & benign KL & ratio \\
+\midrule
+\multirow{2}{*}{InternVL3.5-2B} & 0.2 & 0.990 & 0.624 & 0.363 & 0.112 & 0.190 & 0.071 & 0.0092 & 22$\times$ \\
+ & 0.05 & 1.000 & 0.795 & 0.654 & 0.040 & 0.143 & 0.013 & 0.0092 & 5.4$\times$ \\
+\midrule
+\multirow{2}{*}{Molmo2-4B} & 0.2 & 0.981 & 0.610 & 0.413 & 0.093 & 0.125 & 0.057 & 0.0043 & 47$\times$ \\
+ & 0.05 & 0.984 & 0.726 & 0.587 & 0.035 & 0.081 & 0.011 & 0.0043 & 12$\times$ \\
+\midrule
+\multirow{2}{*}{LLaVA-OV-7B} & 0.2 & 1.000 & 0.588 & 0.342 & 0.114 & 0.151 & 0.079 & 0.0029 & 68$\times$ \\
+ & 0.05 & 1.000 & 0.762 & 0.580 & 0.041 & 0.092 & 0.015 & 0.0029 & 17$\times$ \\
+\midrule
+\multirow{2}{*}{Gemma-3-12B} & 0.2 & 0.989 & 0.357 & 0.169 & 0.054 & 0.056 & 0.033 & 0.1136 & 1.8$\times$ \\
+ & 0.05 & 0.992 & 0.423 & 0.265 & 0.027 & 0.035 & 0.011 & 0.1136 & 0.4$\times$ \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\footnotesize top-$k$ = fraction of the top-$k$ next-token set preserved relative to clean; TV(pos0) and samp.\ TV are total-variation distances at the first answer position (argmax and sampled); real.\ KL is the mean realized $\mathrm{KL}(p_{\mathrm{clean}}\|p_{\mathrm{adv}})$; ratio is the KL bound $\delta$ over the benign single-greylevel-dither KL. The clean-versus-clean sampled-TV noise floor is $\approx$0.07.}

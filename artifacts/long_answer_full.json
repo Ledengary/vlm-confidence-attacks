@@ -1,0 +1,121 @@
+{
+  "models": [
+    {
+      "model": "internvl3_5_2b",
+      "label": "InternVL3.5-2B",
+      "regime": "resist",
+      "readouts": [
+        {
+          "label": "TokProb",
+          "clean": 0.5149,
+          "attacked": 0.0823
+        },
+        {
+          "label": "P(IK)",
+          "clean": 0.6721,
+          "attacked": 0.6213
+        },
+        {
+          "label": "SAPLMA",
+          "clean": 0.6664,
+          "attacked": 0.6214
+        }
+      ],
+      "final_locus": 0.6869,
+      "cot_median": 77.0,
+      "native_median": 2.0,
+      "native_long": false,
+      "feasible_rate": 0.0323,
+      "rejects": 11.96
+    },
+    {
+      "model": "molmo2_4b",
+      "label": "Molmo2-4B",
+      "regime": "collapse",
+      "readouts": [
+        {
+          "label": "TokProb",
+          "clean": 0.5402,
+          "attacked": 0.1837
+        },
+        {
+          "label": "P(IK)",
+          "clean": 0.6761,
+          "attacked": 0.4297
+        },
+        {
+          "label": "SAPLMA",
+          "clean": 0.6152,
+          "attacked": 0.4325
+        }
+      ],
+      "final_locus": 0.6174,
+      "cot_median": 94.5,
+      "native_median": 25.5,
+      "native_long": true,
+      "feasible_rate": 0.0323,
+      "rejects": 10.26
+    },
+    {
+      "model": "llava_onevision_7b",
+      "label": "LLaVA-OV-7B",
+      "regime": "resist",
+      "readouts": [
+        {
+          "label": "TokProb",
+          "clean": 0.552,
+          "attacked": 0.351
+        },
+        {
+          "label": "P(IK)",
+          "clean": 0.7018,
+          "attacked": 0.6236
+        },
+        {
+          "label": "SAPLMA",
+          "clean": 0.6184,
+          "attacked": 0.5796
+        }
+      ],
+      "final_locus": 0.6427,
+      "cot_median": 96.5,
+      "native_median": 2.0,
+      "native_long": false,
+      "feasible_rate": 0.0323,
+      "rejects": 15.79
+    },
+    {
+      "model": "gemma3_12b",
+      "label": "Gemma-3-12B",
+      "regime": "collapse",
+      "readouts": [
+        {
+          "label": "TokProb",
+          "clean": 0.627,
+          "attacked": 0.3305
+        },
+        {
+          "label": "P(IK)",
+          "clean": 0.6666,
+          "attacked": 0.3797
+        },
+        {
+          "label": "SAPLMA",
+          "clean": 0.603,
+          "attacked": 0.3964
+        }
+      ],
+      "final_locus": 0.6041,
+      "cot_median": 96.0,
+      "native_median": 7.0,
+      "native_long": false,
+      "feasible_rate": 0.0323,
+      "rejects": 8.26
+    }
+  ],
+  "footnote": {
+    "molmo_native_median": 25.5,
+    "molmo_frac_ge20": 0.54,
+    "resister_floor": 0.5796
+  }
+}

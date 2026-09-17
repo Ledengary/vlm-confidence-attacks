@@ -1,0 +1,72 @@
+{
+  "cells": {
+    "internvl3_5_2b": {
+      "gqa_val_eval": {
+        "match": "reuse",
+        "pool_size": 1000,
+        "target": 1000
+      },
+      "vqav2_ood": {
+        "match": "reuse",
+        "pool_size": 1000,
+        "target": 1000
+      },
+      "pope_ood": {
+        "match": "reuse",
+        "pool_size": 1000,
+        "target": 1000
+      }
+    },
+    "molmo2_4b": {
+      "gqa_val_eval": {
+        "match": "yes",
+        "pool_size": 1000,
+        "target": 1000
+      },
+      "vqav2_ood": {
+        "match": "yes",
+        "pool_size": 1000,
+        "target": 1000
+      },
+      "pope_ood": {
+        "match": "yes",
+        "pool_size": 1000,
+        "target": 1000
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "match": "yes",
+        "pool_size": 1000,
+        "target": 1000
+      },
+      "vqav2_ood": {
+        "match": "yes",
+        "pool_size": 1000,
+        "target": 1000
+      },
+      "pope_ood": {
+        "match": "yes",
+        "pool_size": 1000,
+        "target": 1000
+      }
+    },
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "match": "yes",
+        "pool_size": 1000,
+        "target": 1000
+      },
+      "vqav2_ood": {
+        "match": "yes",
+        "pool_size": 1000,
+        "target": 1000
+      },
+      "pope_ood": {
+        "match": "yes",
+        "pool_size": 1000,
+        "target": 1000
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+# Model registry. Keys are the internal short ids used throughout the pipeline and in
+# the artifact stores. repo is the exact Hugging Face identifier; family selects the adapter.
+models:
+  internvl3_5_2b:
+    repo: OpenGVLab/InternVL3_5-2B-Instruct
+    family: internvl
+    trust_remote_code: true
+  molmo2_4b:
+    repo: allenai/Molmo2-4B
+    family: molmo
+    trust_remote_code: true
+  llava_onevision_7b:
+    repo: llava-hf/llava-onevision-qwen2-7b-ov-hf
+    family: llava_onevision
+    trust_remote_code: false
+  gemma3_12b:
+    repo: google/gemma-3-12b-it
+    family: gemma3
+    trust_remote_code: false

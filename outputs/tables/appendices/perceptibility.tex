@@ -1,0 +1,25 @@
+\small
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Model & Set & LPIPS mean & LPIPS max & SSIM mean & SSIM min \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.051 & 0.244 & 0.902 & 0.751 \\
+ & VQAv2 & 0.058 & 0.265 & 0.897 & 0.739 \\
+ & POPE & 0.058 & 0.247 & 0.886 & 0.750 \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.074 & 0.385 & 0.889 & 0.736 \\
+ & VQAv2 & 0.079 & 0.277 & 0.881 & 0.666 \\
+ & POPE & 0.061 & 0.307 & 0.893 & 0.749 \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.067 & 0.249 & 0.891 & 0.755 \\
+ & VQAv2 & 0.063 & 0.350 & 0.901 & 0.796 \\
+ & POPE & 0.080 & 0.296 & 0.881 & 0.756 \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.070 & 0.380 & 0.895 & 0.746 \\
+ & VQAv2 & 0.068 & 0.226 & 0.897 & 0.767 \\
+ & POPE & 0.068 & 0.245 & 0.889 & 0.789 \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Benign ref: JPEG q95}} & 0.006 & -- & 0.967 & -- \\
+\multicolumn{2}{@{}l}{\emph{Benign ref: 2px crop-resize}} & 0.074 & -- & 0.696 & -- \\
+\bottomrule
+\end{tabular}

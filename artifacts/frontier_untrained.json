@@ -1,0 +1,77 @@
+{
+  "points": [
+    {
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "clean": 0.7955073333333335,
+      "attacked": 0.014555
+    },
+    {
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "clean": 0.7242403333333333,
+      "attacked": 0.016766666666666662
+    },
+    {
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "clean": 0.7735250000000001,
+      "attacked": 0.0
+    },
+    {
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "clean": 0.7881483333333333,
+      "attacked": 0.008924666666666666
+    },
+    {
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "clean": 0.7913990000000001,
+      "attacked": 0.03364866666666667
+    },
+    {
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "clean": 0.7923746666666668,
+      "attacked": 9.333333333333333e-06
+    },
+    {
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "clean": 0.8272293333333333,
+      "attacked": 0.0053106666666666675
+    },
+    {
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "clean": 0.776137,
+      "attacked": 0.020924666666666664
+    },
+    {
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "clean": 0.741375,
+      "attacked": 0.00026733333333333334
+    },
+    {
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "clean": 0.7424243333333332,
+      "attacked": 0.055916
+    },
+    {
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "clean": 0.7501273333333334,
+      "attacked": 0.081978
+    },
+    {
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "clean": 0.736403,
+      "attacked": 0.011709666666666667
+    }
+  ],
+  "b_qa": 0.5454008666666665
+}

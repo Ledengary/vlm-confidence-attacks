@@ -1,0 +1,66 @@
+{
+  "model": "internvl3_5_2b",
+  "n_labels": 49558,
+  "channels": {
+    "saplma": {
+      "channel": "saplma",
+      "input_dim": 2048,
+      "best_epoch": 9,
+      "swapped": true,
+      "label_mapping": {
+        "labels_swapped": true,
+        "class_1_represents": "incorrect",
+        "n_correct": 15832,
+        "n_incorrect": 4168
+      },
+      "n_train": 20000,
+      "test": {
+        "gqa_val_eval": {
+          "n": 10000,
+          "auroc": 0.8228,
+          "base_rate": 0.7981
+        },
+        "vqav2_ood": {
+          "n": 10000,
+          "auroc": 0.7321,
+          "base_rate": 0.6971
+        },
+        "pope_ood": {
+          "n": 4558,
+          "auroc": 0.7982,
+          "base_rate": 0.8776
+        }
+      }
+    },
+    "pik": {
+      "channel": "pik",
+      "input_dim": 2048,
+      "best_epoch": 5,
+      "swapped": true,
+      "label_mapping": {
+        "labels_swapped": true,
+        "class_1_represents": "incorrect",
+        "n_correct": 15832,
+        "n_incorrect": 4168
+      },
+      "n_train": 20000,
+      "test": {
+        "gqa_val_eval": {
+          "n": 10000,
+          "auroc": 0.7997,
+          "base_rate": 0.7981
+        },
+        "vqav2_ood": {
+          "n": 10000,
+          "auroc": 0.7725,
+          "base_rate": 0.6971
+        },
+        "pope_ood": {
+          "n": 4558,
+          "auroc": 0.8151,
+          "base_rate": 0.8776
+        }
+      }
+    }
+  }
+}

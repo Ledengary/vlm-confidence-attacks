@@ -1,0 +1,14 @@
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}lrcl@{}}
+\toprule
+verifier family & max parity gap & bit-exact & cells affected \\
+\midrule
+Gemma-3-12B & 0.000 & yes & none \\
+LLaVA-OV-7B & 0.000 & yes & none \\
+InternVL3.5-2B & 0.000 & yes & none \\
+Molmo2-4B & 0.144 & no & 3 Molmo-verifier pairs (max 0.144) \\
+\bottomrule
+\end{tabular}
+\vspace{3pt}
+\noindent{\footnotesize The Molmo verifier's per-item mean gap is $\approx$0.004 against the 0.144 maximum. Every reported verifier score is recomputed with the official processor, so the gap affects only the white-box search, never a reported AUROC.}

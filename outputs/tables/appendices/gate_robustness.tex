@@ -1,0 +1,42 @@
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}lrrrrc@{}}
+\toprule
+operating point & clean FPR & acc-clean & acc-adv & drop & cells acc-adv$<$0.5 (bal.) \\
+\midrule
+clean-10\%-FPR & 0.101 & 0.814 & 0.477 & 0.337 & 8/12 \\
+Youden J & 0.246 & 0.744 & 0.515 & 0.229 & 7/12 \\
+$\tau{=}0.5$ & 0.528 & 0.626 & 0.513 & 0.113 & 8/12 \\
+\bottomrule
+\end{tabular}
+
+\vspace{8pt}
+\noindent{\footnotesize\itshape Risk-coverage AURC (FULL locus, higher is worse), per cell, clean vs attacked:}\\[2pt]
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+model & set & AURC clean & AURC attacked \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.266 & 0.837 \\
+ & VQAv2 & 0.352 & 0.838 \\
+ & POPE & 0.326 & 0.846 \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.252 & 0.816 \\
+ & VQAv2 & 0.288 & 0.809 \\
+ & POPE & 0.271 & 0.842 \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.239 & 0.828 \\
+ & VQAv2 & 0.309 & 0.817 \\
+ & POPE & 0.328 & 0.832 \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.271 & 0.791 \\
+ & VQAv2 & 0.293 & 0.781 \\
+ & POPE & 0.262 & 0.836 \\
+\midrule
+\textbf{FULL mean} & & \textbf{0.288} & \textbf{0.823} \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\footnotesize AURC is the area under the risk-coverage curve integrated over all coverage (higher is worse). Over the 60 diagonal profiles (12 cells $\times$ 5 estimators) the mean rises from 0.301 clean to 0.804 attacked; the FULL-locus 12-cell mean shown here rises from 0.288 to 0.823.}

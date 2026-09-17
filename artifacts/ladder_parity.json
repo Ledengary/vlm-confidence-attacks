@@ -1,0 +1,21 @@
+{
+  "families": {
+    "gemma": {
+      "max_gap": 0.0,
+      "n": 3
+    },
+    "internvl": {
+      "max_gap": 0.0,
+      "n": 3
+    },
+    "llava": {
+      "max_gap": 0.0,
+      "n": 3
+    },
+    "molmo": {
+      "max_gap": 0.14420733,
+      "n": 3
+    }
+  },
+  "molmo_mean_gap": 0.004323024999999996
+}

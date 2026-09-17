@@ -1,0 +1,36 @@
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+model & set & max$|$uni$-$rand$|$ & per-image SAPLMA drop & ratio \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.023 & 0.433 & 19$\times$ \\
+ & VQAv2 & 0.020 & 0.410 & 20$\times$ \\
+ & POPE & 0.024 & 0.681 & 28$\times$ \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.010 & 0.708 & 71$\times$ \\
+ & VQAv2 & 0.008 & 0.548 & 68$\times$ \\
+ & POPE & 0.009 & 0.608 & 68$\times$ \\
+\bottomrule
+\end{tabular}
+
+\vspace{8pt}
+\noindent{\footnotesize\itshape Universal vs equal-norm random delta, per channel (Gemma/GQA):}\\[2pt]
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+channel & clean & uni drop & rand drop & uni$-$rand [95\% CI] \\
+\midrule
+token-prob & 0.571 & $-0.031$ & $-0.054$ & $+0.023$ {\scriptsize[$-0.002$,$+0.048$]} \\
+P(IK) & 0.790 & $+0.037$ & $+0.028$ & $+0.009$ {\scriptsize[$-0.008$,$+0.025$]} \\
+SAPLMA & 0.808 & $+0.013$ & $+0.017$ & $-0.004$ {\scriptsize[$-0.014$,$+0.005$]} \\
+verbalized & 0.554 & $-0.007$ & $+0.010$ & $-0.017$ {\scriptsize[$-0.032$,$-0.004$]} \\
+self-consist. & 0.552 & $-0.037$ & $-0.059$ & $+0.022$ {\scriptsize[$-0.001$,$+0.046$]} \\
+CCPS & 0.741 & $+0.081$ & $+0.082$ & $-0.001$ {\scriptsize[$-0.028$,$+0.026$]} \\
+CCPS-D & 0.743 & $+0.036$ & $+0.034$ & $+0.002$ {\scriptsize[$-0.022$,$+0.025$]} \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\footnotesize drop = clean minus perturbed AUROC. The largest universal-minus-random difference is $0.024$ over all six cells, and six of seven channels have uni$-$rand intervals containing 0. The per-image aimed attack removes $0.410$ to $0.708$ on SAPLMA in the same cells, 19 to 71 times the largest universal-versus-random gap.}

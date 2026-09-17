@@ -1,0 +1,676 @@
+{
+  "rows": [
+    {
+      "estimator": "tokprob",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "clean": 0.744988,
+      "attacked": 0.015888,
+      "floor": 0.642
+    },
+    {
+      "estimator": "tokprob",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "clean": 0.767034,
+      "attacked": 0.015348,
+      "floor": 0.616738
+    },
+    {
+      "estimator": "tokprob",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "clean": 0.779466,
+      "attacked": 0.0,
+      "floor": 0.554602
+    },
+    {
+      "estimator": "tokprob",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "clean": 0.744524,
+      "attacked": 0.008316,
+      "floor": 0.683
+    },
+    {
+      "estimator": "tokprob",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "clean": 0.797688,
+      "attacked": 0.022202,
+      "floor": 0.624964
+    },
+    {
+      "estimator": "tokprob",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "clean": 0.7002,
+      "attacked": 5.6e-05,
+      "floor": 0.586834
+    },
+    {
+      "estimator": "tokprob",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "clean": 0.791688,
+      "attacked": 0.00172,
+      "floor": 0.673
+    },
+    {
+      "estimator": "tokprob",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "clean": 0.830472,
+      "attacked": 0.01618,
+      "floor": 0.616094
+    },
+    {
+      "estimator": "tokprob",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "clean": 0.713552,
+      "attacked": 0.000196,
+      "floor": 0.596662
+    },
+    {
+      "estimator": "tokprob",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "clean": 0.570844,
+      "attacked": 0.04296,
+      "floor": 0.66
+    },
+    {
+      "estimator": "tokprob",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "clean": 0.674732,
+      "attacked": 0.061004,
+      "floor": 0.651632
+    },
+    {
+      "estimator": "tokprob",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "clean": 0.579498,
+      "attacked": 0.043554,
+      "floor": 0.5
+    },
+    {
+      "estimator": "pik",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "clean": 0.813668,
+      "attacked": 0.02104,
+      "floor": 0.642
+    },
+    {
+      "estimator": "pik",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "clean": 0.724196,
+      "attacked": 0.027832,
+      "floor": 0.616738
+    },
+    {
+      "estimator": "pik",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "clean": 0.80435,
+      "attacked": 0.0,
+      "floor": 0.554602
+    },
+    {
+      "estimator": "pik",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "clean": 0.779078,
+      "attacked": 0.009344,
+      "floor": 0.683
+    },
+    {
+      "estimator": "pik",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "clean": 0.771888,
+      "attacked": 0.045742,
+      "floor": 0.624964
+    },
+    {
+      "estimator": "pik",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "clean": 0.818586,
+      "attacked": 0.0,
+      "floor": 0.586834
+    },
+    {
+      "estimator": "pik",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "clean": 0.825152,
+      "attacked": 0.008996,
+      "floor": 0.673
+    },
+    {
+      "estimator": "pik",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "clean": 0.740724,
+      "attacked": 0.01484,
+      "floor": 0.616094
+    },
+    {
+      "estimator": "pik",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "clean": 0.775044,
+      "attacked": 2.8e-05,
+      "floor": 0.596662
+    },
+    {
+      "estimator": "pik",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "clean": 0.789614,
+      "attacked": 0.100464,
+      "floor": 0.66
+    },
+    {
+      "estimator": "pik",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "clean": 0.70542,
+      "attacked": 0.086444,
+      "floor": 0.651632
+    },
+    {
+      "estimator": "pik",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "clean": 0.755348,
+      "attacked": 0.003608,
+      "floor": 0.5
+    },
+    {
+      "estimator": "saplma",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "clean": 0.812608,
+      "attacked": 0.017322,
+      "floor": 0.642
+    },
+    {
+      "estimator": "saplma",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "clean": 0.703016,
+      "attacked": 0.00847,
+      "floor": 0.616738
+    },
+    {
+      "estimator": "saplma",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "clean": 0.742348,
+      "attacked": 0.0,
+      "floor": 0.554602
+    },
+    {
+      "estimator": "saplma",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "clean": 0.809434,
+      "attacked": 0.01298,
+      "floor": 0.683
+    },
+    {
+      "estimator": "saplma",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "clean": 0.783686,
+      "attacked": 0.038668,
+      "floor": 0.624964
+    },
+    {
+      "estimator": "saplma",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "clean": 0.791754,
+      "attacked": 0.0,
+      "floor": 0.586834
+    },
+    {
+      "estimator": "saplma",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "clean": 0.851336,
+      "attacked": 0.007276,
+      "floor": 0.673
+    },
+    {
+      "estimator": "saplma",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "clean": 0.758294,
+      "attacked": 0.020376,
+      "floor": 0.616094
+    },
+    {
+      "estimator": "saplma",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "clean": 0.708632,
+      "attacked": 0.00088,
+      "floor": 0.596662
+    },
+    {
+      "estimator": "saplma",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "clean": 0.807896,
+      "attacked": 0.073808,
+      "floor": 0.66
+    },
+    {
+      "estimator": "saplma",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "clean": 0.783432,
+      "attacked": 0.102296,
+      "floor": 0.651632
+    },
+    {
+      "estimator": "saplma",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "clean": 0.812588,
+      "attacked": 0.008664,
+      "floor": 0.5
+    },
+    {
+      "estimator": "ccps",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "clean": 0.79686,
+      "attacked": 0.009924,
+      "floor": 0.642
+    },
+    {
+      "estimator": "ccps",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "clean": 0.73461,
+      "attacked": 0.02104,
+      "floor": 0.616738
+    },
+    {
+      "estimator": "ccps",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "clean": 0.778562,
+      "attacked": 0.0,
+      "floor": 0.554602
+    },
+    {
+      "estimator": "ccps",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "clean": 0.7946,
+      "attacked": 0.010548,
+      "floor": 0.683
+    },
+    {
+      "estimator": "ccps",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "clean": 0.819384,
+      "attacked": 0.056084,
+      "floor": 0.624964
+    },
+    {
+      "estimator": "ccps",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "clean": 0.830652,
+      "attacked": 0.0,
+      "floor": 0.586834
+    },
+    {
+      "estimator": "ccps",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "clean": 0.827634,
+      "attacked": 0.002016,
+      "floor": 0.673
+    },
+    {
+      "estimator": "ccps",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "clean": 0.79462,
+      "attacked": 0.030932,
+      "floor": 0.616094
+    },
+    {
+      "estimator": "ccps",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "clean": 0.745388,
+      "attacked": 2e-05,
+      "floor": 0.596662
+    },
+    {
+      "estimator": "ccps",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "clean": 0.745116,
+      "attacked": 0.032092,
+      "floor": 0.66
+    },
+    {
+      "estimator": "ccps",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "clean": 0.784632,
+      "attacked": 0.067016,
+      "floor": 0.651632
+    },
+    {
+      "estimator": "ccps",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "clean": 0.733428,
+      "attacked": 0.00248,
+      "floor": 0.5
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "clean": 0.807448,
+      "attacked": 0.013664,
+      "floor": 0.642
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "clean": 0.732874,
+      "attacked": 0.021544,
+      "floor": 0.616738
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "clean": 0.791836,
+      "attacked": 0.0,
+      "floor": 0.554602
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "clean": 0.7796,
+      "attacked": 0.003648,
+      "floor": 0.683
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "clean": 0.788732,
+      "attacked": 0.017484,
+      "floor": 0.624964
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "clean": 0.817838,
+      "attacked": 0.0,
+      "floor": 0.586834
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "clean": 0.82993,
+      "attacked": 0.000564,
+      "floor": 0.673
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "clean": 0.796252,
+      "attacked": 0.013584,
+      "floor": 0.616094
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "clean": 0.756666,
+      "attacked": 0.0,
+      "floor": 0.596662
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "clean": 0.742576,
+      "attacked": 0.02638,
+      "floor": 0.66
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "clean": 0.774036,
+      "attacked": 0.084932,
+      "floor": 0.651632
+    },
+    {
+      "estimator": "ccpsd",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "clean": 0.724692,
+      "attacked": 0.004228,
+      "floor": 0.5
+    },
+    {
+      "estimator": "FULL",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "clean": 0.797472,
+      "attacked": 0.009492,
+      "floor": 0.642
+    },
+    {
+      "estimator": "FULL",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "clean": 0.683712,
+      "attacked": 0.006366,
+      "floor": 0.616738
+    },
+    {
+      "estimator": "FULL",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "clean": 0.744588,
+      "attacked": 0.0,
+      "floor": 0.554602
+    },
+    {
+      "estimator": "FULL",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "clean": 0.821654,
+      "attacked": 0.008712,
+      "floor": 0.683
+    },
+    {
+      "estimator": "FULL",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "clean": 0.787016,
+      "attacked": 0.021712,
+      "floor": 0.624964
+    },
+    {
+      "estimator": "FULL",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "clean": 0.795218,
+      "attacked": 0.0,
+      "floor": 0.586834
+    },
+    {
+      "estimator": "FULL",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "clean": 0.837636,
+      "attacked": 0.011292,
+      "floor": 0.673
+    },
+    {
+      "estimator": "FULL",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "clean": 0.73646,
+      "attacked": 0.029636,
+      "floor": 0.616094
+    },
+    {
+      "estimator": "FULL",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "clean": 0.748968,
+      "attacked": 0.00048,
+      "floor": 0.596662
+    },
+    {
+      "estimator": "FULL",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "clean": 0.7985,
+      "attacked": 0.059792,
+      "floor": 0.66
+    },
+    {
+      "estimator": "FULL",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "clean": 0.778512,
+      "attacked": 0.090176,
+      "floor": 0.651632
+    },
+    {
+      "estimator": "FULL",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "clean": 0.812864,
+      "attacked": 0.007724,
+      "floor": 0.5
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "clean": 0.743496,
+      "attacked": 0.015764,
+      "floor": 0.642
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "clean": 0.60811,
+      "attacked": 0.012086,
+      "floor": 0.616738
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "clean": 0.61184,
+      "attacked": 0.001668,
+      "floor": 0.554602
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "clean": 0.727288,
+      "attacked": 0.290522,
+      "floor": 0.683
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "clean": 0.6642,
+      "attacked": 0.250402,
+      "floor": 0.624964
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "clean": 0.670676,
+      "attacked": 0.519506,
+      "floor": 0.586834
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "clean": 0.743736,
+      "attacked": 0.049068,
+      "floor": 0.673
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "clean": 0.639014,
+      "attacked": 0.052416,
+      "floor": 0.616094
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "clean": 0.666052,
+      "attacked": 0.036588,
+      "floor": 0.596662
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "clean": 0.722328,
+      "attacked": 0.331428,
+      "floor": 0.66
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "clean": 0.71458,
+      "attacked": 0.335992,
+      "floor": 0.651632
+    },
+    {
+      "estimator": "COUPLED",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "clean": 0.599968,
+      "attacked": 0.178044,
+      "floor": 0.5
+    }
+  ]
+}

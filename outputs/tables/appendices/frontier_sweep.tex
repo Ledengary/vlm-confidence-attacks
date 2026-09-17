@@ -1,0 +1,27 @@
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}ll cccc r c@{}}
+\toprule
+model & dataset & $\beta{=}0.3$ & $\beta{=}1$ & $\beta{=}3$ & $\beta{=}10$ & peak att & escape \\
+ &  & \multicolumn{4}{c}{clean\,/\,attacked (seed 23; peak $\beta$ bold)} &  &  \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.643/0.198 & \textbf{0.640/0.250} & 0.624/0.205 & 0.607/0.215 & 0.207 & no \\
+ & VQAv2 & 0.646/0.263 & 0.634/0.189 & \textbf{0.621/0.307} & 0.618/0.278 & 0.298 & no \\
+ & POPE & 0.845/0.026 & 0.808/0.000 & 0.710/0.257 & \textbf{0.664/0.318} & 0.316 & no \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.644/0.214 & 0.649/0.210 & 0.619/0.304 & \textbf{0.608/0.384} & 0.359 & no \\
+ & VQAv2 & 0.724/0.270 & 0.681/0.378 & \textbf{0.651/0.439} & 0.610/0.437 & 0.377 & no \\
+ & POPE & 0.846/0.021 & 0.835/0.042 & 0.771/0.244 & \textbf{0.668/0.412} & 0.424 & no \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.721/0.126 & 0.707/0.155 & \textbf{0.683/0.266} & 0.669/0.263 & 0.229 & no \\
+ & VQAv2$^{\S}$ & 0.754/0.209 & 0.731/0.321 & 0.710/0.426 & \textbf{0.674/0.521} & 0.517 & no \\
+ & POPE$^{\ddagger}$ & 0.818/0.290 & 0.828/0.194 & 0.827/0.190 & \textbf{0.768/0.544} & 0.536 & no \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.693/0.174 & 0.646/0.255 & 0.651/0.316 & \textbf{0.611/0.449} & 0.372 & no \\
+ & VQAv2 & 0.706/0.238 & 0.724/0.359 & \textbf{0.713/0.540} & 0.670/0.537 & 0.511 & no \\
+ & POPE & 0.865/0.061 & 0.862/0.059 & 0.829/0.103 & \textbf{0.629/0.385} & 0.385 & no \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\footnotesize $^{\S}$Anchor cell (LLaVA-OV/VQAv2), trained at full budget $K{=}4$, inner steps 10; the other eleven cells use the reduced training-time inner attack $K{=}8$, inner steps 5, with the evaluation attack unchanged at full strength. A gradient-penalty variant, run for the anchor only, reaches clean 0.763 and attacked 0.201, also no escape. $^{\ddagger}$Nearest miss: peak clean 0.755 clears the clean leg (threshold 0.734) but peak att 0.536 (three-seed sd 0.008; seeds 0.544, 0.528, 0.536) stays below the 0.55 bar; it is the highest attacked AUROC anywhere. Escape (0 of 12) requires peak clean above the clean threshold and peak att above 0.55.}

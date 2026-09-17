@@ -1,0 +1,65 @@
+{
+  "feature_dim": 29,
+  "feature_cols": [
+    "original_log_prob_actual",
+    "original_prob_actual",
+    "original_logit_actual",
+    "original_entropy",
+    "original_norm_logits_L2",
+    "original_std_logits",
+    "original_norm_hidden_state_L2",
+    "jacobian_norm_token",
+    "pei_value_token",
+    "perturbed_log_prob_actual_mean",
+    "perturbed_log_prob_actual_std",
+    "perturbed_prob_actual_mean",
+    "perturbed_prob_actual_std",
+    "perturbed_logit_actual_mean",
+    "perturbed_logit_actual_std",
+    "delta_log_prob_actual_from_original_mean",
+    "delta_log_prob_actual_from_original_std",
+    "perturbed_entropy_mean",
+    "perturbed_entropy_std",
+    "perturbed_norm_logits_L2_mean",
+    "perturbed_norm_logits_L2_std",
+    "kl_div_perturbed_from_original_mean",
+    "kl_div_perturbed_from_original_std",
+    "js_div_perturbed_from_original_mean",
+    "js_div_perturbed_from_original_std",
+    "cosine_sim_logits_perturbed_to_original_mean",
+    "cosine_sim_logits_perturbed_to_original_std",
+    "cosine_sim_hidden_perturbed_to_original_mean",
+    "cosine_sim_hidden_perturbed_to_original_std"
+  ],
+  "label_mapping": {
+    "labels_swapped": true
+  },
+  "max_seq_length": 64,
+  "hidden_dims": [
+    64,
+    32
+  ],
+  "kernel_sizes": [
+    3,
+    3
+  ],
+  "embed_dim": 16,
+  "classifier_hidden_dims": [
+    32
+  ],
+  "val_metrics": {
+    "auroc": 0.8095905549816498,
+    "auprc": 0.5208711642981773,
+    "ece": 0.12517126925885969,
+    "brier": 0.15425758956439908,
+    "accuracy": 0.7618
+  },
+  "best_epoch": 30,
+  "pos_weight_ratio": 3.798464491362764,
+  "seed": 23,
+  "dropped_columns": [
+    "l2_dist_hidden_perturbed_from_original_mean",
+    "l2_dist_hidden_perturbed_from_original_std"
+  ],
+  "repair": "removed analytically constant l2_dist columns before fitting the scaler"
+}

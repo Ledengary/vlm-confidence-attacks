@@ -1,0 +1,145 @@
+\setlength{\LTcapwidth}{\textwidth}
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{
+>{\footnotesize}l
+>{\footnotesize}l
+>{\footnotesize}l
+>{\footnotesize}l
+>{\footnotesize}r
+>{\footnotesize}r
+>{\footnotesize}r
+>{\footnotesize}r
+>{\footnotesize}r
+>{\footnotesize}r
+>{\footnotesize}c
+}
+\caption{\textbf{The uniform amplitude certificate, refuted in 83 of 84 estimator-by-cell profiles and unattainable in the remaining one.} $\gamma^{\ast}$ (with bootstrap 95\% CI) is the amplitude below which a certified readout provably keeps discriminating above the cell's operative floor, reported as the continuous crossing of the clean separation curve; clean sep.\ is the mean clean pairwise separation and $G(0)$ the clean AUROC, both over all correct-incorrect pairs; disp.\ is the mean per-item displacement the aimed attack witnesses and max the largest, both on the feasibility-restricted set of $n$ feas.\ items; frac$>\gamma^{\ast}$ is the fraction of feasible items whose witness exceeds $\gamma^{\ast}$, each falsifying a uniform certificate at that level; refuted marks whether a feasible witness exceeds $\gamma^{\ast}$. For TokProb on Gemma/GQA the clean AUROC $G(0)=0.569$ already lies below the operative floor $0.660$, so no positive amplitude is certifiable; that row shows n/a for both $\gamma^{\ast}$ and refuted, since the certificate is unattainable rather than refuted.}
+\label{tab:app-certificate}\\
+\toprule
+estimator & model & set & $\gamma^{\ast}$ [95\% CI] & clean sep. & $G(0)$ & disp. & max & $n$ feas. & frac$>\gamma^{\ast}$ & refuted \\
+\midrule
+\endfirsthead
+\multicolumn{11}{@{}l}{\emph{Table~\ref{tab:app-certificate} continued from previous page}}\\
+\toprule
+estimator & model & set & $\gamma^{\ast}$ [95\% CI] & clean sep. & $G(0)$ & disp. & max & $n$ feas. & frac$>\gamma^{\ast}$ & refuted \\
+\midrule
+\endhead
+\midrule
+\multicolumn{11}{r@{}}{\emph{continued on next page}}\\
+\endfoot
+\bottomrule
+\multicolumn{11}{@{}l}{\footnotesize 83 of 84 profiles refuted; 1 unattainable (TokProb, Gemma, GQA:}\\
+\multicolumn{11}{@{}l}{\footnotesize $G(0)$ below the operative floor, so no positive amplitude is certifiable).}\\
+\endlastfoot
+TokProb & InternVL & GQA & 0.046~{\scriptsize[0.044,0.048]} & 0.191 & 0.744 & 0.129 & 0.823 & 528 & 0.483 & yes \\
+ &  & VQAv2 & 0.065~{\scriptsize[0.064,0.067]} & 0.204 & 0.765 & 0.115 & 0.817 & 473 & 0.410 & yes \\
+ &  & POPE & 0.053~{\scriptsize[0.052,0.055]} & 0.146 & 0.779 & 0.087 & 0.441 & 725 & 0.505 & yes \\
+\addlinespace
+ & Molmo & GQA & 0.019~{\scriptsize[0.017,0.020]} & 0.146 & 0.739 & 0.133 & 0.674 & 463 & 0.739 & yes \\
+ &  & VQAv2 & 0.060~{\scriptsize[0.059,0.062]} & 0.189 & 0.792 & 0.120 & 0.759 & 424 & 0.583 & yes \\
+ &  & POPE & 0.021~{\scriptsize[0.020,0.021]} & 0.079 & 0.688 & 0.105 & 0.368 & 377 & 0.785 & yes \\
+\addlinespace
+ & LLaVA & GQA & 0.045~{\scriptsize[0.043,0.046]} & 0.198 & 0.791 & 0.123 & 0.642 & 630 & 0.633 & yes \\
+ &  & VQAv2 & 0.090~{\scriptsize[0.088,0.092]} & 0.249 & 0.830 & 0.108 & 0.623 & 560 & 0.468 & yes \\
+ &  & POPE & 0.039~{\scriptsize[0.037,0.040]} & 0.134 & 0.714 & 0.096 & 0.419 & 616 & 0.537 & yes \\
+\addlinespace
+ & Gemma & GQA & n/a & 0.031 & 0.569 & 0.043 & 0.397 & 797 & n/a & n/a \\
+ &  & VQAv2 & 0.002~{\scriptsize[0.001,0.002]} & 0.066 & 0.672 & 0.048 & 0.468 & 805 & 0.639 & yes \\
+ &  & POPE & 0.007~{\scriptsize[0.006,0.007]} & 0.026 & 0.580 & 0.051 & 0.309 & 857 & 0.760 & yes \\
+\midrule
+P(IK) & InternVL & GQA & 0.096~{\scriptsize[0.093,0.098]} & 0.309 & 0.809 & 0.318 & 0.997 & 529 & 0.679 & yes \\
+ &  & VQAv2 & 0.070~{\scriptsize[0.067,0.072]} & 0.250 & 0.748 & 0.314 & 0.974 & 470 & 0.696 & yes \\
+ &  & POPE & 0.088~{\scriptsize[0.086,0.092]} & 0.241 & 0.786 & 0.339 & 0.834 & 724 & 0.786 & yes \\
+\addlinespace
+ & Molmo & GQA & 0.039~{\scriptsize[0.038,0.041]} & 0.268 & 0.779 & 0.377 & 0.999 & 461 & 0.796 & yes \\
+ &  & VQAv2 & 0.084~{\scriptsize[0.082,0.087]} & 0.310 & 0.777 & 0.395 & 0.999 & 424 & 0.795 & yes \\
+ &  & POPE & 0.065~{\scriptsize[0.063,0.067]} & 0.204 & 0.818 & 0.322 & 0.604 & 377 & 0.878 & yes \\
+\addlinespace
+ & LLaVA & GQA & 0.094~{\scriptsize[0.090,0.096]} & 0.354 & 0.826 & 0.451 & 0.980 & 630 & 0.841 & yes \\
+ &  & VQAv2 & 0.064~{\scriptsize[0.061,0.066]} & 0.243 & 0.740 & 0.359 & 0.992 & 558 & 0.762 & yes \\
+ &  & POPE & 0.068~{\scriptsize[0.065,0.071]} & 0.246 & 0.775 & 0.273 & 0.711 & 616 & 0.718 & yes \\
+\addlinespace
+ & Gemma & GQA & 0.070~{\scriptsize[0.067,0.072]} & 0.280 & 0.789 & 0.207 & 0.997 & 798 & 0.669 & yes \\
+ &  & VQAv2 & 0.026~{\scriptsize[0.024,0.028]} & 0.207 & 0.706 & 0.202 & 0.999 & 803 & 0.663 & yes \\
+ &  & POPE & 0.120~{\scriptsize[0.117,0.121]} & 0.217 & 0.755 & 0.289 & 0.742 & 857 & 0.704 & yes \\
+\midrule
+SAPLMA & InternVL & GQA & 0.082~{\scriptsize[0.079,0.085]} & 0.332 & 0.799 & 0.297 & 0.998 & 527 & 0.554 & yes \\
+ &  & VQAv2 & 0.042~{\scriptsize[0.040,0.045]} & 0.220 & 0.696 & 0.283 & 1.000 & 467 & 0.565 & yes \\
+ &  & POPE & 0.028~{\scriptsize[0.028,0.030]} & 0.194 & 0.781 & 0.203 & 0.922 & 725 & 0.614 & yes \\
+\addlinespace
+ & Molmo & GQA & 0.040~{\scriptsize[0.039,0.042]} & 0.249 & 0.805 & 0.252 & 0.896 & 463 & 0.726 & yes \\
+ &  & VQAv2 & 0.081~{\scriptsize[0.079,0.083]} & 0.272 & 0.784 & 0.254 & 0.940 & 426 & 0.631 & yes \\
+ &  & POPE & 0.023~{\scriptsize[0.022,0.023]} & 0.107 & 0.787 & 0.091 & 0.702 & 377 & 0.647 & yes \\
+\addlinespace
+ & LLaVA & GQA & 0.120~{\scriptsize[0.118,0.123]} & 0.393 & 0.851 & 0.355 & 0.995 & 628 & 0.667 & yes \\
+ &  & VQAv2 & 0.083~{\scriptsize[0.080,0.085]} & 0.295 & 0.757 & 0.307 & 0.987 & 554 & 0.639 & yes \\
+ &  & POPE & 0.013~{\scriptsize[0.012,0.014]} & 0.144 & 0.709 & 0.119 & 0.940 & 616 & 0.573 & yes \\
+\addlinespace
+ & Gemma & GQA & 0.065~{\scriptsize[0.064,0.068]} & 0.309 & 0.808 & 0.259 & 0.991 & 798 & 0.674 & yes \\
+ &  & VQAv2 & 0.074~{\scriptsize[0.072,0.077]} & 0.311 & 0.785 & 0.266 & 0.970 & 802 & 0.596 & yes \\
+ &  & POPE & 0.079~{\scriptsize[0.076,0.081]} & 0.239 & 0.813 & 0.278 & 0.895 & 857 & 0.621 & yes \\
+\midrule
+CCPS & InternVL & GQA & 0.085~{\scriptsize[0.083,0.088]} & 0.304 & 0.796 & 0.230 & 0.908 & 528 & 0.544 & yes \\
+ &  & VQAv2 & 0.072~{\scriptsize[0.069,0.075]} & 0.270 & 0.738 & 0.193 & 0.955 & 469 & 0.490 & yes \\
+ &  & POPE & 0.103~{\scriptsize[0.100,0.106]} & 0.263 & 0.784 & 0.220 & 0.612 & 725 & 0.596 & yes \\
+\addlinespace
+ & Molmo & GQA & 0.048~{\scriptsize[0.045,0.050]} & 0.301 & 0.777 & 0.303 & 0.893 & 461 & 0.694 & yes \\
+ &  & VQAv2 & 0.106~{\scriptsize[0.103,0.109]} & 0.334 & 0.784 & 0.310 & 0.975 & 424 & 0.670 & yes \\
+ &  & POPE & 0.088~{\scriptsize[0.085,0.092]} & 0.293 & 0.816 & 0.368 & 0.732 & 377 & 0.764 & yes \\
+\addlinespace
+ & LLaVA & GQA & 0.098~{\scriptsize[0.096,0.102]} & 0.367 & 0.824 & 0.272 & 0.995 & 630 & 0.627 & yes \\
+ &  & VQAv2 & 0.097~{\scriptsize[0.095,0.100]} & 0.316 & 0.771 & 0.242 & 0.958 & 559 & 0.565 & yes \\
+ &  & POPE & 0.062~{\scriptsize[0.060,0.064]} & 0.210 & 0.750 & 0.169 & 0.773 & 616 & 0.597 & yes \\
+\addlinespace
+ & Gemma & GQA & 0.040~{\scriptsize[0.038,0.042]} & 0.219 & 0.740 & 0.213 & 0.898 & 797 & 0.679 & yes \\
+ &  & VQAv2 & 0.071~{\scriptsize[0.069,0.073]} & 0.264 & 0.780 & 0.185 & 0.842 & 803 & 0.562 & yes \\
+ &  & POPE & 0.068~{\scriptsize[0.066,0.070]} & 0.177 & 0.711 & 0.235 & 0.786 & 857 & 0.687 & yes \\
+\midrule
+CCPS-D & InternVL & GQA & 0.086~{\scriptsize[0.083,0.088]} & 0.290 & 0.795 & 0.245 & 0.887 & 528 & 0.570 & yes \\
+ &  & VQAv2 & 0.058~{\scriptsize[0.055,0.060]} & 0.240 & 0.719 & 0.196 & 0.909 & 469 & 0.516 & yes \\
+ &  & POPE & 0.098~{\scriptsize[0.095,0.102]} & 0.282 & 0.781 & 0.270 & 0.789 & 725 & 0.640 & yes \\
+\addlinespace
+ & Molmo & GQA & 0.063~{\scriptsize[0.061,0.066]} & 0.312 & 0.797 & 0.337 & 0.828 & 461 & 0.716 & yes \\
+ &  & VQAv2 & 0.107~{\scriptsize[0.105,0.110]} & 0.338 & 0.802 & 0.331 & 0.904 & 424 & 0.696 & yes \\
+ &  & POPE & 0.084~{\scriptsize[0.081,0.087]} & 0.302 & 0.816 & 0.388 & 0.771 & 377 & 0.743 & yes \\
+\addlinespace
+ & LLaVA & GQA & 0.093~{\scriptsize[0.090,0.096]} & 0.380 & 0.823 & 0.293 & 0.978 & 630 & 0.640 & yes \\
+ &  & VQAv2 & 0.093~{\scriptsize[0.090,0.096]} & 0.325 & 0.770 & 0.261 & 0.984 & 559 & 0.569 & yes \\
+ &  & POPE & 0.048~{\scriptsize[0.046,0.050]} & 0.218 & 0.735 & 0.211 & 0.804 & 616 & 0.648 & yes \\
+\addlinespace
+ & Gemma & GQA & 0.036~{\scriptsize[0.034,0.038]} & 0.216 & 0.742 & 0.235 & 0.876 & 797 & 0.704 & yes \\
+ &  & VQAv2 & 0.066~{\scriptsize[0.063,0.068]} & 0.266 & 0.772 & 0.210 & 0.859 & 803 & 0.599 & yes \\
+ &  & POPE & 0.063~{\scriptsize[0.062,0.065]} & 0.164 & 0.740 & 0.244 & 0.786 & 857 & 0.701 & yes \\
+\midrule
+FULL & InternVL & GQA & 0.083~{\scriptsize[0.080,0.085]} & 0.313 & 0.798 & 0.279 & 1.000 & 527 & 0.543 & yes \\
+ &  & VQAv2 & 0.032~{\scriptsize[0.030,0.034]} & 0.209 & 0.688 & 0.256 & 0.999 & 462 & 0.543 & yes \\
+ &  & POPE & 0.029~{\scriptsize[0.028,0.030]} & 0.197 & 0.745 & 0.203 & 0.887 & 725 & 0.568 & yes \\
+\addlinespace
+ & Molmo & GQA & 0.052~{\scriptsize[0.050,0.053]} & 0.277 & 0.818 & 0.254 & 0.964 & 463 & 0.683 & yes \\
+ &  & VQAv2 & 0.090~{\scriptsize[0.087,0.092]} & 0.297 & 0.790 & 0.253 & 0.993 & 427 & 0.635 & yes \\
+ &  & POPE & 0.028~{\scriptsize[0.027,0.029]} & 0.146 & 0.793 & 0.119 & 0.732 & 377 & 0.668 & yes \\
+\addlinespace
+ & LLaVA & GQA & 0.102~{\scriptsize[0.100,0.105]} & 0.360 & 0.837 & 0.344 & 0.991 & 628 & 0.707 & yes \\
+ &  & VQAv2 & 0.072~{\scriptsize[0.069,0.074]} & 0.269 & 0.736 & 0.278 & 0.995 & 552 & 0.636 & yes \\
+ &  & POPE & 0.039~{\scriptsize[0.038,0.041]} & 0.171 & 0.749 & 0.134 & 0.821 & 616 & 0.627 & yes \\
+\addlinespace
+ & Gemma & GQA & 0.072~{\scriptsize[0.070,0.074]} & 0.285 & 0.801 & 0.260 & 0.987 & 795 & 0.713 & yes \\
+ &  & VQAv2 & 0.075~{\scriptsize[0.073,0.077]} & 0.279 & 0.780 & 0.243 & 0.996 & 803 & 0.621 & yes \\
+ &  & POPE & 0.107~{\scriptsize[0.104,0.109]} & 0.235 & 0.813 & 0.287 & 0.919 & 857 & 0.632 & yes \\
+\midrule
+COUPLED & InternVL & GQA & 0.059~{\scriptsize[0.057,0.061]} & 0.248 & 0.751 & 0.412 & 1.000 & 517 & 0.768 & yes \\
+ &  & VQAv2 & 0.005~{\scriptsize[0.003,0.007]} & 0.129 & 0.626 & 0.358 & 1.000 & 441 & 0.800 & yes \\
+ &  & POPE & 0.017~{\scriptsize[0.016,0.019]} & 0.082 & 0.610 & 0.325 & 0.975 & 722 & 0.850 & yes \\
+\addlinespace
+ & Molmo & GQA & 0.022~{\scriptsize[0.020,0.025]} & 0.236 & 0.725 & 0.178 & 0.991 & 461 & 0.666 & yes \\
+ &  & VQAv2 & 0.021~{\scriptsize[0.018,0.023]} & 0.166 & 0.665 & 0.168 & 0.999 & 421 & 0.634 & yes \\
+ &  & POPE & 0.040~{\scriptsize[0.037,0.042]} & 0.135 & 0.673 & 0.027 & 0.137 & 377 & 0.233 & yes \\
+\addlinespace
+ & LLaVA & GQA & 0.043~{\scriptsize[0.040,0.045]} & 0.253 & 0.745 & 0.383 & 0.999 & 624 & 0.800 & yes \\
+ &  & VQAv2 & 0.017~{\scriptsize[0.015,0.020]} & 0.164 & 0.650 & 0.320 & 1.000 & 533 & 0.788 & yes \\
+ &  & POPE & 0.023~{\scriptsize[0.021,0.024]} & 0.103 & 0.666 & 0.302 & 0.929 & 616 & 0.805 & yes \\
+\addlinespace
+ & Gemma & GQA & 0.027~{\scriptsize[0.025,0.029]} & 0.178 & 0.724 & 0.099 & 0.646 & 795 & 0.701 & yes \\
+ &  & VQAv2 & 0.027~{\scriptsize[0.025,0.029]} & 0.172 & 0.714 & 0.095 & 0.668 & 803 & 0.679 & yes \\
+ &  & POPE & 0.036~{\scriptsize[0.035,0.038]} & 0.082 & 0.600 & 0.139 & 0.401 & 857 & 0.932 & yes \\
+\end{longtable}

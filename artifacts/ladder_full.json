@@ -1,0 +1,244 @@
+{
+  "rows": [
+    {
+      "base": "llava",
+      "verifier": "gemma",
+      "dataset": "vqa",
+      "spsa_n": 200,
+      "clean": 0.7549,
+      "clean_ci": [
+        0.6845,
+        0.8199
+      ],
+      "transfer": 0.5775,
+      "transfer_ci": [
+        0.4997,
+        0.6554
+      ],
+      "hsj": 0.5814,
+      "spsa": 0.485,
+      "c2": 0.2141,
+      "parity_max_abs": 0.0
+    },
+    {
+      "base": "llava",
+      "verifier": "internvl",
+      "dataset": "vqa",
+      "spsa_n": 100,
+      "clean": 0.6538,
+      "clean_ci": [
+        0.5763,
+        0.7289
+      ],
+      "transfer": 0.5746,
+      "transfer_ci": [
+        0.4961,
+        0.6542
+      ],
+      "hsj": 0.6251,
+      "spsa": 0.489,
+      "c2": 0.1233,
+      "parity_max_abs": 0.0
+    },
+    {
+      "base": "gemma",
+      "verifier": "llava",
+      "dataset": "gqa",
+      "spsa_n": 200,
+      "clean": 0.7121,
+      "clean_ci": [
+        0.6392,
+        0.7787
+      ],
+      "transfer": 0.6679,
+      "transfer_ci": [
+        0.5913,
+        0.7405
+      ],
+      "hsj": 0.7031,
+      "spsa": 0.6079,
+      "c2": 0.3421,
+      "parity_max_abs": 0.0
+    },
+    {
+      "base": "molmo",
+      "verifier": "gemma",
+      "dataset": "pope",
+      "spsa_n": 200,
+      "clean": 0.6598,
+      "clean_ci": [
+        0.5819,
+        0.7342
+      ],
+      "transfer": 0.5145,
+      "transfer_ci": [
+        0.4311,
+        0.5991
+      ],
+      "hsj": 0.5023,
+      "spsa": 0.4313,
+      "c2": 0.1951,
+      "parity_max_abs": 0.0
+    },
+    {
+      "base": "internvl",
+      "verifier": "llava",
+      "dataset": "gqa",
+      "spsa_n": 200,
+      "clean": 0.6809,
+      "clean_ci": [
+        0.6051,
+        0.7546
+      ],
+      "transfer": 0.637,
+      "transfer_ci": [
+        0.5562,
+        0.7132
+      ],
+      "hsj": 0.6642,
+      "spsa": 0.5615,
+      "c2": 0.2702,
+      "parity_max_abs": 0.0
+    },
+    {
+      "base": "internvl",
+      "verifier": "molmo",
+      "dataset": "pope",
+      "spsa_n": 200,
+      "clean": 0.4953,
+      "clean_ci": [
+        0.4086,
+        0.5813
+      ],
+      "transfer": 0.4419,
+      "transfer_ci": [
+        0.3534,
+        0.5282
+      ],
+      "hsj": 0.4859,
+      "spsa": 0.3546,
+      "c2": 0.3784,
+      "parity_max_abs": 0.14420733
+    },
+    {
+      "base": "gemma",
+      "verifier": "molmo",
+      "dataset": "vqa",
+      "spsa_n": 200,
+      "clean": 0.7537,
+      "clean_ci": [
+        0.6811,
+        0.8211
+      ],
+      "transfer": 0.7171,
+      "transfer_ci": [
+        0.6415,
+        0.7868
+      ],
+      "hsj": 0.7268,
+      "spsa": 0.6109,
+      "c2": 0.7442,
+      "parity_max_abs": 0.04984598
+    },
+    {
+      "base": "molmo",
+      "verifier": "internvl",
+      "dataset": "gqa",
+      "spsa_n": 100,
+      "clean": 0.6764,
+      "clean_ci": [
+        0.6001,
+        0.7494
+      ],
+      "transfer": 0.5915,
+      "transfer_ci": [
+        0.5121,
+        0.6711
+      ],
+      "hsj": 0.6361,
+      "spsa": 0.4774,
+      "c2": 0.0627,
+      "parity_max_abs": 0.0
+    },
+    {
+      "base": "llava",
+      "verifier": "molmo",
+      "dataset": "pope",
+      "spsa_n": 200,
+      "clean": 0.4235,
+      "clean_ci": [
+        0.3358,
+        0.5207
+      ],
+      "transfer": 0.3903,
+      "transfer_ci": [
+        0.3031,
+        0.4826
+      ],
+      "hsj": 0.4174,
+      "spsa": 0.3232,
+      "c2": 0.3178,
+      "parity_max_abs": 0.09302317
+    },
+    {
+      "base": "gemma",
+      "verifier": "internvl",
+      "dataset": "pope",
+      "spsa_n": 100,
+      "clean": 0.6101,
+      "clean_ci": [
+        0.5326,
+        0.69
+      ],
+      "transfer": 0.5365,
+      "transfer_ci": [
+        0.4571,
+        0.6178
+      ],
+      "hsj": 0.5819,
+      "spsa": 0.4036,
+      "c2": 0.3467,
+      "parity_max_abs": 0.0
+    },
+    {
+      "base": "internvl",
+      "verifier": "gemma",
+      "dataset": "vqa",
+      "spsa_n": 200,
+      "clean": 0.7517,
+      "clean_ci": [
+        0.6846,
+        0.8177
+      ],
+      "transfer": 0.616,
+      "transfer_ci": [
+        0.5403,
+        0.6943
+      ],
+      "hsj": 0.6079,
+      "spsa": 0.4339,
+      "c2": 0.2894,
+      "parity_max_abs": 0.0
+    },
+    {
+      "base": "molmo",
+      "verifier": "llava",
+      "dataset": "vqa",
+      "spsa_n": 200,
+      "clean": 0.6899,
+      "clean_ci": [
+        0.6124,
+        0.7615
+      ],
+      "transfer": 0.5861,
+      "transfer_ci": [
+        0.5073,
+        0.6641
+      ],
+      "hsj": 0.6807,
+      "spsa": 0.5783,
+      "c2": 0.1641,
+      "parity_max_abs": 0.0
+    }
+  ]
+}

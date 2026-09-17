@@ -1,0 +1,119 @@
+{
+  "estimators": [
+    {
+      "label": "TokProb",
+      "clean_mean": 0.7040337432542694,
+      "clean_median": 0.7098322562720514,
+      "clean_min": 0.564526202236984,
+      "clean_max": 0.8082732976992796,
+      "adv_mean": 0.07248844653798033,
+      "adv_min": 4.018969536210915e-05,
+      "adv_max": 0.3254385428763523,
+      "dagger": false
+    },
+    {
+      "label": "P(IK)",
+      "clean_mean": 0.8052168489182044,
+      "clean_median": 0.802547667959894,
+      "clean_min": 0.7421238938053097,
+      "clean_max": 0.8604326587578507,
+      "adv_mean": 0.14632864226134204,
+      "adv_min": 0.043244331682171476,
+      "adv_max": 0.370033922131899,
+      "dagger": false
+    },
+    {
+      "label": "SAPLMA",
+      "clean_mean": 0.7951421075550212,
+      "clean_median": 0.7987283622512298,
+      "clean_min": 0.7203092690820821,
+      "clean_max": 0.8679990704159889,
+      "adv_mean": 0.14003525478359197,
+      "adv_min": 0.014862149344907965,
+      "adv_max": 0.44248517816759364,
+      "dagger": false
+    },
+    {
+      "label": "CCPS",
+      "clean_mean": 0.7811882614152382,
+      "clean_median": 0.7777624273564916,
+      "clean_min": 0.7140180548458525,
+      "clean_max": 0.8542877062514524,
+      "adv_mean": 0.14808237686653664,
+      "adv_min": 0.0037858693031106823,
+      "adv_max": 0.44300088625389644,
+      "dagger": false
+    },
+    {
+      "label": "CCPS-D",
+      "clean_mean": 0.782350692971316,
+      "clean_median": 0.7876184046162795,
+      "clean_min": 0.7105830920342928,
+      "clean_max": 0.8477806181733675,
+      "adv_mean": 0.11191519221296363,
+      "adv_min": 0.006876456876456876,
+      "adv_max": 0.41911405170833077,
+      "dagger": false
+    },
+    {
+      "label": "FULL",
+      "clean_mean": 0.7973012050355568,
+      "clean_median": 0.8000589384184862,
+      "clean_min": 0.7399023524189969,
+      "clean_max": 0.8619567743434813,
+      "adv_mean": 0.1352000536646626,
+      "adv_min": 0.0034241620448517,
+      "adv_max": 0.4578074384206344,
+      "dagger": false
+    },
+    {
+      "label": "COUPLED",
+      "clean_mean": 0.7109614043379568,
+      "clean_median": 0.7032062946960436,
+      "clean_min": 0.6627229873370921,
+      "clean_max": 0.7834637247112035,
+      "adv_mean": 0.2521305006937463,
+      "adv_min": 0.029026648873791906,
+      "adv_max": 0.7314268687733023,
+      "dagger": true
+    },
+    {
+      "label": "RANDOM (ctrl)",
+      "clean_mean": 0.515,
+      "clean_median": 0.515,
+      "clean_min": 0.515,
+      "clean_max": 0.515,
+      "adv_mean": 0.513,
+      "adv_min": 0.512,
+      "adv_max": 0.518,
+      "dagger": false
+    }
+  ],
+  "per_model": [
+    {
+      "label": "InternVL3.5-2B",
+      "auroc": 0.04024009210533277,
+      "note": ""
+    },
+    {
+      "label": "Molmo2-4B",
+      "auroc": 0.2854849135598349,
+      "note": "(partial inversion)"
+    },
+    {
+      "label": "LLaVA-OV-7B",
+      "auroc": 0.07787397244777304,
+      "note": ""
+    },
+    {
+      "label": "Gemma-3-12B",
+      "auroc": 0.09148095201699097,
+      "note": ""
+    }
+  ],
+  "coupled_dagger": {
+    "twelve_cell": 0.2521305006937463,
+    "molmo_pope": 0.7314268687733023,
+    "eleven_cell": 0.20855810359560484
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "cells": {
+    "internvl3_5_2b": {
+      "gqa_val_eval": {
+        "pik": 0.293402,
+        "saplma": 0.288322
+      },
+      "vqav2_ood": {
+        "pik": 0.4379,
+        "saplma": 0.344416
+      },
+      "pope_ood": {
+        "pik": 0.261558,
+        "saplma": 0.355202
+      }
+    },
+    "molmo2_4b": {
+      "gqa_val_eval": {
+        "pik": 0.389948,
+        "saplma": 0.316462
+      },
+      "vqav2_ood": {
+        "pik": 0.376654,
+        "saplma": 0.357918
+      },
+      "pope_ood": {
+        "pik": 0.310908,
+        "saplma": 0.263988
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "pik": 0.350854,
+        "saplma": 0.303442
+      },
+      "vqav2_ood": {
+        "pik": 0.37729,
+        "saplma": 0.330942
+      },
+      "pope_ood": {
+        "pik": 0.315228,
+        "saplma": 0.293592
+      }
+    },
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "pik": 0.442346,
+        "saplma": 0.421554
+      },
+      "vqav2_ood": {
+        "pik": 0.460752,
+        "saplma": 0.408368
+      },
+      "pope_ood": {
+        "pik": 0.387888,
+        "saplma": 0.336458
+      }
+    }
+  }
+}

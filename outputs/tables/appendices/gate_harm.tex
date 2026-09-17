@@ -1,0 +1,52 @@
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+model & set & acc-clean & w2ac (tr) & acc-adv (tr) & w2ac (aim) & acc-adv (aim) \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.845 & 0.468 & 0.481 & 0.710 & 0.290 \\
+ & VQAv2 & 0.735 & 0.429 & 0.330 & 0.619 & 0.172 \\
+ & POPE & 0.744 & 0.848 & 0.182 & 0.894 & 0.081 \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.842 & 0.396 & 0.471 & 0.506 & 0.348 \\
+ & VQAv2 & 0.843 & 0.398 & 0.460 & 0.482 & 0.353 \\
+ & POPE & 0.831 & 0.114 & 0.695 & 0.374 & 0.394 \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.853 & 0.449 & 0.428 & 0.697 & 0.212 \\
+ & VQAv2 & 0.784 & 0.339 & 0.373 & 0.580 & 0.200 \\
+ & POPE & 0.788 & 0.748 & 0.273 & 0.780 & 0.151 \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.833 & 0.044 & 0.751 & 0.223 & 0.300 \\
+ & VQAv2 & 0.829 & 0.066 & 0.648 & 0.231 & 0.289 \\
+ & POPE & 0.840 & 0.096 & 0.629 & 0.478 & 0.116 \\
+\bottomrule
+\end{tabular}
+
+\vspace{8pt}
+\noindent{\footnotesize\itshape Accepted accuracy at natural prevalence, no-gate baseline vs gated:}\\[2pt]
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}llrrrrcc@{}}
+\toprule
+model & set & no-gate & gated cln & gated (tr) & gated (aim) & $<$base (tr) & $<$base (aim) \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.798 & 0.956 & 0.786 & 0.617 & yes & yes \\
+ & VQAv2 & 0.697 & 0.865 & 0.531 & 0.324 & yes & yes \\
+ & POPE & 0.895 & 0.961 & 0.654 & 0.428 & yes & yes \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.832 & 0.964 & 0.816 & 0.726 & yes & yes \\
+ & VQAv2 & 0.771 & 0.948 & 0.741 & 0.647 & yes & yes \\
+ & POPE & 0.881 & 0.973 & 0.944 & 0.828 & no & yes \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.859 & 0.973 & 0.820 & 0.621 & yes & yes \\
+ & VQAv2 & 0.784 & 0.929 & 0.684 & 0.476 & yes & yes \\
+ & POPE & 0.878 & 0.964 & 0.729 & 0.560 & yes & yes \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.752 & 0.938 & 0.901 & 0.565 & no & yes \\
+ & VQAv2 & 0.714 & 0.923 & 0.821 & 0.503 & no & yes \\
+ & POPE & 0.855 & 0.969 & 0.909 & 0.437 & no & yes \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\footnotesize The gate is the FULL hidden-state gate at a $10\%$ clean false-accept rate, fixed under attack. \emph{tr} is the transfer token-probability attack, \emph{aim} the gate-aimed attack; \emph{w2ac} is the fraction of wrong answers flipped from abstain to accept. Upper block is the balanced pool, so an acc-adv below $0.5$ is worse than random acceptance. Lower block reweights accepted accuracy to the benchmark's natural correctness prevalence; the no-gate baseline accepts every answer, and $<$base marks gated accepted accuracy below it.}

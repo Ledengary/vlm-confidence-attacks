@@ -1,0 +1,84 @@
+{
+  "cells": {
+    "internvl3_5_2b": {
+      "gqa_val_eval": {
+        "rigor_n": 6000,
+        "rigor_rate": 0.9951666666666666,
+        "byte_id": 994,
+        "byte_total": 1000
+      },
+      "vqav2_ood": {
+        "rigor_n": 6000,
+        "rigor_rate": 0.9928333333333333,
+        "byte_id": 990,
+        "byte_total": 1000
+      },
+      "pope_ood": {
+        "rigor_n": 6000,
+        "rigor_rate": 0.9998333333333334,
+        "byte_id": 1000,
+        "byte_total": 1000
+      }
+    },
+    "molmo2_4b": {
+      "gqa_val_eval": {
+        "rigor_n": 6000,
+        "rigor_rate": 0.9988333333333334,
+        "byte_id": 998,
+        "byte_total": 1000
+      },
+      "vqav2_ood": {
+        "rigor_n": 6000,
+        "rigor_rate": 0.9945,
+        "byte_id": 987,
+        "byte_total": 1000
+      },
+      "pope_ood": {
+        "rigor_n": 6000,
+        "rigor_rate": 1.0,
+        "byte_id": 1000,
+        "byte_total": 1000
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "rigor_n": 6000,
+        "rigor_rate": 0.9988333333333334,
+        "byte_id": 999,
+        "byte_total": 1000
+      },
+      "vqav2_ood": {
+        "rigor_n": 6000,
+        "rigor_rate": 0.9943333333333333,
+        "byte_id": 997,
+        "byte_total": 1000
+      },
+      "pope_ood": {
+        "rigor_n": 6000,
+        "rigor_rate": 1.0,
+        "byte_id": 1000,
+        "byte_total": 1000
+      }
+    },
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "rigor_n": 6000,
+        "rigor_rate": 0.9978333333333333,
+        "byte_id": 998,
+        "byte_total": 1000
+      },
+      "vqav2_ood": {
+        "rigor_n": 6000,
+        "rigor_rate": 0.9971666666666666,
+        "byte_id": 996,
+        "byte_total": 1000
+      },
+      "pope_ood": {
+        "rigor_n": 6000,
+        "rigor_rate": 1.0,
+        "byte_id": 1000,
+        "byte_total": 1000
+      }
+    }
+  }
+}

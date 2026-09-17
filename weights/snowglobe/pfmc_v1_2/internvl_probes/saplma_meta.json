@@ -1,0 +1,18 @@
+{
+  "channel": "saplma",
+  "input_dim": 2048,
+  "swapped": true,
+  "label_mapping": {
+    "labels_swapped": true,
+    "class_1_represents": "incorrect",
+    "n_correct": 16229,
+    "n_incorrect": 3771
+  },
+  "best_epoch": 8,
+  "seed": 23,
+  "n_train": 20000,
+  "n_val": 5000,
+  "preprocessing": "uncapped",
+  "labels": "matched: re-judged for drifted items",
+  "protocol": "pipe_03_probes verbatim"
+}

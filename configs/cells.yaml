@@ -1,0 +1,30 @@
+# The canonical evaluation matrix: 4 models x 3 benchmarks = 12 cells, 1000 items per cell
+# (500 correct + 500 incorrect), drawn under the global seed. Seven confidence readouts.
+seed: 23
+models:
+  - internvl3_5_2b
+  - molmo2_4b
+  - llava_onevision_7b
+  - gemma3_12b
+benchmarks:
+  gqa:
+    set: gqa_val_eval
+    image_source: Visual Genome
+  vqav2:
+    set: vqav2_ood
+    image_source: COCO
+  pope:
+    set: pope_ood
+    image_source: COCO
+items_per_cell: 1000
+balance:
+  correct: 500
+  incorrect: 500
+readouts:
+  - tokprob
+  - pik
+  - saplma
+  - ccps
+  - ccpsd
+  - full
+  - coupled
