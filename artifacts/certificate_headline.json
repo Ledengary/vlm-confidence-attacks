@@ -1,0 +1,1600 @@
+{
+  "rows": [
+    {
+      "channel": "tokprob",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "floor": 0.642,
+      "gamma_grid": 0.05,
+      "gamma_exact": 0.046700000000000005,
+      "ci": [
+        0.04488695000000001,
+        0.048397037500000024
+      ],
+      "sep": 0.19360371799999998,
+      "g0": 0.744988,
+      "disp": 0.3907741111111111,
+      "wmax": 0.894775,
+      "nfeas": 999,
+      "frac": 0.95995995995996,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "floor": 0.616738,
+      "gamma_grid": 0.07,
+      "gamma_exact": 0.06645000000000001,
+      "ci": [
+        0.06467247499999997,
+        0.06815601249999999
+      ],
+      "sep": 0.20680661399999997,
+      "g0": 0.767034,
+      "disp": 0.3819244308617234,
+      "wmax": 0.890082,
+      "nfeas": 998,
+      "frac": 0.9338677354709419,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "floor": 0.554602,
+      "gamma_grid": 0.055,
+      "gamma_exact": 0.05355,
+      "ci": [
+        0.0520795,
+        0.05564906249999995
+      ],
+      "sep": 0.14593874800000003,
+      "g0": 0.779466,
+      "disp": 0.33236202600000003,
+      "wmax": 0.9971019999999999,
+      "nfeas": 1000,
+      "frac": 0.889,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "floor": 0.683,
+      "gamma_grid": 0.025,
+      "gamma_exact": 0.02065,
+      "ci": [
+        0.01928592499999997,
+        0.021948525000000035
+      ],
+      "sep": 0.149542344,
+      "g0": 0.744524,
+      "disp": 0.300971589,
+      "wmax": 0.867185,
+      "nfeas": 1000,
+      "frac": 0.957,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "floor": 0.624964,
+      "gamma_grid": 0.065,
+      "gamma_exact": 0.0626,
+      "ci": [
+        0.06121000000000004,
+        0.06397950000000002
+      ],
+      "sep": 0.194806478,
+      "g0": 0.797688,
+      "disp": 0.3137115220000001,
+      "wmax": 0.9333640000000001,
+      "nfeas": 1000,
+      "frac": 0.925,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "floor": 0.586834,
+      "gamma_grid": 0.025,
+      "gamma_exact": 0.02275,
+      "ci": [
+        0.0219375,
+        0.02358349999999998
+      ],
+      "sep": 0.08413047,
+      "g0": 0.7002,
+      "disp": 0.20122714,
+      "wmax": 0.546451,
+      "nfeas": 1000,
+      "frac": 0.914,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "floor": 0.673,
+      "gamma_grid": 0.045,
+      "gamma_exact": 0.0448,
+      "ci": [
+        0.043232400000000004,
+        0.04632599999999998
+      ],
+      "sep": 0.198829486,
+      "g0": 0.791688,
+      "disp": 0.361723984,
+      "wmax": 0.87638,
+      "nfeas": 1000,
+      "frac": 0.952,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "floor": 0.616094,
+      "gamma_grid": 0.095,
+      "gamma_exact": 0.09055,
+      "ci": [
+        0.088621,
+        0.09233449999999999
+      ],
+      "sep": 0.25071974799999996,
+      "g0": 0.830472,
+      "disp": 0.37056259,
+      "wmax": 0.888827,
+      "nfeas": 1000,
+      "frac": 0.912,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "floor": 0.596662,
+      "gamma_grid": 0.04,
+      "gamma_exact": 0.0386,
+      "ci": [
+        0.03727830000000005,
+        0.039835525000000024
+      ],
+      "sep": 0.13358665399999994,
+      "g0": 0.713552,
+      "disp": 0.35665783700000003,
+      "wmax": 0.733476,
+      "nfeas": 1000,
+      "frac": 0.97,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "floor": 0.66,
+      "gamma_grid": 0.0,
+      "gamma_exact": 0.0,
+      "ci": [
+        NaN,
+        NaN
+      ],
+      "sep": 0.032016763999999996,
+      "g0": 0.570844,
+      "disp": 0.13980642499999998,
+      "wmax": 0.809658,
+      "nfeas": 1000,
+      "frac": NaN,
+      "refuted": "n/a"
+    },
+    {
+      "channel": "tokprob",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "floor": 0.651632,
+      "gamma_grid": 0.005,
+      "gamma_exact": 0.00215,
+      "ci": [
+        0.0017314749999999962,
+        0.0025784999999999836
+      ],
+      "sep": 0.066811446,
+      "g0": 0.674732,
+      "disp": 0.148731258,
+      "wmax": 0.949338,
+      "nfeas": 1000,
+      "frac": 0.862,
+      "refuted": "yes"
+    },
+    {
+      "channel": "tokprob",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "floor": 0.5,
+      "gamma_grid": 0.01,
+      "gamma_exact": 0.00655,
+      "ci": [
+        0.0061075000000000434,
+        0.006950550000000024
+      ],
+      "sep": 0.025670039999999998,
+      "g0": 0.579498,
+      "disp": 0.10427793500000002,
+      "wmax": 0.39781200000000005,
+      "nfeas": 1000,
+      "frac": 0.833,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "floor": 0.642,
+      "gamma_grid": 0.105,
+      "gamma_exact": 0.10210000000000001,
+      "ci": [
+        0.09947700000000001,
+        0.10448550000000001
+      ],
+      "sep": 0.34147887599999993,
+      "g0": 0.813668,
+      "disp": 0.49784596478873233,
+      "wmax": 0.9996799999999999,
+      "nfeas": 994,
+      "frac": 0.795774647887324,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "floor": 0.616738,
+      "gamma_grid": 0.06,
+      "gamma_exact": 0.0589,
+      "ci": [
+        0.05635098750000004,
+        0.06145700000000004
+      ],
+      "sep": 0.2545441580000001,
+      "g0": 0.724196,
+      "disp": 0.45325456048387097,
+      "wmax": 0.9979279999999999,
+      "nfeas": 992,
+      "frac": 0.8014112903225806,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "floor": 0.554602,
+      "gamma_grid": 0.07,
+      "gamma_exact": 0.06860000000000001,
+      "ci": [
+        0.06572491249999998,
+        0.07121111250000002
+      ],
+      "sep": 0.27925179600000005,
+      "g0": 0.80435,
+      "disp": 0.5557461920000001,
+      "wmax": 0.987021,
+      "nfeas": 1000,
+      "frac": 0.811,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "floor": 0.683,
+      "gamma_grid": 0.04,
+      "gamma_exact": 0.039,
+      "ci": [
+        0.03731631250000003,
+        0.040723525000000024
+      ],
+      "sep": 0.26651426800000005,
+      "g0": 0.779078,
+      "disp": 0.4715960330992979,
+      "wmax": 0.9998630000000001,
+      "nfeas": 997,
+      "frac": 0.8966900702106319,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "floor": 0.624964,
+      "gamma_grid": 0.085,
+      "gamma_exact": 0.08145000000000001,
+      "ci": [
+        0.0787598875,
+        0.08377283750000002
+      ],
+      "sep": 0.30578496200000005,
+      "g0": 0.771888,
+      "disp": 0.43998086505538775,
+      "wmax": 0.999983,
+      "nfeas": 993,
+      "frac": 0.8197381671701913,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "floor": 0.586834,
+      "gamma_grid": 0.065,
+      "gamma_exact": 0.06495000000000001,
+      "ci": [
+        0.06324400000000002,
+        0.06651955000000001
+      ],
+      "sep": 0.204348216,
+      "g0": 0.818586,
+      "disp": 0.3902408428428428,
+      "wmax": 0.757275,
+      "nfeas": 999,
+      "frac": 0.8918918918918919,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "floor": 0.673,
+      "gamma_grid": 0.095,
+      "gamma_exact": 0.09275,
+      "ci": [
+        0.0894269375,
+        0.09573149999999997
+      ],
+      "sep": 0.353024966,
+      "g0": 0.825152,
+      "disp": 0.513747911,
+      "wmax": 0.9973380000000001,
+      "nfeas": 1000,
+      "frac": 0.849,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "floor": 0.616094,
+      "gamma_grid": 0.065,
+      "gamma_exact": 0.06475,
+      "ci": [
+        0.06211248749999999,
+        0.06730399999999997
+      ],
+      "sep": 0.24426287200000002,
+      "g0": 0.740724,
+      "disp": 0.44594961461461463,
+      "wmax": 0.995074,
+      "nfeas": 999,
+      "frac": 0.8398398398398398,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "floor": 0.596662,
+      "gamma_grid": 0.07,
+      "gamma_exact": 0.068,
+      "ci": [
+        0.06528248750000003,
+        0.0706446375
+      ],
+      "sep": 0.24579023200000003,
+      "g0": 0.775044,
+      "disp": 0.46363166499999997,
+      "wmax": 0.88932,
+      "nfeas": 1000,
+      "frac": 0.84,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "floor": 0.66,
+      "gamma_grid": 0.07,
+      "gamma_exact": 0.06995,
+      "ci": [
+        0.06782331250000004,
+        0.07229053749999997
+      ],
+      "sep": 0.28006978000000005,
+      "g0": 0.789614,
+      "disp": 0.32339707900000003,
+      "wmax": 0.999306,
+      "nfeas": 1000,
+      "frac": 0.84,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "floor": 0.651632,
+      "gamma_grid": 0.03,
+      "gamma_exact": 0.02615,
+      "ci": [
+        0.024107387500000004,
+        0.028433999999999987
+      ],
+      "sep": 0.20766539199999998,
+      "g0": 0.70542,
+      "disp": 0.31001968,
+      "wmax": 0.999825,
+      "nfeas": 1000,
+      "frac": 0.869,
+      "refuted": "yes"
+    },
+    {
+      "channel": "pik",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "floor": 0.5,
+      "gamma_grid": 0.12,
+      "gamma_exact": 0.11960000000000001,
+      "ci": [
+        0.117369,
+        0.12155899999999997
+      ],
+      "sep": 0.21659627199999995,
+      "g0": 0.755348,
+      "disp": 0.37215925400000005,
+      "wmax": 0.806354,
+      "nfeas": 1000,
+      "frac": 0.814,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "floor": 0.642,
+      "gamma_grid": 0.1,
+      "gamma_exact": 0.09655000000000001,
+      "ci": [
+        0.09280895000000003,
+        0.09979368750000003
+      ],
+      "sep": 0.33934417800000005,
+      "g0": 0.812608,
+      "disp": 0.4759041362260343,
+      "wmax": 0.999974,
+      "nfeas": 991,
+      "frac": 0.7729566094853683,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "floor": 0.616738,
+      "gamma_grid": 0.045,
+      "gamma_exact": 0.044750000000000005,
+      "ci": [
+        0.04230045,
+        0.047415849999999996
+      ],
+      "sep": 0.230929858,
+      "g0": 0.703016,
+      "disp": 0.47128459356136826,
+      "wmax": 0.999997,
+      "nfeas": 994,
+      "frac": 0.8400402414486922,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "floor": 0.554602,
+      "gamma_grid": 0.025,
+      "gamma_exact": 0.02445,
+      "ci": [
+        0.023914000000000046,
+        0.025885999999999965
+      ],
+      "sep": 0.18559946199999997,
+      "g0": 0.742348,
+      "disp": 0.43205910110110113,
+      "wmax": 0.996345,
+      "nfeas": 999,
+      "frac": 0.7937937937937938,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "floor": 0.683,
+      "gamma_grid": 0.045,
+      "gamma_exact": 0.041850000000000005,
+      "ci": [
+        0.04050946250000003,
+        0.043242
+      ],
+      "sep": 0.25653885400000004,
+      "g0": 0.809434,
+      "disp": 0.35380343303121853,
+      "wmax": 0.9850129999999999,
+      "nfeas": 993,
+      "frac": 0.8479355488418933,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "floor": 0.624964,
+      "gamma_grid": 0.085,
+      "gamma_exact": 0.0806,
+      "ci": [
+        0.07844097499999998,
+        0.08263601249999998
+      ],
+      "sep": 0.2737339060000001,
+      "g0": 0.783686,
+      "disp": 0.357298664321608,
+      "wmax": 0.972731,
+      "nfeas": 995,
+      "frac": 0.8060301507537688,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "floor": 0.586834,
+      "gamma_grid": 0.025,
+      "gamma_exact": 0.0241,
+      "ci": [
+        0.023459500000000022,
+        0.024727512500000014
+      ],
+      "sep": 0.11290534199999996,
+      "g0": 0.791754,
+      "disp": 0.211693693856999,
+      "wmax": 0.8116099999999999,
+      "nfeas": 993,
+      "frac": 0.8227593152064451,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "floor": 0.673,
+      "gamma_grid": 0.125,
+      "gamma_exact": 0.12095,
+      "ci": [
+        0.11815598749999999,
+        0.1241755
+      ],
+      "sep": 0.39401352400000006,
+      "g0": 0.851336,
+      "disp": 0.49428478000000003,
+      "wmax": 0.997465,
+      "nfeas": 1000,
+      "frac": 0.801,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "floor": 0.616094,
+      "gamma_grid": 0.085,
+      "gamma_exact": 0.0838,
+      "ci": [
+        0.081393,
+        0.08624861249999999
+      ],
+      "sep": 0.29644380200000003,
+      "g0": 0.758294,
+      "disp": 0.456136824,
+      "wmax": 0.990456,
+      "nfeas": 1000,
+      "frac": 0.801,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "floor": 0.596662,
+      "gamma_grid": 0.015,
+      "gamma_exact": 0.01305,
+      "ci": [
+        0.012450499999999975,
+        0.013646500000000006
+      ],
+      "sep": 0.143582586,
+      "g0": 0.708632,
+      "disp": 0.259070916,
+      "wmax": 0.978399,
+      "nfeas": 1000,
+      "frac": 0.784,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "floor": 0.66,
+      "gamma_grid": 0.07,
+      "gamma_exact": 0.0658,
+      "ci": [
+        0.0637794375,
+        0.06797418749999998
+      ],
+      "sep": 0.310189022,
+      "g0": 0.807896,
+      "disp": 0.38268487200000006,
+      "wmax": 0.988065,
+      "nfeas": 1000,
+      "frac": 0.859,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "floor": 0.651632,
+      "gamma_grid": 0.075,
+      "gamma_exact": 0.0731,
+      "ci": [
+        0.07051794999999997,
+        0.07582857500000002
+      ],
+      "sep": 0.309120412,
+      "g0": 0.783432,
+      "disp": 0.386637516,
+      "wmax": 0.984399,
+      "nfeas": 1000,
+      "frac": 0.821,
+      "refuted": "yes"
+    },
+    {
+      "channel": "saplma",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "floor": 0.5,
+      "gamma_grid": 0.08,
+      "gamma_exact": 0.0786,
+      "ci": [
+        0.07619000000000004,
+        0.08139350000000001
+      ],
+      "sep": 0.238617518,
+      "g0": 0.812588,
+      "disp": 0.36884501999999997,
+      "wmax": 0.921284,
+      "nfeas": 1000,
+      "frac": 0.762,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "floor": 0.642,
+      "gamma_grid": 0.09,
+      "gamma_exact": 0.08755,
+      "ci": [
+        0.0854834375,
+        0.08959555
+      ],
+      "sep": 0.292928364,
+      "g0": 0.79686,
+      "disp": 0.4765307690763052,
+      "wmax": 0.978443,
+      "nfeas": 996,
+      "frac": 0.8634538152610441,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "floor": 0.616738,
+      "gamma_grid": 0.075,
+      "gamma_exact": 0.07025,
+      "ci": [
+        0.06761499999999998,
+        0.07289806250000001
+      ],
+      "sep": 0.256563846,
+      "g0": 0.73461,
+      "disp": 0.4372307085427136,
+      "wmax": 0.994252,
+      "nfeas": 995,
+      "frac": 0.8150753768844221,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "floor": 0.554602,
+      "gamma_grid": 0.08,
+      "gamma_exact": 0.07865,
+      "ci": [
+        0.07589499999999999,
+        0.08115761249999999
+      ],
+      "sep": 0.220719908,
+      "g0": 0.778562,
+      "disp": 0.47888973873873875,
+      "wmax": 0.9972,
+      "nfeas": 999,
+      "frac": 0.8508508508508509,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "floor": 0.683,
+      "gamma_grid": 0.06,
+      "gamma_exact": 0.0599,
+      "ci": [
+        0.057903949999999996,
+        0.0618035
+      ],
+      "sep": 0.27853364399999997,
+      "g0": 0.7946,
+      "disp": 0.39034914889336014,
+      "wmax": 0.949582,
+      "nfeas": 994,
+      "frac": 0.8672032193158954,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "floor": 0.624964,
+      "gamma_grid": 0.115,
+      "gamma_exact": 0.11395000000000001,
+      "ci": [
+        0.11178700000000001,
+        0.116123
+      ],
+      "sep": 0.32752398999999993,
+      "g0": 0.819384,
+      "disp": 0.36649823107971746,
+      "wmax": 0.96243,
+      "nfeas": 991,
+      "frac": 0.7447023208879919,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "floor": 0.586834,
+      "gamma_grid": 0.09,
+      "gamma_exact": 0.0873,
+      "ci": [
+        0.084367,
+        0.08989505
+      ],
+      "sep": 0.27384118799999996,
+      "g0": 0.830652,
+      "disp": 0.42892741566265064,
+      "wmax": 0.7615109999999999,
+      "nfeas": 996,
+      "frac": 0.8232931726907631,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "floor": 0.673,
+      "gamma_grid": 0.105,
+      "gamma_exact": 0.10175000000000001,
+      "ci": [
+        0.09880949999999997,
+        0.10405818749999998
+      ],
+      "sep": 0.36679600000000007,
+      "g0": 0.827634,
+      "disp": 0.46783524899999995,
+      "wmax": 0.998982,
+      "nfeas": 1000,
+      "frac": 0.804,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "floor": 0.616094,
+      "gamma_grid": 0.115,
+      "gamma_exact": 0.11475,
+      "ci": [
+        0.11186845,
+        0.11735617500000001
+      ],
+      "sep": 0.3443394759999999,
+      "g0": 0.79462,
+      "disp": 0.4287834664664665,
+      "wmax": 0.997193,
+      "nfeas": 999,
+      "frac": 0.7257257257257257,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "floor": 0.596662,
+      "gamma_grid": 0.06,
+      "gamma_exact": 0.05675,
+      "ci": [
+        0.05503971249999999,
+        0.05858351250000001
+      ],
+      "sep": 0.212378854,
+      "g0": 0.745388,
+      "disp": 0.369569075,
+      "wmax": 0.893328,
+      "nfeas": 1000,
+      "frac": 0.817,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "floor": 0.66,
+      "gamma_grid": 0.045,
+      "gamma_exact": 0.04195,
+      "ci": [
+        0.039978,
+        0.04382808749999998
+      ],
+      "sep": 0.21527831199999994,
+      "g0": 0.745116,
+      "disp": 0.3037551611611612,
+      "wmax": 0.8876620000000001,
+      "nfeas": 999,
+      "frac": 0.8828828828828829,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "floor": 0.651632,
+      "gamma_grid": 0.075,
+      "gamma_exact": 0.0714,
+      "ci": [
+        0.0691868375,
+        0.07354949999999999
+      ],
+      "sep": 0.26700605399999994,
+      "g0": 0.784632,
+      "disp": 0.288377263,
+      "wmax": 0.89291,
+      "nfeas": 1000,
+      "frac": 0.799,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccps",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "floor": 0.5,
+      "gamma_grid": 0.075,
+      "gamma_exact": 0.07200000000000001,
+      "ci": [
+        0.07024023749999998,
+        0.073905
+      ],
+      "sep": 0.17751498200000002,
+      "g0": 0.733428,
+      "disp": 0.32146421100000006,
+      "wmax": 0.82509,
+      "nfeas": 1000,
+      "frac": 0.837,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "floor": 0.642,
+      "gamma_grid": 0.095,
+      "gamma_exact": 0.09335,
+      "ci": [
+        0.091003,
+        0.09550908749999998
+      ],
+      "sep": 0.299705014,
+      "g0": 0.807448,
+      "disp": 0.49554660341365453,
+      "wmax": 0.963243,
+      "nfeas": 996,
+      "frac": 0.8734939759036144,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "floor": 0.616738,
+      "gamma_grid": 0.07,
+      "gamma_exact": 0.06505,
+      "ci": [
+        0.06240949999999999,
+        0.0675965
+      ],
+      "sep": 0.250814352,
+      "g0": 0.732874,
+      "disp": 0.4479042412060301,
+      "wmax": 0.990352,
+      "nfeas": 995,
+      "frac": 0.8462311557788945,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "floor": 0.554602,
+      "gamma_grid": 0.105,
+      "gamma_exact": 0.10335000000000001,
+      "ci": [
+        0.10051449999999995,
+        0.10626349999999996
+      ],
+      "sep": 0.26548175799999996,
+      "g0": 0.791836,
+      "disp": 0.5350124054054055,
+      "wmax": 0.995314,
+      "nfeas": 999,
+      "frac": 0.8558558558558559,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "floor": 0.683,
+      "gamma_grid": 0.05,
+      "gamma_exact": 0.0456,
+      "ci": [
+        0.0434979,
+        0.04772551249999998
+      ],
+      "sep": 0.27577944199999993,
+      "g0": 0.7796,
+      "disp": 0.4561362253521127,
+      "wmax": 0.9877009999999999,
+      "nfeas": 994,
+      "frac": 0.8812877263581489,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "floor": 0.624964,
+      "gamma_grid": 0.105,
+      "gamma_exact": 0.1003,
+      "ci": [
+        0.09759081250000001,
+        0.1029195
+      ],
+      "sep": 0.316857498,
+      "g0": 0.788732,
+      "disp": 0.454009038345106,
+      "wmax": 0.9855400000000001,
+      "nfeas": 991,
+      "frac": 0.8234106962663976,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "floor": 0.586834,
+      "gamma_grid": 0.07,
+      "gamma_exact": 0.06965,
+      "ci": [
+        0.06677149999999998,
+        0.07268476249999999
+      ],
+      "sep": 0.267827178,
+      "g0": 0.817838,
+      "disp": 0.45092606124497986,
+      "wmax": 0.7611540000000001,
+      "nfeas": 996,
+      "frac": 0.8122489959839357,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "floor": 0.673,
+      "gamma_grid": 0.105,
+      "gamma_exact": 0.10215,
+      "ci": [
+        0.09952447499999999,
+        0.1047265
+      ],
+      "sep": 0.35942386400000004,
+      "g0": 0.82993,
+      "disp": 0.474749009,
+      "wmax": 0.99451,
+      "nfeas": 1000,
+      "frac": 0.825,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "floor": 0.616094,
+      "gamma_grid": 0.115,
+      "gamma_exact": 0.11235,
+      "ci": [
+        0.10959599999999997,
+        0.11529599999999998
+      ],
+      "sep": 0.33256073999999997,
+      "g0": 0.796252,
+      "disp": 0.45339883983983986,
+      "wmax": 0.9987579999999999,
+      "nfeas": 999,
+      "frac": 0.7657657657657657,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "floor": 0.596662,
+      "gamma_grid": 0.07,
+      "gamma_exact": 0.066,
+      "ci": [
+        0.06411050000000001,
+        0.06800913750000004
+      ],
+      "sep": 0.21607287599999997,
+      "g0": 0.756666,
+      "disp": 0.380409923,
+      "wmax": 0.8814200000000001,
+      "nfeas": 1000,
+      "frac": 0.826,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "floor": 0.66,
+      "gamma_grid": 0.04,
+      "gamma_exact": 0.0381,
+      "ci": [
+        0.03633644999999999,
+        0.03993151250000001
+      ],
+      "sep": 0.19696843800000002,
+      "g0": 0.742576,
+      "disp": 0.3036973463463464,
+      "wmax": 0.829342,
+      "nfeas": 999,
+      "frac": 0.9129129129129129,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "floor": 0.651632,
+      "gamma_grid": 0.065,
+      "gamma_exact": 0.06205,
+      "ci": [
+        0.060000462499999956,
+        0.06398500000000001
+      ],
+      "sep": 0.24304260400000002,
+      "g0": 0.774036,
+      "disp": 0.273448848,
+      "wmax": 0.834605,
+      "nfeas": 1000,
+      "frac": 0.847,
+      "refuted": "yes"
+    },
+    {
+      "channel": "ccpsd",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "floor": 0.5,
+      "gamma_grid": 0.07,
+      "gamma_exact": 0.068,
+      "ci": [
+        0.06633899999999998,
+        0.06966
+      ],
+      "sep": 0.15675756,
+      "g0": 0.724692,
+      "disp": 0.30581865799999997,
+      "wmax": 0.775381,
+      "nfeas": 1000,
+      "frac": 0.852,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "floor": 0.642,
+      "gamma_grid": 0.085,
+      "gamma_exact": 0.08320000000000001,
+      "ci": [
+        0.08036092499999996,
+        0.08570700000000003
+      ],
+      "sep": 0.31276372,
+      "g0": 0.797472,
+      "disp": 0.5002321696787149,
+      "wmax": 0.9998739999999999,
+      "nfeas": 996,
+      "frac": 0.8232931726907631,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "floor": 0.616738,
+      "gamma_grid": 0.035,
+      "gamma_exact": 0.0307,
+      "ci": [
+        0.02847296249999997,
+        0.032746750000000005
+      ],
+      "sep": 0.20539406400000002,
+      "g0": 0.683712,
+      "disp": 0.46087643762575453,
+      "wmax": 0.999991,
+      "nfeas": 994,
+      "frac": 0.8501006036217303,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "floor": 0.554602,
+      "gamma_grid": 0.03,
+      "gamma_exact": 0.029400000000000003,
+      "ci": [
+        0.0283485,
+        0.030363499999999988
+      ],
+      "sep": 0.19662880600000002,
+      "g0": 0.744588,
+      "disp": 0.4638893213213213,
+      "wmax": 0.996618,
+      "nfeas": 999,
+      "frac": 0.7987987987987988,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "floor": 0.683,
+      "gamma_grid": 0.055,
+      "gamma_exact": 0.0536,
+      "ci": [
+        0.05213699999999999,
+        0.05511100000000001
+      ],
+      "sep": 0.282260896,
+      "g0": 0.821654,
+      "disp": 0.3623504613065327,
+      "wmax": 0.997938,
+      "nfeas": 995,
+      "frac": 0.8140703517587939,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "floor": 0.624964,
+      "gamma_grid": 0.09,
+      "gamma_exact": 0.08940000000000001,
+      "ci": [
+        0.08694800000000003,
+        0.091694525
+      ],
+      "sep": 0.29522242000000004,
+      "g0": 0.787016,
+      "disp": 0.3880961189516129,
+      "wmax": 0.999785,
+      "nfeas": 992,
+      "frac": 0.7943548387096774,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "floor": 0.586834,
+      "gamma_grid": 0.03,
+      "gamma_exact": 0.0286,
+      "ci": [
+        0.027373000000000036,
+        0.029592000000000007
+      ],
+      "sep": 0.150619434,
+      "g0": 0.795218,
+      "disp": 0.27363298592964824,
+      "wmax": 0.94902,
+      "nfeas": 995,
+      "frac": 0.821105527638191,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "floor": 0.673,
+      "gamma_grid": 0.105,
+      "gamma_exact": 0.10245,
+      "ci": [
+        0.09969349999999999,
+        0.10511701249999998
+      ],
+      "sep": 0.36044124400000005,
+      "g0": 0.837636,
+      "disp": 0.46797317899999996,
+      "wmax": 0.9971479999999999,
+      "nfeas": 1000,
+      "frac": 0.836,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "floor": 0.616094,
+      "gamma_grid": 0.075,
+      "gamma_exact": 0.07165,
+      "ci": [
+        0.06908997499999998,
+        0.07453857500000001
+      ],
+      "sep": 0.26875421400000005,
+      "g0": 0.73646,
+      "disp": 0.43457395495495493,
+      "wmax": 0.99681,
+      "nfeas": 999,
+      "frac": 0.8088088088088088,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "floor": 0.596662,
+      "gamma_grid": 0.04,
+      "gamma_exact": 0.039400000000000004,
+      "ci": [
+        0.03806096250000001,
+        0.0408135
+      ],
+      "sep": 0.171087828,
+      "g0": 0.748968,
+      "disp": 0.28823235399999997,
+      "wmax": 0.93797,
+      "nfeas": 1000,
+      "frac": 0.79,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "floor": 0.66,
+      "gamma_grid": 0.075,
+      "gamma_exact": 0.07075000000000001,
+      "ci": [
+        0.06855235000000001,
+        0.0728651375
+      ],
+      "sep": 0.2823596139999999,
+      "g0": 0.7985,
+      "disp": 0.35351676876876875,
+      "wmax": 0.985023,
+      "nfeas": 999,
+      "frac": 0.8808808808808809,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "floor": 0.651632,
+      "gamma_grid": 0.075,
+      "gamma_exact": 0.07455,
+      "ci": [
+        0.07209698750000003,
+        0.07680005000000004
+      ],
+      "sep": 0.27813706400000004,
+      "g0": 0.778512,
+      "disp": 0.35190110700000005,
+      "wmax": 0.998929,
+      "nfeas": 1000,
+      "frac": 0.856,
+      "refuted": "yes"
+    },
+    {
+      "channel": "FULL",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "floor": 0.5,
+      "gamma_grid": 0.11,
+      "gamma_exact": 0.10655,
+      "ci": [
+        0.10410519999999997,
+        0.10859449999999998
+      ],
+      "sep": 0.23493894800000006,
+      "g0": 0.812864,
+      "disp": 0.373046742,
+      "wmax": 0.950994,
+      "nfeas": 1000,
+      "frac": 0.775,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "floor": 0.642,
+      "gamma_grid": 0.06,
+      "gamma_exact": 0.055150000000000005,
+      "ci": [
+        0.05305299999999996,
+        0.05736083750000003
+      ],
+      "sep": 0.24050746999999997,
+      "g0": 0.743496,
+      "disp": 0.5106785351405623,
+      "wmax": 0.999995,
+      "nfeas": 996,
+      "frac": 0.8955823293172691,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "floor": 0.616738,
+      "gamma_grid": 0.0,
+      "gamma_exact": 0.0,
+      "ci": [
+        NaN,
+        NaN
+      ],
+      "sep": 0.111993502,
+      "g0": 0.60811,
+      "disp": 0.4622166189516129,
+      "wmax": 0.999924,
+      "nfeas": 992,
+      "frac": NaN,
+      "refuted": "n/a"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "floor": 0.554602,
+      "gamma_grid": 0.02,
+      "gamma_exact": 0.01805,
+      "ci": [
+        0.0165109375,
+        0.01957749999999997
+      ],
+      "sep": 0.08342261399999999,
+      "g0": 0.61184,
+      "disp": 0.42777361499999994,
+      "wmax": 0.987442,
+      "nfeas": 1000,
+      "frac": 0.947,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "floor": 0.683,
+      "gamma_grid": 0.025,
+      "gamma_exact": 0.0234,
+      "ci": [
+        0.02116699999999999,
+        0.02579100000000001
+      ],
+      "sep": 0.23727620000000005,
+      "g0": 0.727288,
+      "disp": 0.23270186847389557,
+      "wmax": 0.9988929999999999,
+      "nfeas": 996,
+      "frac": 0.8182730923694779,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "floor": 0.624964,
+      "gamma_grid": 0.025,
+      "gamma_exact": 0.0205,
+      "ci": [
+        0.018147987499999997,
+        0.023003000000000023
+      ],
+      "sep": 0.166227448,
+      "g0": 0.6642,
+      "disp": 0.221040227,
+      "wmax": 0.997867,
+      "nfeas": 1000,
+      "frac": 0.774,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "floor": 0.586834,
+      "gamma_grid": 0.04,
+      "gamma_exact": 0.0381,
+      "ci": [
+        0.03572550000000002,
+        0.040159
+      ],
+      "sep": 0.13253081000000003,
+      "g0": 0.670676,
+      "disp": 0.06264657557557557,
+      "wmax": 0.535517,
+      "nfeas": 999,
+      "frac": 0.5385385385385385,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "floor": 0.673,
+      "gamma_grid": 0.045,
+      "gamma_exact": 0.042300000000000004,
+      "ci": [
+        0.03960146250000001,
+        0.04451325
+      ],
+      "sep": 0.2520803780000001,
+      "g0": 0.743736,
+      "disp": 0.438559033,
+      "wmax": 0.99998,
+      "nfeas": 1000,
+      "frac": 0.885,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "floor": 0.616094,
+      "gamma_grid": 0.015,
+      "gamma_exact": 0.0112,
+      "ci": [
+        0.00888045,
+        0.013476012499999988
+      ],
+      "sep": 0.151992662,
+      "g0": 0.639014,
+      "disp": 0.402248327,
+      "wmax": 0.999996,
+      "nfeas": 1000,
+      "frac": 0.916,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "floor": 0.596662,
+      "gamma_grid": 0.025,
+      "gamma_exact": 0.0229,
+      "ci": [
+        0.021260499999999988,
+        0.024456712500000043
+      ],
+      "sep": 0.10315375599999999,
+      "g0": 0.666052,
+      "disp": 0.347145924,
+      "wmax": 0.931855,
+      "nfeas": 1000,
+      "frac": 0.906,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "floor": 0.66,
+      "gamma_grid": 0.03,
+      "gamma_exact": 0.026500000000000003,
+      "ci": [
+        0.02475900000000003,
+        0.02813179999999997
+      ],
+      "sep": 0.17654940400000002,
+      "g0": 0.722328,
+      "disp": 0.14998697699999997,
+      "wmax": 0.852105,
+      "nfeas": 1000,
+      "frac": 0.911,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "floor": 0.651632,
+      "gamma_grid": 0.03,
+      "gamma_exact": 0.027350000000000003,
+      "ci": [
+        0.025565462500000018,
+        0.029050637499999976
+      ],
+      "sep": 0.17257343600000002,
+      "g0": 0.71458,
+      "disp": 0.151027553,
+      "wmax": 0.851284,
+      "nfeas": 1000,
+      "frac": 0.903,
+      "refuted": "yes"
+    },
+    {
+      "channel": "COUPLED",
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "floor": 0.5,
+      "gamma_grid": 0.04,
+      "gamma_exact": 0.03635,
+      "ci": [
+        0.034511974999999986,
+        0.038111499999999965
+      ],
+      "sep": 0.08180043799999999,
+      "g0": 0.599968,
+      "disp": 0.16229179300000002,
+      "wmax": 0.453499,
+      "nfeas": 1000,
+      "frac": 0.968,
+      "refuted": "yes"
+    }
+  ]
+}

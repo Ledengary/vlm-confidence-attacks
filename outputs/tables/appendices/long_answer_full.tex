@@ -1,0 +1,43 @@
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}llrrc@{}}
+\toprule
+model & readout & clean AUROC & attacked AUROC & regime \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & TokProb & 0.515~{\tiny($.444$,$.586$)} & 0.082~{\tiny($.046$,$.124$)} & \multirow{3}{*}{resist} \\
+ & P(IK) & 0.672~{\tiny($.605$,$.735$)} & 0.621~{\tiny($.553$,$.687$)} &  \\
+ & SAPLMA & 0.666~{\tiny($.601$,$.730$)} & 0.621~{\tiny($.553$,$.688$)} &  \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & TokProb & 0.540~{\tiny($.474$,$.605$)} & 0.184~{\tiny($.139$,$.232$)} & \multirow{3}{*}{collapse} \\
+ & P(IK) & 0.676~{\tiny($.615$,$.735$)} & 0.430~{\tiny($.365$,$.496$)} &  \\
+ & SAPLMA & 0.615~{\tiny($.549$,$.679$)} & 0.432~{\tiny($.368$,$.498$)} &  \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & TokProb & 0.552~{\tiny($.407$,$.695$)} & 0.351~{\tiny($.222$,$.489$)} & \multirow{3}{*}{resist} \\
+ & P(IK) & 0.702~{\tiny($.515$,$.856$)} & 0.624~{\tiny($.435$,$.791$)} &  \\
+ & SAPLMA & 0.618~{\tiny($.478$,$.752$)} & 0.580~{\tiny($.438$,$.714$)} &  \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & TokProb & 0.627~{\tiny($.557$,$.697$)} & 0.331~{\tiny($.264$,$.401$)} & \multirow{3}{*}{collapse} \\
+ & P(IK) & 0.667~{\tiny($.600$,$.732$)} & 0.380~{\tiny($.312$,$.448$)} &  \\
+ & SAPLMA & 0.603~{\tiny($.532$,$.672$)} & 0.396~{\tiny($.327$,$.467$)} &  \\
+\bottomrule
+\end{tabular}
+
+\vspace{5pt}
+{\footnotesize\itshape Per-model diagnostics (signal location, answer length, byte-identity feasibility):}\\[2pt]
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+model & final-locus clean & reasoning-prompt median (tok) & native median (tok) & feasible-step rate & rejects/item-dir \\
+\midrule
+InternVL3.5-2B & 0.687 & 77.0 & 2.0 & 0.0323 & 11.96 \\
+Molmo2-4B & 0.617 & 94.5 & 25.5$^{\ast}$ & 0.0323 & 10.26 \\
+LLaVA-OV-7B & 0.643 & 96.5 & 2.0 & 0.0323 & 15.79 \\
+Gemma-3-12B & 0.604 & 96.0 & 7.0 & 0.0323 & 8.26 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\vspace{2pt}
+{\footnotesize $^{\ast}$Molmo is the only natively long model (neutral-prompt median 25.5 tokens, frac$\ge$20 $=$ 0.54); the others emit 2 to 7 tokens without a chain-of-thought prompt. The resisters' attacked floor, the minimum over P(IK) and SAPLMA on InternVL and LLaVA, is 0.580 (LLaVA SAPLMA). Feasible-step rate is the median over TokProb item-directions of feasible iterates divided by $62$ (two restarts times $31$ checks), equal to $2/62$; the per-model means range from $0.04$ to $0.21$. rejects/item-dir is the mean number of fresh-decode rejections per item-direction (8 to 16).}

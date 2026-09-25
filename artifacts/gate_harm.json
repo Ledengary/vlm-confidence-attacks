@@ -1,0 +1,168 @@
+{
+  "cells": {
+    "internvl3_5_2b": {
+      "gqa_val_eval": {
+        "w2ac": 0.4676113360323887,
+        "acc_clean": 0.8452012383900929,
+        "acc_adv": 0.48148148148148145,
+        "w2ac_aimed": 0.7096774193548387,
+        "acc_adv_aimed": 0.28975265017667845,
+        "p_natural": 0.7981,
+        "rew_clean": 0.9557190813255588,
+        "rew_adv_transfer": 0.7858944545860823,
+        "rew_adv_aimed": 0.6172461309055035,
+        "below_transfer": true,
+        "below_aimed": true
+      },
+      "vqav2_ood": {
+        "w2ac": 0.42857142857142855,
+        "acc_clean": 0.7351351351351352,
+        "acc_adv": 0.3298429319371728,
+        "w2ac_aimed": 0.6186612576064908,
+        "acc_adv_aimed": 0.17249417249417248,
+        "p_natural": 0.6971,
+        "rew_clean": 0.8646382915464712,
+        "rew_adv_transfer": 0.5311173863354638,
+        "rew_adv_aimed": 0.32420219602312544,
+        "below_transfer": true,
+        "below_aimed": true
+      },
+      "pope_ood": {
+        "w2ac": 0.848,
+        "acc_clean": 0.7437185929648241,
+        "acc_adv": 0.18244406196213425,
+        "w2ac_aimed": 0.894,
+        "acc_adv_aimed": 0.08118081180811808,
+        "p_natural": 0.8945555555555555,
+        "rew_clean": 0.9609668800360015,
+        "rew_adv_transfer": 0.6543616261853225,
+        "rew_adv_aimed": 0.4284280265007026,
+        "below_transfer": true,
+        "below_aimed": true
+      }
+    },
+    "molmo2_4b": {
+      "gqa_val_eval": {
+        "w2ac": 0.396,
+        "acc_clean": 0.8422712933753943,
+        "acc_adv": 0.47109207708779444,
+        "w2ac_aimed": 0.506,
+        "acc_adv_aimed": 0.34838709677419355,
+        "p_natural": 0.8324,
+        "rew_clean": 0.9636648704336108,
+        "rew_adv_transfer": 0.8156233687799855,
+        "rew_adv_aimed": 0.7264323531122934,
+        "below_transfer": true,
+        "below_aimed": true
+      },
+      "vqav2_ood": {
+        "w2ac": 0.3975409836065574,
+        "acc_clean": 0.8434504792332268,
+        "acc_adv": 0.45982142857142855,
+        "w2ac_aimed": 0.4819277108433735,
+        "acc_adv_aimed": 0.35267857142857145,
+        "p_natural": 0.7709,
+        "rew_clean": 0.9477241453175533,
+        "rew_adv_transfer": 0.7412237056564461,
+        "rew_adv_aimed": 0.647053886184321,
+        "below_transfer": true,
+        "below_aimed": true
+      },
+      "pope_ood": {
+        "w2ac": 0.114,
+        "acc_clean": 0.8305647840531561,
+        "acc_adv": 0.6948640483383686,
+        "w2ac_aimed": 0.374,
+        "acc_adv_aimed": 0.3944020356234097,
+        "p_natural": 0.8806666666666667,
+        "rew_clean": 0.9731008695293463,
+        "rew_adv_transfer": 0.9438381654442716,
+        "rew_adv_aimed": 0.8277711970956958,
+        "below_transfer": false,
+        "below_aimed": true
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "w2ac": 0.44889779559118237,
+        "acc_clean": 0.8533724340175953,
+        "acc_adv": 0.4276729559748428,
+        "w2ac_aimed": 0.6973947895791583,
+        "acc_adv_aimed": 0.21188118811881188,
+        "p_natural": 0.8588,
+        "rew_clean": 0.9725260613268122,
+        "rew_adv_transfer": 0.8196542760738608,
+        "rew_adv_aimed": 0.6205152029992734,
+        "below_transfer": true,
+        "below_aimed": true
+      },
+      "vqav2_ood": {
+        "w2ac": 0.3387096774193548,
+        "acc_clean": 0.7835497835497836,
+        "acc_adv": 0.37283236994219654,
+        "w2ac_aimed": 0.5797979797979798,
+        "acc_adv_aimed": 0.1995249406175772,
+        "p_natural": 0.7844,
+        "rew_clean": 0.9294301253499035,
+        "rew_adv_transfer": 0.6838256760701966,
+        "rew_adv_aimed": 0.4755764839029122,
+        "below_transfer": true,
+        "below_aimed": true
+      },
+      "pope_ood": {
+        "w2ac": 0.748,
+        "acc_clean": 0.788135593220339,
+        "acc_adv": 0.2727272727272727,
+        "w2ac_aimed": 0.78,
+        "acc_adv_aimed": 0.15057915057915058,
+        "p_natural": 0.8775555555555555,
+        "rew_clean": 0.9638481807302274,
+        "rew_adv_transfer": 0.7288219009535527,
+        "rew_adv_aimed": 0.5595699612325645,
+        "below_transfer": true,
+        "below_aimed": true
+      }
+    },
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "w2ac": 0.04408817635270541,
+        "acc_clean": 0.8333333333333334,
+        "acc_adv": 0.7510917030567685,
+        "w2ac_aimed": 0.22289156626506024,
+        "acc_adv_aimed": 0.3,
+        "p_natural": 0.7517,
+        "rew_clean": 0.9380303484077069,
+        "rew_adv_transfer": 0.9013346532306695,
+        "rew_adv_aimed": 0.5647350495842933,
+        "below_transfer": false,
+        "below_aimed": true
+      },
+      "vqav2_ood": {
+        "w2ac": 0.06626506024096386,
+        "acc_clean": 0.8287671232876712,
+        "acc_adv": 0.6481481481481481,
+        "w2ac_aimed": 0.23092369477911648,
+        "acc_adv_aimed": 0.28879310344827586,
+        "p_natural": 0.7137,
+        "rew_clean": 0.9234616404605882,
+        "rew_adv_transfer": 0.821175441826215,
+        "rew_adv_aimed": 0.5030423722929515,
+        "below_transfer": false,
+        "below_aimed": true
+      },
+      "pope_ood": {
+        "w2ac": 0.096,
+        "acc_clean": 0.8402555910543131,
+        "acc_adv": 0.6289592760180995,
+        "w2ac_aimed": 0.478,
+        "acc_adv_aimed": 0.1162079510703364,
+        "p_natural": 0.8552487398641245,
+        "rew_clean": 0.9688261794016798,
+        "rew_adv_transfer": 0.9092185243757004,
+        "rew_adv_aimed": 0.4372168718923167,
+        "below_transfer": false,
+        "below_aimed": true
+      }
+    }
+  }
+}

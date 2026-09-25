@@ -1,0 +1,28 @@
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrlrl@{}}
+\toprule
+estimator & clean mean & clean median & clean per-cell range & adv mean & adv per-cell range \\
+\midrule
+P(IK) & 0.805 & 0.804 & 0.730--0.860 & 0.014 & 0.001--0.062 \\
+SAPLMA & 0.795 & 0.800 & 0.723--0.868 & 0.013 & 0.000--0.032 \\
+CCPS & 0.788 & 0.791 & 0.724--0.854 & 0.025 & 0.004--0.056 \\
+CCPS-D & 0.788 & 0.793 & 0.725--0.856 & 0.009 & 0.000--0.024 \\
+\midrule
+FULL & 0.798 & 0.800 & 0.741--0.862 & 0.012 & 0.000--0.034 \\
+COUPLED & 0.710 & 0.703 & 0.652--0.782 & 0.166$^{\dagger}$ & 0.002--0.571 \\
+\bottomrule
+\end{tabular}
+
+\vspace{4pt}
+\footnotesize
+\begin{tabular}{@{}lc@{}}
+\toprule
+model & attacked within-answer AUROC \\
+\midrule
+InternVL3.5-2B & 0.006 \\
+Molmo2-4B & 0.019 \\
+LLaVA-OV-7B & 0.017 \\
+Gemma-3-12B & 0.020 \\
+\bottomrule
+\end{tabular}

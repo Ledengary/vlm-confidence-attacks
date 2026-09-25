@@ -1,0 +1,10 @@
+# Conda environment for the full (GPU) pipeline. Torch is installed via pip from the
+# CUDA 12.8 wheels to match the reported stack.
+name: vlm-confidence-attacks
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - -r requirements-full.txt

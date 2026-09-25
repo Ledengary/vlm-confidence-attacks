@@ -1,0 +1,148 @@
+{
+  "cells": [
+    {
+      "model": "internvl3_5_2b",
+      "set": "gqa_val_eval",
+      "cv5": 0.63896,
+      "heldout": 0.642,
+      "operative": 0.642,
+      "rho": 1.0,
+      "w": 0.039832,
+      "cstar": 0.820968,
+      "ceiling": 0.820968,
+      "holds": true
+    },
+    {
+      "model": "internvl3_5_2b",
+      "set": "vqav2_ood",
+      "cv5": 0.616738,
+      "heldout": null,
+      "operative": 0.616738,
+      "rho": 1.0,
+      "w": 0.045252,
+      "cstar": 0.856338,
+      "ceiling": 0.856338,
+      "holds": true
+    },
+    {
+      "model": "internvl3_5_2b",
+      "set": "pope_ood",
+      "cv5": 0.554602,
+      "heldout": null,
+      "operative": 0.554602,
+      "rho": 0.9984165260027329,
+      "w": 0.49764,
+      "cstar": 0.564,
+      "ceiling": 0.564788,
+      "holds": true
+    },
+    {
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "cv5": 0.597634,
+      "heldout": 0.683,
+      "operative": 0.683,
+      "rho": 0.4406596051998074,
+      "w": 0.066464,
+      "cstar": 0.808368,
+      "ceiling": 0.845544,
+      "holds": true
+    },
+    {
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "cv5": 0.624964,
+      "heldout": null,
+      "operative": 0.624964,
+      "rho": 0.38402712078208767,
+      "w": 0.050736,
+      "cstar": 0.876788,
+      "ceiling": 0.90804,
+      "holds": true
+    },
+    {
+      "model": "molmo2_4b",
+      "set": "pope_ood",
+      "cv5": 0.586834,
+      "heldout": null,
+      "operative": 0.586834,
+      "rho": 0.35923106204796346,
+      "w": 0.5254,
+      "cstar": 0.602,
+      "ceiling": 0.9386599999999999,
+      "holds": true
+    },
+    {
+      "model": "llava_onevision_7b",
+      "set": "gqa_val_eval",
+      "cv5": 0.630608,
+      "heldout": 0.673,
+      "operative": 0.673,
+      "rho": 0.9580525214966302,
+      "w": 0.034424,
+      "cstar": 0.846852,
+      "ceiling": 0.848296,
+      "holds": true
+    },
+    {
+      "model": "llava_onevision_7b",
+      "set": "vqav2_ood",
+      "cv5": 0.616094,
+      "heldout": null,
+      "operative": 0.616094,
+      "rho": 0.9309635173058933,
+      "w": 0.04276,
+      "cstar": 0.86742,
+      "ceiling": 0.8703719999999999,
+      "holds": true
+    },
+    {
+      "model": "llava_onevision_7b",
+      "set": "pope_ood",
+      "cv5": 0.596662,
+      "heldout": null,
+      "operative": 0.596662,
+      "rho": 0.9618010672500082,
+      "w": 0.241368,
+      "cstar": 0.703296,
+      "ceiling": 0.712516,
+      "holds": true
+    },
+    {
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval",
+      "cv5": 0.60903,
+      "heldout": 0.66,
+      "operative": 0.66,
+      "rho": 0.8826435019587805,
+      "w": 0.070452,
+      "cstar": 0.820978,
+      "ceiling": 0.8292459999999999,
+      "holds": true
+    },
+    {
+      "model": "gemma3_12b",
+      "set": "vqav2_ood",
+      "cv5": 0.651632,
+      "heldout": null,
+      "operative": 0.651632,
+      "rho": 0.7932226313021263,
+      "w": 0.053236,
+      "cstar": 0.88545,
+      "ceiling": 0.896458,
+      "holds": true
+    },
+    {
+      "model": "gemma3_12b",
+      "set": "pope_ood",
+      "cv5": 0.47405,
+      "heldout": null,
+      "operative": 0.5,
+      "rho": 0.9416597203722641,
+      "w": 0.465476,
+      "cstar": 0.53649,
+      "ceiling": 0.563646,
+      "holds": true
+    }
+  ]
+}

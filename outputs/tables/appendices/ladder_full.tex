@@ -1,0 +1,28 @@
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llll rrr l@{}}
+\toprule
+base$\to$verifier & set & clean [95\% CI] & transfer [95\% CI] & decision & score & white-box & notes \\
+ & & & & HSJ & SPSA (600 queries) &  & \\
+\midrule
+LLaVA$\to$Gemma & VQAv2 & 0.755~{\tiny(0.68,0.82)} & 0.578~{\tiny(0.50,0.66)} & 0.581 & 0.485 & 0.214 &  \\
+LLaVA$\to$InternVL & VQAv2 & 0.654~{\tiny(0.58,0.73)} & 0.575~{\tiny(0.50,0.65)} & 0.625 & 0.489 & 0.123 & score $n{=}100$ \\
+Gemma$\to$LLaVA & GQA & 0.712~{\tiny(0.64,0.78)} & 0.668~{\tiny(0.59,0.74)} & 0.703 & 0.608 & 0.342 &  \\
+Molmo$\to$Gemma & POPE & 0.660~{\tiny(0.58,0.73)} & 0.514~{\tiny(0.43,0.60)} & 0.502 & 0.431 & 0.195 &  \\
+InternVL$\to$LLaVA & GQA & 0.681~{\tiny(0.61,0.75)} & 0.637~{\tiny(0.56,0.71)} & 0.664 & 0.561 & 0.270 &  \\
+InternVL$\to$Molmo & POPE & 0.495~{\tiny(0.41,0.58)} & 0.442~{\tiny(0.35,0.53)} & 0.486 & 0.355 & 0.378 & near-chance clean; parity \\
+Gemma$\to$Molmo & VQAv2 & 0.754~{\tiny(0.68,0.82)} & 0.717~{\tiny(0.64,0.79)} & 0.727 & 0.611 & 0.744 & parity; WB under-powered \\
+Molmo$\to$InternVL & GQA & 0.676~{\tiny(0.60,0.75)} & 0.592~{\tiny(0.51,0.67)} & 0.636 & 0.477 & 0.063 & score $n{=}100$ \\
+LLaVA$\to$Molmo & POPE & 0.423~{\tiny(0.34,0.52)} & 0.390~{\tiny(0.30,0.48)} & 0.417 & 0.323 & 0.318 & near-chance clean; parity \\
+Gemma$\to$InternVL & POPE & 0.610~{\tiny(0.53,0.69)} & 0.536~{\tiny(0.46,0.62)} & 0.582 & 0.404 & 0.347 & score $n{=}100$ \\
+InternVL$\to$Gemma & VQAv2 & 0.752~{\tiny(0.68,0.82)} & 0.616~{\tiny(0.54,0.69)} & 0.608 & 0.434 & 0.289 &  \\
+Molmo$\to$LLaVA & VQAv2 & 0.690~{\tiny(0.61,0.76)} & 0.586~{\tiny(0.51,0.66)} & 0.681 & 0.578 & 0.164 &  \\
+\midrule
+\textbf{mean (12 pairs)} & & \textbf{0.655} & \textbf{0.571} & \textbf{0.601} & \textbf{0.480} & \textbf{0.287} & \\
+\textbf{mean, excl.\ under-powered white-box} & & \textbf{0.646} & \textbf{0.558} & \textbf{0.590} & \textbf{0.468} & \textbf{0.246} & \\
+\textbf{mean, bit-exact verifier (9)} & & \textbf{0.688} & \textbf{0.589} & \textbf{0.620} & \textbf{0.496} & \textbf{0.223} & \\
+\bottomrule
+\end{tabular}}
+\vspace{3pt}
+\noindent{\footnotesize All AUROC are worst-case-oracle attacked verifier confidence. ``mean, excl.\ under-powered white-box'' drops the one under-powered Molmo-verifier white-box pair (Gemma$\to$Molmo), giving a white-box mean of 0.246. ``bit-exact verifier'' drops the three Molmo-verifier pairs, the only non-bit-exact differentiable paths (Table~\ref{tab:app-parity}): white-box 0.223, range 0.06 to 0.35. In the notes column, score $n{=}100$ marks the three InternVL-verifier pairs, ``near-chance clean'' the two Molmo-verifier pairs on POPE, and ``parity'' the Molmo-verifier differentiable-path gap.}

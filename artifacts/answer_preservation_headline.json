@@ -1,0 +1,120 @@
+{
+  "cells": {
+    "internvl3_5_2b": {
+      "gqa_val_eval": {
+        "n_items": 1000,
+        "full_fb": 16,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.8,
+        "all_fb_pct": 0.65,
+        "items_any_fb": 20,
+        "excluded": 0
+      },
+      "vqav2_ood": {
+        "n_items": 1000,
+        "full_fb": 14,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.7,
+        "all_fb_pct": 0.65,
+        "items_any_fb": 19,
+        "excluded": 0
+      },
+      "pope_ood": {
+        "n_items": 1000,
+        "full_fb": 2,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.1,
+        "all_fb_pct": 0.08,
+        "items_any_fb": 4,
+        "excluded": 0
+      }
+    },
+    "molmo2_4b": {
+      "gqa_val_eval": {
+        "n_items": 1000,
+        "full_fb": 16,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.8,
+        "all_fb_pct": 0.57,
+        "items_any_fb": 25,
+        "excluded": 0
+      },
+      "vqav2_ood": {
+        "n_items": 1000,
+        "full_fb": 20,
+        "full_endpoints": 2000,
+        "full_fb_pct": 1.0,
+        "all_fb_pct": 0.63,
+        "items_any_fb": 23,
+        "excluded": 0
+      },
+      "pope_ood": {
+        "n_items": 1000,
+        "full_fb": 22,
+        "full_endpoints": 2000,
+        "full_fb_pct": 1.1,
+        "all_fb_pct": 0.6,
+        "items_any_fb": 35,
+        "excluded": 0
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "n_items": 1000,
+        "full_fb": 0,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.0,
+        "all_fb_pct": 0.0,
+        "items_any_fb": 0,
+        "excluded": 0
+      },
+      "vqav2_ood": {
+        "n_items": 1000,
+        "full_fb": 1,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.05,
+        "all_fb_pct": 0.04,
+        "items_any_fb": 2,
+        "excluded": 0
+      },
+      "pope_ood": {
+        "n_items": 1000,
+        "full_fb": 0,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.0,
+        "all_fb_pct": 0.0,
+        "items_any_fb": 0,
+        "excluded": 0
+      }
+    },
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "n_items": 1000,
+        "full_fb": 1,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.05,
+        "all_fb_pct": 0.03,
+        "items_any_fb": 1,
+        "excluded": 0
+      },
+      "vqav2_ood": {
+        "n_items": 1000,
+        "full_fb": 0,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.0,
+        "all_fb_pct": 0.03,
+        "items_any_fb": 2,
+        "excluded": 0
+      },
+      "pope_ood": {
+        "n_items": 1000,
+        "full_fb": 0,
+        "full_endpoints": 2000,
+        "full_fb_pct": 0.0,
+        "all_fb_pct": 0.0,
+        "items_any_fb": 0,
+        "excluded": 0
+      }
+    }
+  }
+}

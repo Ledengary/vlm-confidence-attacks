@@ -1,0 +1,23 @@
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+model & dataset & clean AUROC & attacked, KL$\le$0.2 & attacked, KL$\le$0.05 \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.810 & 0.430 & 0.680 \\
+ & VQAv2 & 0.613 & 0.254 & 0.487 \\
+ & POPE & 0.757 & 0.310 & 0.534 \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.811 & 0.463 & 0.639 \\
+ & VQAv2 & 0.788 & 0.395 & 0.626 \\
+ & POPE & 0.769 & 0.351 & 0.567 \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.873 & 0.453 & 0.696 \\
+ & VQAv2 & 0.764 & 0.323 & 0.595 \\
+ & POPE & 0.720 & 0.342 & 0.519 \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.764 & 0.163 & 0.227 \\
+ & VQAv2 & 0.743 & 0.213 & 0.303 \\
+ & POPE & 0.748 & 0.061 & 0.162 \\
+\bottomrule
+\end{tabular}

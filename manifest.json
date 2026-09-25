@@ -1,0 +1,359 @@
+{
+  "schema": "vlm-confidence-attacks/manifest/1",
+  "tier_a_entry": "python -m src.analysis.build_all",
+  "items": [
+    {
+      "kind": "table",
+      "number": 1,
+      "label": "tab:core",
+      "section": "main",
+      "generator": "src.analysis.tables_main:build_core_decomp",
+      "artifacts": [
+        "core_decomp.json",
+        "label_free.json"
+      ],
+      "tier_b_stage": "attacks, estimators"
+    },
+    {
+      "kind": "table",
+      "number": 2,
+      "label": "tab:ladder",
+      "section": "main",
+      "generator": "src.analysis.tables_main:build_ladder_main",
+      "artifacts": [
+        "ladder_full.json"
+      ],
+      "tier_b_stage": "verifier_ladder"
+    },
+    {
+      "kind": "table",
+      "number": 3,
+      "label": "tab:app-preservation",
+      "section": "setup",
+      "generator": "src.analysis.tables_setup:build_answer_preservation",
+      "artifacts": [
+        "answer_preservation.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 4,
+      "label": "tab:app-norms",
+      "section": "setup",
+      "generator": "src.analysis.tables_setup:build_perturbation_norms",
+      "artifacts": [
+        "perturbation_norms.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 5,
+      "label": "tab:app-percept",
+      "section": "setup",
+      "generator": "src.analysis.tables_setup:build_perceptibility",
+      "artifacts": [
+        "perceptibility.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 6,
+      "label": "tab:app-judge",
+      "section": "setup",
+      "generator": "src.analysis.tables_setup:build_judge_validation",
+      "artifacts": [
+        "judge_validation.json"
+      ],
+      "tier_b_stage": "judge"
+    },
+    {
+      "kind": "table",
+      "number": 7,
+      "label": "tab:app-draw",
+      "section": "setup",
+      "generator": "src.analysis.tables_setup:build_canonical_draw",
+      "artifacts": [
+        "canonical_draw.json"
+      ],
+      "tier_b_stage": "data_prep"
+    },
+    {
+      "kind": "table",
+      "number": 8,
+      "label": "tab:app-hyper",
+      "section": "setup",
+      "generator": "src.analysis.tables_setup:build_hyperparameters",
+      "artifacts": [
+        "configs/hyperparameters.yaml"
+      ],
+      "tier_b_stage": "config"
+    },
+    {
+      "kind": "table",
+      "number": 9,
+      "label": "tab:app-decomp-full",
+      "section": "decomp",
+      "generator": "src.analysis.tables_longtables:build_decomp_full",
+      "artifacts": [
+        "decomp_full.json"
+      ],
+      "tier_b_stage": "attacks, estimators"
+    },
+    {
+      "kind": "table",
+      "number": 10,
+      "label": "tab:app-subspace",
+      "section": "decomp",
+      "generator": "src.analysis.tables_mechanisms:build_answer_coupled_subspace",
+      "artifacts": [
+        "answer_coupled_subspace.json"
+      ],
+      "tier_b_stage": "hidden_states"
+    },
+    {
+      "kind": "table",
+      "number": 11,
+      "label": "tab:app-within",
+      "section": "mechanisms",
+      "generator": "src.analysis.tables_mechanisms:build_within_answer",
+      "artifacts": [
+        "within_answer.json"
+      ],
+      "tier_b_stage": "estimators"
+    },
+    {
+      "kind": "table",
+      "number": 12,
+      "label": "tab:app-ceiling",
+      "section": "mechanisms",
+      "generator": "src.analysis.tables_mechanisms:build_ceiling_floor",
+      "artifacts": [
+        "ceiling_floor.json"
+      ],
+      "tier_b_stage": "attacks, estimators"
+    },
+    {
+      "kind": "table",
+      "number": 13,
+      "label": "tab:app-longanswer",
+      "section": "mechanisms",
+      "generator": "src.analysis.tables_mechanisms:build_long_answer_full",
+      "artifacts": [
+        "long_answer_full.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 14,
+      "label": "tab:app-certificate",
+      "section": "mechanisms",
+      "generator": "src.analysis.tables_longtables:build_certificate",
+      "artifacts": [
+        "certificate.json"
+      ],
+      "tier_b_stage": "estimators"
+    },
+    {
+      "kind": "table",
+      "number": 15,
+      "label": "tab:app-phenomenon",
+      "section": "phenomenon",
+      "generator": "src.analysis.tables_longtables:build_phenomenon_full",
+      "artifacts": [
+        "phenomenon_full.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 16,
+      "label": "tab:app-labelfree",
+      "section": "phenomenon",
+      "generator": "src.analysis.tables_phenomenon:build_label_free",
+      "artifacts": [
+        "label_free.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 17,
+      "label": "tab:app-multiseed",
+      "section": "phenomenon",
+      "generator": "src.analysis.tables_phenomenon:build_multiseed_attacked",
+      "artifacts": [
+        "multiseed_attacked.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 18,
+      "label": "tab:app-multiseed-survivor",
+      "section": "phenomenon",
+      "generator": "src.analysis.tables_phenomenon:build_multiseed_survivor",
+      "artifacts": [
+        "multiseed_survivor.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 19,
+      "label": "tab:app-kl",
+      "section": "distribution",
+      "generator": "src.analysis.tables_distribution:build_kl_constraint",
+      "artifacts": [
+        "kl_constraint.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 20,
+      "label": "tab:app-kl-surviving",
+      "section": "distribution",
+      "generator": "src.analysis.tables_distribution:build_kl_surviving",
+      "artifacts": [
+        "kl_surviving.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 21,
+      "label": "tab:app-kl-behavioral",
+      "section": "distribution",
+      "generator": "src.analysis.tables_distribution:build_kl_behavioral",
+      "artifacts": [
+        "kl_behavioral.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 22,
+      "label": "tab:app-gemma-sens",
+      "section": "distribution",
+      "generator": "src.analysis.tables_distribution:build_gemma_sensitivity",
+      "artifacts": [
+        "gemma_sensitivity.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 23,
+      "label": "tab:app-gate-harm",
+      "section": "deployment",
+      "generator": "src.analysis.tables_scope:build_gate_harm",
+      "artifacts": [
+        "gate_harm.json"
+      ],
+      "tier_b_stage": "estimators"
+    },
+    {
+      "kind": "table",
+      "number": 24,
+      "label": "tab:app-gate-robust",
+      "section": "deployment",
+      "generator": "src.analysis.tables_scope:build_gate_robustness",
+      "artifacts": [
+        "gate_robustness.json"
+      ],
+      "tier_b_stage": "estimators"
+    },
+    {
+      "kind": "table",
+      "number": 25,
+      "label": "tab:app-frontier",
+      "section": "frontier",
+      "generator": "src.analysis.tables_scope:build_frontier_sweep",
+      "artifacts": [
+        "frontier_sweep.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 26,
+      "label": "tab:app-invariance",
+      "section": "frontier",
+      "generator": "src.analysis.tables_scope:build_attack_invariance",
+      "artifacts": [
+        "attack_invariance.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 27,
+      "label": "tab:app-ladder",
+      "section": "ladder",
+      "generator": "src.analysis.tables_main:build_ladder_full",
+      "artifacts": [
+        "ladder_full.json"
+      ],
+      "tier_b_stage": "verifier_ladder"
+    },
+    {
+      "kind": "table",
+      "number": 28,
+      "label": "tab:app-parity",
+      "section": "ladder",
+      "generator": "src.analysis.tables_main:build_ladder_parity",
+      "artifacts": [
+        "ladder_parity.json"
+      ],
+      "tier_b_stage": "verifier_ladder"
+    },
+    {
+      "kind": "table",
+      "number": 29,
+      "label": "tab:app-transfer",
+      "section": "scope",
+      "generator": "src.analysis.tables_scope:build_cross_model_transfer",
+      "artifacts": [
+        "cross_model_transfer.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 30,
+      "label": "tab:app-universal",
+      "section": "scope",
+      "generator": "src.analysis.tables_scope:build_universal_perturbation",
+      "artifacts": [
+        "universal_perturbation.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "table",
+      "number": 31,
+      "label": "tab:app-defenses",
+      "section": "scope",
+      "generator": "src.analysis.tables_scope:build_defenses_partial",
+      "artifacts": [
+        "defenses_partial.json"
+      ],
+      "tier_b_stage": "attacks"
+    },
+    {
+      "kind": "figure",
+      "label": "fig:frontier",
+      "section": "impossibility",
+      "generator": "src.figures.frontier:build_frontier",
+      "artifacts": [
+        "frontier_untrained.json",
+        "frontier_sweep.json"
+      ],
+      "tier_b_stage": "attacks, inference"
+    }
+  ]
+}

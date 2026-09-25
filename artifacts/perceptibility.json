@@ -1,0 +1,90 @@
+{
+  "cells": {
+    "internvl3_5_2b": {
+      "gqa_val_eval": {
+        "lpips_mean": 0.05104827,
+        "lpips_max": 0.24447,
+        "ssim_mean": 0.9019899000000001,
+        "ssim_min": 0.750745
+      },
+      "vqav2_ood": {
+        "lpips_mean": 0.05811172727272726,
+        "lpips_max": 0.264815,
+        "ssim_mean": 0.897267505050505,
+        "ssim_min": 0.738787
+      },
+      "pope_ood": {
+        "lpips_mean": 0.05768911,
+        "lpips_max": 0.246702,
+        "ssim_mean": 0.8860551899999999,
+        "ssim_min": 0.750476
+      }
+    },
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "lpips_mean": 0.07424565,
+        "lpips_max": 0.385453,
+        "ssim_mean": 0.8894422,
+        "ssim_min": 0.735633
+      },
+      "vqav2_ood": {
+        "lpips_mean": 0.0789593,
+        "lpips_max": 0.277088,
+        "ssim_mean": 0.8810848699999998,
+        "ssim_min": 0.66625
+      },
+      "pope_ood": {
+        "lpips_mean": 0.06119923000000001,
+        "lpips_max": 0.307084,
+        "ssim_mean": 0.8925131500000001,
+        "ssim_min": 0.748696
+      }
+    },
+    "molmo2_4b": {
+      "gqa_val_eval": {
+        "lpips_mean": 0.06743060606060605,
+        "lpips_max": 0.249186,
+        "ssim_mean": 0.8913706767676767,
+        "ssim_min": 0.754953
+      },
+      "vqav2_ood": {
+        "lpips_mean": 0.06300868999999999,
+        "lpips_max": 0.350163,
+        "ssim_mean": 0.90121246,
+        "ssim_min": 0.796483
+      },
+      "pope_ood": {
+        "lpips_mean": 0.08007104040404041,
+        "lpips_max": 0.296352,
+        "ssim_mean": 0.8814703434343434,
+        "ssim_min": 0.756493
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "lpips_mean": 0.07037128,
+        "lpips_max": 0.380028,
+        "ssim_mean": 0.8947731400000001,
+        "ssim_min": 0.746306
+      },
+      "vqav2_ood": {
+        "lpips_mean": 0.0676381,
+        "lpips_max": 0.226413,
+        "ssim_mean": 0.89709863,
+        "ssim_min": 0.766776
+      },
+      "pope_ood": {
+        "lpips_mean": 0.06840641,
+        "lpips_max": 0.244771,
+        "ssim_mean": 0.88916054,
+        "ssim_min": 0.789137
+      }
+    }
+  },
+  "benign": {
+    "jpeg_lpips": 0.006034780833333334,
+    "jpeg_ssim": 0.9666384941666665,
+    "crop_lpips": 0.07367878083333335,
+    "crop_ssim": 0.6964264458333332
+  }
+}

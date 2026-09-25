@@ -1,0 +1,37 @@
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+defense & P(IK) survival range & median & corruption range & median \\
+\midrule
+JPEG q75 & 0.49--0.90 & 0.680 & 0.02--0.38 & 0.164 \\
+JPEG q50 & 0.38--0.76 & 0.481 & 0.03--0.36 & 0.172 \\
+blur & 0.53--0.97 & 0.712 & 0.02--0.17 & 0.105 \\
+4-bit & 0.72--1.03 & 0.956 & 0.04--0.27 & 0.131 \\
+resize-crop & 0.60--1.05 & 0.781 & 0.02--0.14 & 0.075 \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\small survival = fraction of the P(IK) manipulable range the purifier leaves ($1.0$ = removes nothing; values above $1.0$ mean the purifier enlarges the range); corruption = own-answer corruption the purifier costs.}
+
+\vspace{8pt}
+\noindent{\small\itshape Randomized smoothing under the adaptive EOT attack (SAPLMA):}\\[2pt]
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lll r rr r rr r r c@{}}
+\toprule
+model & set & $\sigma$ & clean & tr.\ disp & aim disp & ratio & tr.\ adv & aim adv & floor & $\gamma^{\ast}$ & disp$>\gamma^{\ast}$ \\
+\midrule
+LLaVA & GQA & 0 (base) & 0.851 & -- & 0.240 & -- & -- & 0.143 & 0.673 & 0.125 & yes \\
+LLaVA & GQA & 0.08 & 0.836 & 0.079 & 0.361 & 4.6$\times$ & 0.728 & 0.176 & 0.673 & 0.110 & yes \\
+LLaVA & GQA & 0.16 & 0.808 & 0.019 & 0.361 & 19.2$\times$ & 0.784 & 0.200 & 0.673 & 0.085 & yes \\
+LLaVA & POPE & 0.08 & 0.693 & 0.078 & 0.182 & 2.3$\times$ & 0.513 & 0.104 & 0.597 & 0.015 & yes \\
+LLaVA & POPE & 0.16 & 0.671 & 0.022 & 0.258 & 11.8$\times$ & 0.637 & 0.123 & 0.597 & 0.015 & yes \\
+InternVL & GQA & 0.16 & 0.779 & 0.020 & 0.368 & 18.8$\times$ & 0.755 & 0.175 & 0.642 & 0.085 & yes \\
+Molmo & GQA & 0.08 & 0.793 & 0.044 & 0.183 & 4.2$\times$ & 0.722 & 0.305 & 0.683 & 0.045 & yes \\
+Molmo & GQA & 0.16 & 0.776 & 0.012 & 0.209 & 17.8$\times$ & 0.760 & 0.317 & 0.683 & 0.045 & yes \\
+Gemma & GQA & 0.08 & 0.788 & 0.022 & 0.295 & 13.3$\times$ & 0.775 & 0.255 & 0.660 & 0.070 & yes \\
+Gemma & GQA & 0.16 & 0.771 & 0.009 & 0.245 & 27.2$\times$ & 0.766 & 0.336 & 0.660 & 0.070 & yes \\
+\bottomrule
+\end{tabular}

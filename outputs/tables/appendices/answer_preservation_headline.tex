@@ -1,0 +1,23 @@
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}ll rrrrc@{}}
+\toprule
+model & set & items & FULL fallback & all-obj fallback & items w/ any fb & excluded \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 1000 & 16/2000 (0.80\%) & 0.65\% & 20 & 0 \\
+ & VQAv2 & 1000 & 14/2000 (0.70\%) & 0.65\% & 19 & 0 \\
+ & POPE & 1000 & 2/2000 (0.10\%) & 0.08\% & 4 & 0 \\
+\addlinespace
+\multirow{3}{*}{Molmo2-4B} & GQA & 1000 & 16/2000 (0.80\%) & 0.57\% & 25 & 0 \\
+ & VQAv2 & 1000 & 20/2000 (1.00\%) & 0.63\% & 23 & 0 \\
+ & POPE & 1000 & 22/2000 (1.10\%) & 0.60\% & 35 & 0 \\
+\addlinespace
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 1000 & 0/2000 (0.00\%) & 0.00\% & 0 & 0 \\
+ & VQAv2 & 1000 & 1/2000 (0.05\%) & 0.04\% & 2 & 0 \\
+ & POPE & 1000 & 0/2000 (0.00\%) & 0.00\% & 0 & 0 \\
+\addlinespace
+\multirow{3}{*}{Gemma-3-12B} & GQA & 1000 & 1/2000 (0.05\%) & 0.03\% & 1 & 0 \\
+ & VQAv2 & 1000 & 0/2000 (0.00\%) & 0.03\% & 2 & 0 \\
+ & POPE & 1000 & 0/2000 (0.00\%) & 0.00\% & 0 & 0 \\
+\bottomrule
+\end{tabular}

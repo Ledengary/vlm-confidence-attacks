@@ -1,0 +1,57 @@
+{
+  "eps_over_255": 8,
+  "rows": [
+    {
+      "model_long": "Gemma-3-12B",
+      "set_long": "GQA",
+      "item_id": "gqa_val_00551840",
+      "question": "What is the island made of?",
+      "answer": "Wood",
+      "correct": true,
+      "clean_image": "images/gqa_val_00551840__clean.png",
+      "adv_image": "images/gqa_val_00551840__adv.png",
+      "clean_full": 0.925643,
+      "attacked_full": 0.849825,
+      "tau": 0.872342848777771
+    },
+    {
+      "model_long": "Gemma-3-12B",
+      "set_long": "GQA",
+      "item_id": "gqa_val_09200247",
+      "question": "Does the sky look cloudy?",
+      "answer": "No",
+      "correct": false,
+      "clean_image": "images/gqa_val_09200247__clean.png",
+      "adv_image": "images/gqa_val_09200247__adv.png",
+      "clean_full": 0.802436,
+      "attacked_full": 0.874333,
+      "tau": 0.872342848777771
+    },
+    {
+      "model_long": "InternVL3.5-2B",
+      "set_long": "POPE",
+      "item_id": "pope_adversarial_2286_2285",
+      "question": "Is there a traffic light in the image?",
+      "answer": "No",
+      "correct": true,
+      "clean_image": "images/pope_adversarial_2286_2285__clean.png",
+      "adv_image": "images/pope_adversarial_2286_2285__adv.png",
+      "clean_full": 0.995517,
+      "attacked_full": 0.330949,
+      "tau": 0.9946200847625732
+    },
+    {
+      "model_long": "InternVL3.5-2B",
+      "set_long": "POPE",
+      "item_id": "pope_adversarial_1051_1050",
+      "question": "Is there a backpack in the image?",
+      "answer": "No",
+      "correct": false,
+      "clean_image": "images/pope_adversarial_1051_1050__clean.png",
+      "adv_image": "images/pope_adversarial_1051_1050__adv.png",
+      "clean_full": 0.631617,
+      "attacked_full": 0.996252,
+      "tau": 0.9946200847625732
+    }
+  ]
+}

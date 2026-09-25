@@ -1,0 +1,172 @@
+{
+  "llava15_7b_clip_gqa_eps2": {
+    "variant": "llava15_7b_clip",
+    "set": "gqa",
+    "eps": 2,
+    "n": 500,
+    "n_correct": 250,
+    "n_wrong": 250,
+    "operative_floor": 0.5565,
+    "c_star_insample": 0.8144,
+    "fallback_rate": 0.006,
+    "readouts": {
+      "pik": {
+        "clean_auroc": 0.741,
+        "clean_ci": [
+          0.6963,
+          0.7837
+        ],
+        "oracle_attacked_auroc": 0.0396,
+        "oracle_ci": [
+          0.0236,
+          0.0576
+        ],
+        "labelfree_attacked_auroc": 0.4048,
+        "labelfree_ci": [
+          0.3553,
+          0.4549
+        ],
+        "mean_reachable_width": 0.7591,
+        "clean_sep_med_diff": 0.385,
+        "clean_pooled_iqr": 0.5458,
+        "width_over_sep": 1.972,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      },
+      "saplma": {
+        "clean_auroc": 0.6942,
+        "clean_ci": [
+          0.6475,
+          0.7391
+        ],
+        "oracle_attacked_auroc": 0.085,
+        "oracle_ci": [
+          0.0623,
+          0.1098
+        ],
+        "labelfree_attacked_auroc": 0.4649,
+        "labelfree_ci": [
+          0.4138,
+          0.5156
+        ],
+        "mean_reachable_width": 0.3378,
+        "clean_sep_med_diff": 0.1924,
+        "clean_pooled_iqr": 0.3377,
+        "width_over_sep": 1.756,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      },
+      "tokprob": {
+        "clean_auroc": 0.7823,
+        "clean_ci": [
+          0.7409,
+          0.821
+        ],
+        "oracle_attacked_auroc": 0.0575,
+        "oracle_ci": [
+          0.0373,
+          0.0804
+        ],
+        "labelfree_attacked_auroc": 0.3507,
+        "labelfree_ci": [
+          0.3035,
+          0.4
+        ],
+        "mean_reachable_width": 0.4488,
+        "clean_sep_med_diff": 0.2294,
+        "clean_pooled_iqr": 0.3078,
+        "width_over_sep": 1.957,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      }
+    }
+  },
+  "llava15_7b_fare_gqa_eps2": {
+    "variant": "llava15_7b_fare",
+    "set": "gqa",
+    "eps": 2,
+    "n": 500,
+    "n_correct": 250,
+    "n_wrong": 250,
+    "operative_floor": 0.5826,
+    "c_star_insample": 0.8217,
+    "fallback_rate": 0.028,
+    "readouts": {
+      "pik": {
+        "clean_auroc": 0.683,
+        "clean_ci": [
+          0.636,
+          0.7283
+        ],
+        "oracle_attacked_auroc": 0.4747,
+        "oracle_ci": [
+          0.4234,
+          0.525
+        ],
+        "labelfree_attacked_auroc": 0.6447,
+        "labelfree_ci": [
+          0.5965,
+          0.6913
+        ],
+        "mean_reachable_width": 0.1649,
+        "clean_sep_med_diff": 0.1998,
+        "clean_pooled_iqr": 0.3836,
+        "width_over_sep": 0.825,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      },
+      "saplma": {
+        "clean_auroc": 0.7222,
+        "clean_ci": [
+          0.6772,
+          0.7649
+        ],
+        "oracle_attacked_auroc": 0.5124,
+        "oracle_ci": [
+          0.4617,
+          0.5624
+        ],
+        "labelfree_attacked_auroc": 0.6922,
+        "labelfree_ci": [
+          0.6451,
+          0.736
+        ],
+        "mean_reachable_width": 0.1861,
+        "clean_sep_med_diff": 0.3062,
+        "clean_pooled_iqr": 0.511,
+        "width_over_sep": 0.608,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      },
+      "tokprob": {
+        "clean_auroc": 0.7474,
+        "clean_ci": [
+          0.7045,
+          0.7895
+        ],
+        "oracle_attacked_auroc": 0.4883,
+        "oracle_ci": [
+          0.4361,
+          0.5399
+        ],
+        "labelfree_attacked_auroc": 0.6694,
+        "labelfree_ci": [
+          0.6223,
+          0.7157
+        ],
+        "mean_reachable_width": 0.1613,
+        "clean_sep_med_diff": 0.1994,
+        "clean_pooled_iqr": 0.3113,
+        "width_over_sep": 0.809,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "cells": {
+    "internvl3_5_2b": {
+      "gqa_val_eval": {
+        "linf_mean": 0.02983963493008444,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9092,
+        "n_total": 10000
+      },
+      "vqav2_ood": {
+        "linf_mean": 0.029968371677847737,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9138,
+        "n_total": 10000
+      },
+      "pope_ood": {
+        "linf_mean": 0.03079343836811211,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9670,
+        "n_total": 10000
+      }
+    },
+    "molmo2_4b": {
+      "gqa_val_eval": {
+        "linf_mean": 0.030235093611371257,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9388,
+        "n_total": 10000
+      },
+      "vqav2_ood": {
+        "linf_mean": 0.030042295562659693,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9295,
+        "n_total": 10000
+      },
+      "pope_ood": {
+        "linf_mean": 0.03040389438699539,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9522,
+        "n_total": 10000
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "linf_mean": 0.029899161474741656,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9281,
+        "n_total": 10000
+      },
+      "vqav2_ood": {
+        "linf_mean": 0.029914114406094844,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9196,
+        "n_total": 10000
+      },
+      "pope_ood": {
+        "linf_mean": 0.02987210030538547,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9111,
+        "n_total": 10000
+      }
+    },
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "linf_mean": 0.03029815778040684,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9658,
+        "n_total": 10000
+      },
+      "vqav2_ood": {
+        "linf_mean": 0.03005887115644919,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9469,
+        "n_total": 10000
+      },
+      "pope_ood": {
+        "linf_mean": 0.030688972836845192,
+        "linf_max": 0.03137254901960784,
+        "n_moved": 9810,
+        "n_total": 10000
+      }
+    }
+  },
+  "n_moved_total": 112630,
+  "n_total": 120000
+}

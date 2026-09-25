@@ -1,0 +1,67 @@
+{
+  "n_train": 20000,
+  "n_val": 5000,
+  "frozen_train_size": 20000,
+  "frozen_val_size": 5000,
+  "coverage_train": 1.0,
+  "coverage_val": 1.0,
+  "channels": {
+    "pik": {
+      "A_old_capped": {
+        "auroc": 0.8011,
+        "ece": 0.13307,
+        "brier": 0.15668
+      },
+      "B_old_uncapped": {
+        "auroc": 0.8163,
+        "ece": 0.11823,
+        "brier": 0.14523
+      },
+      "C_matched_uncapped": {
+        "channel": "pik",
+        "swapped": true,
+        "best_epoch": 8,
+        "n_train": 20000,
+        "n_val": 5000,
+        "val_auroc": 0.8242,
+        "val_ece": 0.1214,
+        "val_brier": 0.14884
+      },
+      "matched_gain_auroc_C_minus_B": 0.0079,
+      "corr_B_vs_C": 0.8936,
+      "corr_A_vs_C": 0.8353,
+      "median_abs_diff_B_vs_C": 0.05366,
+      "p95_abs_diff_B_vs_C": 0.29644,
+      "max_abs_diff_B_vs_C": 0.71293
+    },
+    "saplma": {
+      "A_old_capped": {
+        "auroc": 0.8129,
+        "ece": 0.13193,
+        "brier": 0.15773
+      },
+      "B_old_uncapped": {
+        "auroc": 0.8408,
+        "ece": 0.10273,
+        "brier": 0.13277
+      },
+      "C_matched_uncapped": {
+        "channel": "saplma",
+        "swapped": true,
+        "best_epoch": 8,
+        "n_train": 20000,
+        "n_val": 5000,
+        "val_auroc": 0.848,
+        "val_ece": 0.09633,
+        "val_brier": 0.13063
+      },
+      "matched_gain_auroc_C_minus_B": 0.0072,
+      "corr_B_vs_C": 0.863,
+      "corr_A_vs_C": 0.7626,
+      "median_abs_diff_B_vs_C": 0.04446,
+      "p95_abs_diff_B_vs_C": 0.36358,
+      "max_abs_diff_B_vs_C": 0.93686
+    }
+  },
+  "note": "all three configurations are evaluated on the FULL validation split with matched labels, so nothing is confounded by an answer-stable subset"
+}

@@ -1,0 +1,36 @@
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}lrrlrl@{}}
+\toprule
+estimator & clean mean & clean median & clean per-cell range & adv mean & adv per-cell range \\
+\midrule
+TokProb & 0.704 & 0.710 & 0.565--0.808 & 0.072 & 0.000--0.325 \\
+P(IK) & 0.805 & 0.803 & 0.742--0.860 & 0.146 & 0.043--0.370 \\
+SAPLMA & 0.795 & 0.799 & 0.720--0.868 & 0.140 & 0.015--0.442 \\
+CCPS & 0.781 & 0.778 & 0.714--0.854 & 0.148 & 0.004--0.443 \\
+CCPS-D & 0.782 & 0.788 & 0.711--0.848 & 0.112 & 0.007--0.419 \\
+\midrule
+FULL & 0.797 & 0.800 & 0.740--0.862 & 0.135 & 0.003--0.458 \\
+COUPLED & 0.711 & 0.703 & 0.663--0.783 & 0.252$^{\dagger}$ & 0.029--0.731 \\
+RANDOM (ctrl) & 0.515 & 0.515 & 0.515 & 0.513 & 0.512--0.518 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\vspace{4pt}
+{\footnotesize\itshape Per-model attacked within-answer AUROC (mean over 3 cells $\times$ 5 deployed channels):}\\[2pt]
+\footnotesize
+\begin{tabular}{@{}lc@{}}
+\toprule
+model & attacked within-answer AUROC \\
+\midrule
+InternVL3.5-2B & 0.040 \\
+Molmo2-4B & 0.285 (partial inversion) \\
+LLaVA-OV-7B & 0.078 \\
+Gemma-3-12B & 0.091 \\
+\bottomrule
+\end{tabular}
+
+\vspace{2pt}
+{\footnotesize $^{\dagger}$COUPLED's adversarial mean (0.252) is the twelve-cell mean and includes the survivor cell, Molmo/POPE (adversarial within-answer 0.731); the eleven-cell mean excluding it is 0.209.}

@@ -1,0 +1,120 @@
+{
+  "cells": {
+    "internvl3_5_2b": {
+      "gqa_val_eval": {
+        "tokprob": 0.340114,
+        "pik": 0.293402,
+        "saplma": 0.288322,
+        "ccps": 0.318728,
+        "ccpsd": 0.30702,
+        "full": 0.266118,
+        "coupled": 0.327166
+      },
+      "vqav2_ood": {
+        "tokprob": 0.328128,
+        "pik": 0.4379,
+        "saplma": 0.344416,
+        "ccps": 0.36166,
+        "ccpsd": 0.348984,
+        "full": 0.383218,
+        "coupled": 0.456206
+      },
+      "pope_ood": {
+        "tokprob": 0.289898,
+        "pik": 0.261558,
+        "saplma": 0.355202,
+        "ccps": 0.321074,
+        "ccpsd": 0.298014,
+        "full": 0.320544,
+        "coupled": 0.375284
+      }
+    },
+    "molmo2_4b": {
+      "gqa_val_eval": {
+        "tokprob": 0.310834,
+        "pik": 0.389948,
+        "saplma": 0.316462,
+        "ccps": 0.372934,
+        "ccpsd": 0.359082,
+        "full": 0.292672,
+        "coupled": 0.537426
+      },
+      "vqav2_ood": {
+        "tokprob": 0.270842,
+        "pik": 0.376654,
+        "saplma": 0.357918,
+        "ccps": 0.415358,
+        "ccpsd": 0.357034,
+        "full": 0.321698,
+        "coupled": 0.553546
+      },
+      "pope_ood": {
+        "tokprob": 0.395164,
+        "pik": 0.310908,
+        "saplma": 0.263988,
+        "ccps": 0.32305,
+        "ccpsd": 0.306904,
+        "full": 0.225216,
+        "coupled": 0.684918
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "tokprob": 0.272494,
+        "pik": 0.350854,
+        "saplma": 0.303442,
+        "ccps": 0.311438,
+        "ccpsd": 0.3052,
+        "full": 0.306408,
+        "coupled": 0.368218
+      },
+      "vqav2_ood": {
+        "tokprob": 0.309048,
+        "pik": 0.37729,
+        "saplma": 0.330942,
+        "ccps": 0.377862,
+        "ccpsd": 0.35127,
+        "full": 0.354084,
+        "coupled": 0.442948
+      },
+      "pope_ood": {
+        "tokprob": 0.33304,
+        "pik": 0.315228,
+        "saplma": 0.293592,
+        "ccps": 0.380008,
+        "ccpsd": 0.475118,
+        "full": 0.259166,
+        "coupled": 0.46558
+      }
+    },
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "tokprob": 0.466342,
+        "pik": 0.442346,
+        "saplma": 0.421554,
+        "ccps": 0.448274,
+        "ccpsd": 0.397084,
+        "full": 0.390564,
+        "coupled": 0.598276
+      },
+      "vqav2_ood": {
+        "tokprob": 0.430672,
+        "pik": 0.460752,
+        "saplma": 0.408368,
+        "ccps": 0.442264,
+        "ccpsd": 0.43285,
+        "full": 0.397986,
+        "coupled": 0.597892
+      },
+      "pope_ood": {
+        "tokprob": 0.456814,
+        "pik": 0.387888,
+        "saplma": 0.336458,
+        "ccps": 0.333218,
+        "ccpsd": 0.304612,
+        "full": 0.334704,
+        "coupled": 0.524742
+      }
+    }
+  }
+}

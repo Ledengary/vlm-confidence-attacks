@@ -1,0 +1,265 @@
+{
+  "models": [
+    {
+      "model": "internvl3_5_2b",
+      "label": "InternVL3.5-2B",
+      "regime": "resist",
+      "readouts": [
+        {
+          "label": "TokProb",
+          "clean": 0.5149,
+          "attacked": 0.0823,
+          "clean_ci": [
+            0.4442134412304867,
+            0.5863191574839303
+          ],
+          "attacked_ci": [
+            0.04625803489439853,
+            0.12408172635445362
+          ],
+          "n": 264,
+          "n_pos": 132,
+          "n_neg": 132,
+          "n_pairs": 17424
+        },
+        {
+          "label": "P(IK)",
+          "clean": 0.6721,
+          "attacked": 0.6213,
+          "clean_ci": [
+            0.6054809458218549,
+            0.7350206611570248
+          ],
+          "attacked_ci": [
+            0.552796430211203,
+            0.6870996900826447
+          ],
+          "n": 264,
+          "n_pos": 132,
+          "n_neg": 132,
+          "n_pairs": 17424
+        },
+        {
+          "label": "SAPLMA",
+          "clean": 0.6664,
+          "attacked": 0.6214,
+          "clean_ci": [
+            0.6012956267217631,
+            0.7303159435261708
+          ],
+          "attacked_ci": [
+            0.5534865702479339,
+            0.6876779155188245
+          ],
+          "n": 264,
+          "n_pos": 132,
+          "n_neg": 132,
+          "n_pairs": 17424
+        }
+      ],
+      "final_locus": 0.6869,
+      "cot_median": 77.0,
+      "native_median": 2.0,
+      "native_long": false,
+      "feasible_rate": 0.0323,
+      "rejects": 11.96
+    },
+    {
+      "model": "molmo2_4b",
+      "label": "Molmo2-4B",
+      "regime": "collapse",
+      "readouts": [
+        {
+          "label": "TokProb",
+          "clean": 0.5402,
+          "attacked": 0.1837,
+          "clean_ci": [
+            0.473986532138192,
+            0.6050211702175577
+          ],
+          "attacked_ci": [
+            0.1390917075807396,
+            0.23165623170127472
+          ],
+          "n": 298,
+          "n_pos": 149,
+          "n_neg": 149,
+          "n_pairs": 22201
+        },
+        {
+          "label": "P(IK)",
+          "clean": 0.6761,
+          "attacked": 0.4297,
+          "clean_ci": [
+            0.6146074501148597,
+            0.7353734066033062
+          ],
+          "attacked_ci": [
+            0.36543286338453224,
+            0.4957884779964866
+          ],
+          "n": 298,
+          "n_pos": 149,
+          "n_neg": 149,
+          "n_pairs": 22201
+        },
+        {
+          "label": "SAPLMA",
+          "clean": 0.6152,
+          "attacked": 0.4325,
+          "clean_ci": [
+            0.5490709877933426,
+            0.6793849376154227
+          ],
+          "attacked_ci": [
+            0.3677300572046304,
+            0.49813184090806717
+          ],
+          "n": 298,
+          "n_pos": 149,
+          "n_neg": 149,
+          "n_pairs": 22201
+        }
+      ],
+      "final_locus": 0.6174,
+      "cot_median": 94.5,
+      "native_median": 25.5,
+      "native_long": true,
+      "feasible_rate": 0.0323,
+      "rejects": 10.26
+    },
+    {
+      "model": "llava_onevision_7b",
+      "label": "LLaVA-OV-7B",
+      "regime": "resist",
+      "readouts": [
+        {
+          "label": "TokProb",
+          "clean": 0.552,
+          "attacked": 0.351,
+          "clean_ci": [
+            0.40714285714285714,
+            0.6948979591836735
+          ],
+          "attacked_ci": [
+            0.22244897959183674,
+            0.4887755102040816
+          ],
+          "n": 69,
+          "n_pos": 20,
+          "n_neg": 49,
+          "n_pairs": 980
+        },
+        {
+          "label": "P(IK)",
+          "clean": 0.7018,
+          "attacked": 0.6236,
+          "clean_ci": [
+            0.5145454545454545,
+            0.8563636363636363
+          ],
+          "attacked_ci": [
+            0.43454545454545457,
+            0.7909090909090909
+          ],
+          "n": 65,
+          "n_pos": 10,
+          "n_neg": 55,
+          "n_pairs": 550
+        },
+        {
+          "label": "SAPLMA",
+          "clean": 0.6184,
+          "attacked": 0.5796,
+          "clean_ci": [
+            0.4775510204081633,
+            0.7520408163265306
+          ],
+          "attacked_ci": [
+            0.4377295918367347,
+            0.7142857142857143
+          ],
+          "n": 69,
+          "n_pos": 20,
+          "n_neg": 49,
+          "n_pairs": 980
+        }
+      ],
+      "final_locus": 0.6427,
+      "cot_median": 96.5,
+      "native_median": 2.0,
+      "native_long": false,
+      "feasible_rate": 0.0323,
+      "rejects": 15.79
+    },
+    {
+      "model": "gemma3_12b",
+      "label": "Gemma-3-12B",
+      "regime": "collapse",
+      "readouts": [
+        {
+          "label": "TokProb",
+          "clean": 0.627,
+          "attacked": 0.3305,
+          "clean_ci": [
+            0.5567101326742976,
+            0.6969302809573361
+          ],
+          "attacked_ci": [
+            0.2637844693028096,
+            0.40094953173777315
+          ],
+          "n": 248,
+          "n_pos": 124,
+          "n_neg": 124,
+          "n_pairs": 15376
+        },
+        {
+          "label": "P(IK)",
+          "clean": 0.6666,
+          "attacked": 0.3797,
+          "clean_ci": [
+            0.5997658688865765,
+            0.7317263917793965
+          ],
+          "attacked_ci": [
+            0.31230489073881373,
+            0.4482976716961498
+          ],
+          "n": 248,
+          "n_pos": 124,
+          "n_neg": 124,
+          "n_pairs": 15376
+        },
+        {
+          "label": "SAPLMA",
+          "clean": 0.603,
+          "attacked": 0.3964,
+          "clean_ci": [
+            0.5324531737773153,
+            0.6719579214360042
+          ],
+          "attacked_ci": [
+            0.3273266779396462,
+            0.4670931971904266
+          ],
+          "n": 248,
+          "n_pos": 124,
+          "n_neg": 124,
+          "n_pairs": 15376
+        }
+      ],
+      "final_locus": 0.6041,
+      "cot_median": 96.0,
+      "native_median": 7.0,
+      "native_long": false,
+      "feasible_rate": 0.0323,
+      "rejects": 8.26
+    }
+  ],
+  "footnote": {
+    "molmo_native_median": 25.5,
+    "molmo_frac_ge20": 0.54,
+    "resister_floor": 0.5796
+  }
+}

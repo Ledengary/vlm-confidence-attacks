@@ -1,0 +1,842 @@
+[
+  {
+    "model": "gemma3_12b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.442346,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "pope_ood",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.387888,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.460752,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.293402,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "pope_ood",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.261558,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.4379,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.350854,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "pope_ood",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.315228,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.37729,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.389948,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "pope_ood",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.310908,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "pik",
+    "evaluated_estimator": "pik",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.376654,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.421554,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "pope_ood",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.336458,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.408368,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.288322,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "pope_ood",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.355202,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.344416,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.303442,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "pope_ood",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.293592,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.330942,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.316462,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "pope_ood",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.263988,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "saplma",
+    "evaluated_estimator": "saplma",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.357918,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.466342,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "pope_ood",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.456814,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.430672,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.340114,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "pope_ood",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.289898,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.328128,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.272494,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "pope_ood",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.33304,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.309048,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.310834,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "pope_ood",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.395164,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "tokprob",
+    "evaluated_estimator": "tokprob",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.270842,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.397084,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.390564,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.598276,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.448274,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "pope_ood",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.304612,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "pope_ood",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.334704,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "pope_ood",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.524742,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "pope_ood",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.333218,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.43285,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.397986,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.597892,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "gemma3_12b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.442264,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.30702,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.266118,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.327166,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.318728,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "pope_ood",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.298014,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "pope_ood",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.320544,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "pope_ood",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.375284,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "pope_ood",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.321074,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.348984,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.383218,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.456206,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "internvl3_5_2b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.36166,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.3052,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.306408,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.368218,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.311438,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "pope_ood",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.475118,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "pope_ood",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.259166,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "pope_ood",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.46558,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "pope_ood",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.380008,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.35127,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.354084,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.442948,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "llava_onevision_7b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.377862,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.359082,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.292672,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.537426,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "gqa_val_eval",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.372934,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "pope_ood",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.306904,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "pope_ood",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.225216,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "pope_ood",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.684918,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "pope_ood",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.32305,
+    "construction": "surrogate_ccpsd_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "ccpsd",
+    "evaluated_estimator": "ccpsd",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.357034,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "full",
+    "evaluated_estimator": "full",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.321698,
+    "construction": "diagonal_b30x2"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "coupled",
+    "evaluated_estimator": "coupled",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.553546,
+    "construction": "witnessed_union_all5_incl_coupled"
+  },
+  {
+    "model": "molmo2_4b",
+    "dataset": "vqav2_ood",
+    "aimed_objective": "ccps",
+    "evaluated_estimator": "ccps",
+    "selector": "clean_sign_selected",
+    "is_oracle": false,
+    "auroc": 0.415358,
+    "construction": "surrogate_ccpsd_b30x2"
+  }
+]

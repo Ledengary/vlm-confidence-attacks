@@ -1,0 +1,172 @@
+{
+  "llava15_7b_clip224_gqa_eps2": {
+    "variant": "llava15_7b_clip224",
+    "set": "gqa",
+    "eps": 2,
+    "n": 500,
+    "n_correct": 250,
+    "n_wrong": 250,
+    "operative_floor": 0.5538,
+    "c_star_insample": 0.8358,
+    "fallback_rate": 0.0,
+    "readouts": {
+      "pik": {
+        "clean_auroc": 0.7196,
+        "clean_ci": [
+          0.6743,
+          0.763
+        ],
+        "oracle_attacked_auroc": 0.0818,
+        "oracle_ci": [
+          0.0586,
+          0.1075
+        ],
+        "labelfree_attacked_auroc": 0.4631,
+        "labelfree_ci": [
+          0.413,
+          0.5152
+        ],
+        "mean_reachable_width": 0.63,
+        "clean_sep_med_diff": 0.2914,
+        "clean_pooled_iqr": 0.5023,
+        "width_over_sep": 2.162,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      },
+      "saplma": {
+        "clean_auroc": 0.7153,
+        "clean_ci": [
+          0.669,
+          0.7592
+        ],
+        "oracle_attacked_auroc": 0.0407,
+        "oracle_ci": [
+          0.0249,
+          0.0589
+        ],
+        "labelfree_attacked_auroc": 0.3832,
+        "labelfree_ci": [
+          0.3326,
+          0.434
+        ],
+        "mean_reachable_width": 0.4922,
+        "clean_sep_med_diff": 0.2276,
+        "clean_pooled_iqr": 0.4031,
+        "width_over_sep": 2.162,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      },
+      "tokprob": {
+        "clean_auroc": 0.7467,
+        "clean_ci": [
+          0.7029,
+          0.789
+        ],
+        "oracle_attacked_auroc": 0.0496,
+        "oracle_ci": [
+          0.0308,
+          0.071
+        ],
+        "labelfree_attacked_auroc": 0.3772,
+        "labelfree_ci": [
+          0.3285,
+          0.4274
+        ],
+        "mean_reachable_width": 0.4544,
+        "clean_sep_med_diff": 0.1973,
+        "clean_pooled_iqr": 0.3049,
+        "width_over_sep": 2.304,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      }
+    }
+  },
+  "llava15_7b_fare224_gqa_eps2": {
+    "variant": "llava15_7b_fare224",
+    "set": "gqa",
+    "eps": 2,
+    "n": 500,
+    "n_correct": 250,
+    "n_wrong": 250,
+    "operative_floor": 0.6342,
+    "c_star_insample": 0.8318,
+    "fallback_rate": 0.028,
+    "readouts": {
+      "pik": {
+        "clean_auroc": 0.704,
+        "clean_ci": [
+          0.6584,
+          0.7495
+        ],
+        "oracle_attacked_auroc": 0.4822,
+        "oracle_ci": [
+          0.4324,
+          0.5325
+        ],
+        "labelfree_attacked_auroc": 0.6568,
+        "labelfree_ci": [
+          0.6094,
+          0.7046
+        ],
+        "mean_reachable_width": 0.2149,
+        "clean_sep_med_diff": 0.2896,
+        "clean_pooled_iqr": 0.5079,
+        "width_over_sep": 0.742,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      },
+      "saplma": {
+        "clean_auroc": 0.7177,
+        "clean_ci": [
+          0.672,
+          0.7619
+        ],
+        "oracle_attacked_auroc": 0.5636,
+        "oracle_ci": [
+          0.5125,
+          0.6136
+        ],
+        "labelfree_attacked_auroc": 0.6974,
+        "labelfree_ci": [
+          0.6509,
+          0.7421
+        ],
+        "mean_reachable_width": 0.0793,
+        "clean_sep_med_diff": 0.1006,
+        "clean_pooled_iqr": 0.2095,
+        "width_over_sep": 0.788,
+        "informative": true,
+        "robust": true,
+        "escape": true
+      },
+      "tokprob": {
+        "clean_auroc": 0.7442,
+        "clean_ci": [
+          0.7004,
+          0.786
+        ],
+        "oracle_attacked_auroc": 0.4836,
+        "oracle_ci": [
+          0.4323,
+          0.5352
+        ],
+        "labelfree_attacked_auroc": 0.6738,
+        "labelfree_ci": [
+          0.6254,
+          0.7204
+        ],
+        "mean_reachable_width": 0.1598,
+        "clean_sep_med_diff": 0.1914,
+        "clean_pooled_iqr": 0.2987,
+        "width_over_sep": 0.835,
+        "informative": true,
+        "robust": false,
+        "escape": false
+      }
+    }
+  }
+}

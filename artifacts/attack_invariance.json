@@ -1,0 +1,206 @@
+{
+  "block_a": {
+    "cells": {
+      "internvl3_5_2b": {
+        "gqa_val_eval": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 2,
+          "lf_total": 2
+        },
+        "vqav2_ood": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 2,
+          "lf_total": 2
+        },
+        "pope_ood": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 2,
+          "lf_total": 2
+        }
+      },
+      "molmo2_4b": {
+        "gqa_val_eval": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 2,
+          "lf_total": 2
+        },
+        "vqav2_ood": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 2,
+          "lf_total": 2
+        },
+        "pope_ood": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 2,
+          "lf_total": 2
+        }
+      },
+      "llava_onevision_7b": {
+        "gqa_val_eval": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 2,
+          "lf_total": 2
+        },
+        "vqav2_ood": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 2,
+          "lf_total": 2
+        },
+        "pope_ood": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 2,
+          "lf_total": 2
+        }
+      },
+      "gemma3_12b": {
+        "gqa_val_eval": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 1,
+          "lf_total": 2
+        },
+        "vqav2_ood": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 1,
+          "lf_total": 2
+        },
+        "pope_ood": {
+          "coord_pass": 10,
+          "coord_total": 10,
+          "lf_pass": 1,
+          "lf_total": 2
+        }
+      }
+    }
+  },
+  "total_coord": 120,
+  "total_coord_max": 120,
+  "total_lf": 21,
+  "total_lf_max": 24,
+  "lf_failures": [
+    {
+      "config": "C1",
+      "model": "gemma3_12b",
+      "set": "pope_ood"
+    },
+    {
+      "config": "C2",
+      "model": "gemma3_12b",
+      "set": "gqa_val_eval"
+    },
+    {
+      "config": "C2",
+      "model": "gemma3_12b",
+      "set": "vqav2_ood"
+    }
+  ],
+  "block_b": {
+    "cells": {
+      "internvl3_5_2b": {
+        "gqa_val_eval": {
+          "clean": 0.8796766309456665,
+          "adv_unbounded": 0.028811806730588457,
+          "adv_margin": 0.03866462272185318,
+          "floor": 0.642
+        },
+        "vqav2_ood": {
+          "clean": 0.7917303284950343,
+          "adv_unbounded": 0.0183982683982684,
+          "adv_margin": 0.08462282398452611,
+          "floor": 0.616738
+        },
+        "pope_ood": {
+          "clean": 0.8317890369625346,
+          "adv_unbounded": 8.171988936384209e-05,
+          "adv_margin": 0.027765820060266896,
+          "floor": 0.554602
+        }
+      },
+      "molmo2_4b": {
+        "gqa_val_eval": {
+          "clean": 0.9114709851551956,
+          "adv_unbounded": 0.09051779245685063,
+          "adv_margin": 0.5586111111111111,
+          "floor": 0.683
+        },
+        "vqav2_ood": {
+          "clean": 0.871976612703053,
+          "adv_unbounded": 0.130326263824154,
+          "adv_margin": 0.5128132920304139,
+          "floor": 0.624964
+        },
+        "pope_ood": {
+          "clean": 0.9142230818826563,
+          "adv_unbounded": 0.009542230818826564,
+          "adv_margin": 0.10745440126883427,
+          "floor": 0.586834
+        }
+      },
+      "llava_onevision_7b": {
+        "gqa_val_eval": {
+          "clean": 0.9224250043350095,
+          "adv_unbounded": 0.049830934628056184,
+          "adv_margin": 0.3670774647887324,
+          "floor": 0.673
+        },
+        "vqav2_ood": {
+          "clean": 0.7975751859384365,
+          "adv_unbounded": 0.0467277782690286,
+          "adv_margin": 0.25564387917329096,
+          "floor": 0.616094
+        },
+        "pope_ood": {
+          "clean": 0.8047871376811594,
+          "adv_unbounded": 0.03238224637681159,
+          "adv_margin": 0.13086770981507823,
+          "floor": 0.596662
+        }
+      },
+      "gemma3_12b": {
+        "gqa_val_eval": {
+          "clean": 0.8118424484827407,
+          "adv_unbounded": 0.23180592991913745,
+          "adv_margin": 0.4762348555452004,
+          "floor": 0.66
+        },
+        "vqav2_ood": {
+          "clean": 0.7978011309442703,
+          "adv_unbounded": 0.2088670118544761,
+          "adv_margin": 0.3646723646723647,
+          "floor": 0.651632
+        },
+        "pope_ood": {
+          "clean": 0.8348507877482158,
+          "adv_unbounded": 0.0822081544114392,
+          "adv_margin": 0.4048913043478261,
+          "floor": 0.5
+        }
+      }
+    }
+  },
+  "n_cells": 12,
+  "n_below_floor": 12,
+  "n_below_half": 10,
+  "above_half": [
+    {
+      "model": "molmo2_4b",
+      "set": "gqa_val_eval",
+      "value": 0.5586111111111111
+    },
+    {
+      "model": "molmo2_4b",
+      "set": "vqav2_ood",
+      "value": 0.5128132920304139
+    }
+  ]
+}

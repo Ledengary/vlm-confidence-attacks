@@ -1,0 +1,18 @@
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}llrrrl@{}}
+\toprule
+source & set & white-box tok drop & transfer mean & transfer max & worst target \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & $+0.444$ & $+0.006$ & $+0.011$ & Molmo \\
+ & VQAv2 & $+0.481$ & $+0.013$ & $+0.023$ & LLaVA \\
+ & POPE & $+0.514$ & $+0.024$ & $+0.033$ & LLaVA \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & $+0.760$ & $+0.023$ & $+0.051$ & Molmo \\
+ & VQAv2 & $+0.710$ & $+0.023$ & $+0.039$ & InternVL \\
+ & POPE & $+0.712$ & $+0.014$ & $+0.044$ & InternVL \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\footnotesize Metric: token-probability AUROC drop. The same-model (white-box) attack removes $0.444$ to $0.760$; the same image transferred to a different target removes at most $+0.051$ (LLaVA to Molmo on GQA, the largest of the 18 off-diagonal transfers), and most are below $+0.03$.}

@@ -1,0 +1,62 @@
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+model & dataset & coordinated (of 10) & label-agnostic (of 2) \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 10/10 & 2/2 \\
+ & VQAv2 & 10/10 & 2/2 \\
+ & POPE & 10/10 & 2/2 \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 10/10 & 2/2 \\
+ & VQAv2 & 10/10 & 2/2 \\
+ & POPE & 10/10 & 2/2 \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 10/10 & 2/2 \\
+ & VQAv2 & 10/10 & 2/2 \\
+ & POPE & 10/10 & 2/2 \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 10/10 & 1/2$^{\dagger}$ \\
+ & VQAv2 & 10/10 & 1/2$^{\dagger}$ \\
+ & POPE & 10/10 & 1/2$^{\dagger}$ \\
+\midrule
+\textbf{total} & & \textbf{120/120} & \textbf{21/24} \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\small $^{\dagger}$The three label-agnostic misses are all Gemma-3-12B and directionless
+(alignment below the null bar), not reversed: C1/Gemma/POPE, C2/Gemma/GQA, C2/Gemma/VQAv2, a token-probability
+saturation effect; they pass the unsigned-drift criterion. Coordinated configs: A1--A6 (budget
+$\{2,4,8,16\}/255$, PGD steps $\{5,15,30,60\}$), B1--B2 (two $L_2$ norms), D1--D2 (aim P(IK)/SAPLMA).}
+
+\vspace{8pt}
+\noindent{\small\itshape Margin-band control (SAPLMA; clean and attacked AUROC on the attack-engaged subset):}\\[2pt]
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+model & dataset & clean AUROC & attacked (unbounded) & attacked (margin) & floor \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.880 & 0.029 & 0.039 & 0.642 \\
+ & VQAv2 & 0.792 & 0.018 & 0.085 & 0.617 \\
+ & POPE & 0.832 & 0.000 & 0.028 & 0.555 \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.911 & 0.091 & 0.559 & 0.683 \\
+ & VQAv2 & 0.872 & 0.130 & 0.513 & 0.625 \\
+ & POPE & 0.914 & 0.010 & 0.107 & 0.587 \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.922 & 0.050 & 0.367 & 0.673 \\
+ & VQAv2 & 0.798 & 0.047 & 0.256 & 0.616 \\
+ & POPE & 0.805 & 0.032 & 0.131 & 0.597 \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.812 & 0.232 & 0.476 & 0.660 \\
+ & VQAv2 & 0.798 & 0.209 & 0.365 & 0.652 \\
+ & POPE & 0.835 & 0.082 & 0.405 & 0.500 \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\small Attacked (margin) holds the answer margin in the 0.25 band; it is at or below the
+operative floor in 12 of 12 cells (below chance in 10 of 12; Molmo/GQA 0.559 and Molmo/VQAv2 0.513 stay
+above 0.5 but below their floors). The collapse persists when the margin is not allowed to run free.}

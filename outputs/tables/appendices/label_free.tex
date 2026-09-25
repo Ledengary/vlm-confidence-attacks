@@ -1,0 +1,26 @@
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}llrrrrrrr@{}}
+\toprule
+model & dataset & TokProb & P(IK) & SAPLMA & CCPS & CCPS-D & FULL & COUPLED \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.340 & 0.293 & 0.288 & 0.319 & 0.307 & 0.266 & 0.327 \\
+ & VQAv2 & 0.328 & 0.438 & 0.344 & 0.362 & 0.349 & 0.383 & 0.456 \\
+ & POPE & 0.290 & 0.262 & 0.355 & 0.321 & 0.298 & 0.321 & 0.375 \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.311 & 0.390 & 0.316 & 0.373 & 0.359 & 0.293 & 0.537 \\
+ & VQAv2 & 0.271 & 0.377 & 0.358 & 0.415 & 0.357 & 0.322 & 0.554 \\
+ & POPE & 0.395 & 0.311 & 0.264 & 0.323 & 0.307 & 0.225 & 0.685 \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.272 & 0.351 & 0.303 & 0.311 & 0.305 & 0.306 & 0.368 \\
+ & VQAv2 & 0.309 & 0.377 & 0.331 & 0.378 & 0.351 & 0.354 & 0.443 \\
+ & POPE & 0.333 & 0.315 & 0.294 & 0.380 & 0.475 & 0.259 & 0.466 \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.466 & 0.442 & 0.422 & 0.448 & 0.397 & 0.391 & 0.598 \\
+ & VQAv2 & 0.431 & 0.461 & 0.408 & 0.442 & 0.433 & 0.398 & 0.598 \\
+ & POPE & 0.457 & 0.388 & 0.336 & 0.333 & 0.305 & 0.335 & 0.525 \\
+\bottomrule
+\end{tabular}
+
+\vspace{3pt}
+\noindent{\footnotesize 78 of 84 label-free profiles fall below chance ($0.5$). Endpoints: P(IK), SAPLMA, CCPS-D, FULL use each readout's own aimed endpoints; TokProb, COUPLED use the witnessed union over the aimed objectives; CCPS uses the CCPS-D-aimed surrogate. The own-aimed and surrogate endpoints are the 30-step, 2-restart search (Table~\ref{tab:app-hyper}); the TokProb and COUPLED union spans all five aimed objectives and includes COUPLED's own 60-step, 3-restart endpoints.}

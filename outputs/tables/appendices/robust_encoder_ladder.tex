@@ -1,0 +1,21 @@
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lll rrr rrr@{}}
+\toprule
+ &  &  & \multicolumn{3}{c}{oracle attacked AUROC} & \multicolumn{3}{c}{reach / separation} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+Tower & Input & $\epsilon$ & P(IK) & SAPLMA & TokProb & P(IK) & SAPLMA & TokProb \\
+\midrule
+\multirow{5}{*}{Standard} & \multirow{3}{*}{336} & 2/255 & 0.040 & 0.085 & 0.058 & 1.97 & 1.76 & 1.96 \\
+ &  & 4/255 & 0.041 & 0.046 & 0.050 & 2.02 & 1.92 & 2.00 \\
+ &  & 8/255 & 0.040 & 0.034 & 0.045 & 2.02 & 2.01 & 2.01 \\
+ & \multirow{2}{*}{224} & 2/255 & 0.082 & 0.041 & 0.050 & 2.16 & 2.16 & 2.30 \\
+ &  & 4/255 & 0.075 & 0.021 & 0.039 & 2.25 & 2.25 & 2.38 \\
+\midrule
+\multirow{5}{*}{FARE-4} & \multirow{3}{*}{336} & 2/255 & 0.475 & 0.512 & 0.488 & 0.83 & 0.61 & 0.81 \\
+ &  & 4/255 & 0.325 & 0.365 & 0.321 & 1.38 & 0.95 & 1.28 \\
+ &  & 8/255 & 0.164 & 0.171 & 0.152 & 2.14 & 1.39 & 1.85 \\
+ & \multirow{2}{*}{224} & 2/255 & 0.482 & 0.564$^{\dagger}$ & 0.484 & 0.74 & 0.79 & 0.84 \\
+ &  & 4/255 & 0.314 & 0.435 & 0.291 & 1.24 & 1.32 & 1.35 \\
+\bottomrule
+\end{tabular}

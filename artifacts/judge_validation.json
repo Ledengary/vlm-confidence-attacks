@@ -1,0 +1,48 @@
+{
+  "overall": {
+    "n": 300,
+    "agreement": 0.99,
+    "kappa": 0.98,
+    "kappa_ci": [
+      0.953,
+      1.0
+    ]
+  },
+  "per_dataset": {
+    "GQA": {
+      "n": 100,
+      "agreement": 0.98
+    },
+    "VQAv2": {
+      "n": 100,
+      "agreement": 0.99
+    },
+    "POPE": {
+      "n": 100,
+      "agreement": 1.0
+    }
+  },
+  "per_model": {
+    "internvl3_5_2b": {
+      "n": 75,
+      "agreement": 0.96
+    },
+    "molmo2_4b": {
+      "n": 76,
+      "agreement": 1.0
+    },
+    "llava_onevision_7b": {
+      "n": 75,
+      "agreement": 1.0
+    },
+    "gemma3_12b": {
+      "n": 74,
+      "agreement": 1.0
+    }
+  },
+  "wrong": {
+    "n": 147,
+    "n_agree": 147,
+    "false_accept": 0
+  }
+}

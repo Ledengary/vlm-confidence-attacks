@@ -1,0 +1,13 @@
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lrr rrc rrc@{}}
+\toprule
+ &  &  & \multicolumn{3}{c}{B1 oracle} & \multicolumn{3}{c}{B2 label-free} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+operating point & clean FPR & acc-clean & acc-adv & drop & $<$0.5 & acc-adv & drop & $<$0.5 \\
+\midrule
+clean-10\%-FPR & 0.100 & 0.814 & 0.062 & 0.752 & 12/12 & 0.363 & 0.451 & 12/12 \\
+Youden J & 0.247 & 0.743 & 0.132 & 0.611 & 12/12 & 0.380 & 0.363 & 12/12 \\
+$\tau{=}0.5$ & 0.525 & 0.626 & 0.245 & 0.380 & 12/12 & 0.413 & 0.212 & 12/12 \\
+\bottomrule
+\end{tabular}

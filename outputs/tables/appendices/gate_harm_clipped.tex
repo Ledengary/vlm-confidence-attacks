@@ -1,0 +1,71 @@
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}ll r rr rr rr@{}}
+\toprule
+ &  &  & \multicolumn{2}{c}{B1 oracle} & \multicolumn{2}{c}{B2 label-free} & \multicolumn{2}{c}{B3 cross-probe} \\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+model & set & acc-cln & w2ac & acc-adv & w2ac & acc-adv & w2ac & acc-adv \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.846 & 0.846 & 0.065 & 0.790 & 0.347 & 0.426 & 0.154 \\
+ & VQAv2 & 0.731 & 0.836 & 0.041 & 0.600 & 0.394 & 0.314 & 0.093 \\
+ & POPE & 0.744 & 0.898 & 0.006 & 0.672 & 0.314 & 0.606 & 0.000 \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.845 & 0.762 & 0.111 & 0.712 & 0.366 & 0.422 & 0.112 \\
+ & VQAv2 & 0.843 & 0.712 & 0.117 & 0.606 & 0.387 & 0.358 & 0.113 \\
+ & POPE & 0.829 & 0.878 & 0.030 & 0.732 & 0.283 & 0.798 & 0.000 \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.853 & 0.800 & 0.070 & 0.790 & 0.358 & 0.430 & 0.092 \\
+ & VQAv2 & 0.784 & 0.732 & 0.073 & 0.560 & 0.389 & 0.306 & 0.047 \\
+ & POPE & 0.788 & 0.806 & 0.064 & 0.630 & 0.337 & 0.696 & 0.003 \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.833 & 0.496 & 0.069 & 0.406 & 0.404 & 0.234 & 0.297 \\
+ & VQAv2 & 0.826 & 0.468 & 0.063 & 0.306 & 0.408 & 0.192 & 0.171 \\
+ & POPE & 0.840 & 0.724 & 0.031 & 0.684 & 0.365 & 0.496 & 0.103 \\
+\bottomrule
+\end{tabular}
+
+\vspace{6pt}
+\begin{tabular}{@{}ll rrrr ccc@{}}
+\toprule
+model & set & no-gate & B1 & B2 & B3 & $<$base B1 & $<$base B2 & $<$base B3 \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.798 & 0.216 & 0.677 & 0.419 & yes & yes & yes \\
+ & VQAv2 & 0.697 & 0.090 & 0.600 & 0.192 & yes & yes & yes \\
+ & POPE & 0.895 & 0.048 & 0.795 & 0.000 & yes & yes & yes \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.832 & 0.384 & 0.742 & 0.386 & yes & yes & yes \\
+ & VQAv2 & 0.771 & 0.309 & 0.680 & 0.301 & yes & yes & yes \\
+ & POPE & 0.881 & 0.184 & 0.745 & 0.000 & yes & yes & yes \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.859 & 0.315 & 0.773 & 0.383 & yes & yes & yes \\
+ & VQAv2 & 0.784 & 0.224 & 0.698 & 0.152 & yes & yes & yes \\
+ & POPE & 0.878 & 0.329 & 0.785 & 0.018 & yes & yes & yes \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.752 & 0.183 & 0.673 & 0.561 & yes & yes & yes \\
+ & VQAv2 & 0.714 & 0.143 & 0.632 & 0.339 & yes & yes & yes \\
+ & POPE & 0.855 & 0.157 & 0.773 & 0.403 & yes & yes & yes \\
+\bottomrule
+\end{tabular}
+
+\vspace{6pt}
+\begin{tabular}{@{}ll rrr@{}}
+\toprule
+model & set & AURC clean & AURC B1 & AURC B2 \\
+\midrule
+\multirow{3}{*}{InternVL3.5-2B} & GQA & 0.266 & 0.837 & 0.576 \\
+ & VQAv2 & 0.352 & 0.838 & 0.519 \\
+ & POPE & 0.325 & 0.846 & 0.526 \\
+\midrule
+\multirow{3}{*}{Molmo2-4B} & GQA & 0.252 & 0.816 & 0.636 \\
+ & VQAv2 & 0.288 & 0.809 & 0.631 \\
+ & POPE & 0.271 & 0.842 & 0.676 \\
+\midrule
+\multirow{3}{*}{LLaVA-OV-7B} & GQA & 0.239 & 0.828 & 0.615 \\
+ & VQAv2 & 0.309 & 0.817 & 0.603 \\
+ & POPE & 0.328 & 0.832 & 0.694 \\
+\midrule
+\multirow{3}{*}{Gemma-3-12B} & GQA & 0.271 & 0.791 & 0.573 \\
+ & VQAv2 & 0.293 & 0.781 & 0.583 \\
+ & POPE & 0.262 & 0.836 & 0.589 \\
+\bottomrule
+\end{tabular}

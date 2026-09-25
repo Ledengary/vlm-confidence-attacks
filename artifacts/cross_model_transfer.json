@@ -1,0 +1,55 @@
+{
+  "sources": [
+    "gemma3_12b",
+    "llava_onevision_7b"
+  ],
+  "cells": {
+    "gemma3_12b": {
+      "gqa_val_eval": {
+        "white_box": 0.443638,
+        "transfer_mean": 0.006346666666666612,
+        "transfer_max": 0.01051599999999997,
+        "worst_target": "molmo2_4b"
+      },
+      "vqav2_ood": {
+        "white_box": 0.48145200000000005,
+        "transfer_mean": 0.013463333333333346,
+        "transfer_max": 0.023155999999999954,
+        "worst_target": "llava_onevision_7b"
+      },
+      "pope_ood": {
+        "white_box": 0.513768,
+        "transfer_mean": 0.02422733333333334,
+        "transfer_max": 0.03310999999999997,
+        "worst_target": "llava_onevision_7b"
+      }
+    },
+    "llava_onevision_7b": {
+      "gqa_val_eval": {
+        "white_box": 0.760104,
+        "transfer_mean": 0.023300666666666636,
+        "transfer_max": 0.05108199999999996,
+        "worst_target": "molmo2_4b"
+      },
+      "vqav2_ood": {
+        "white_box": 0.710406,
+        "transfer_mean": 0.022797333333333336,
+        "transfer_max": 0.03880600000000001,
+        "worst_target": "internvl3_5_2b"
+      },
+      "pope_ood": {
+        "white_box": 0.7118880000000001,
+        "transfer_mean": 0.013610000000000011,
+        "transfer_max": 0.04377600000000004,
+        "worst_target": "internvl3_5_2b"
+      }
+    }
+  },
+  "n_offdiag": 18,
+  "max_pair": {
+    "source": "llava_onevision_7b",
+    "target": "molmo2_4b",
+    "set": "gqa_val_eval",
+    "value": 0.05108199999999996
+  }
+}

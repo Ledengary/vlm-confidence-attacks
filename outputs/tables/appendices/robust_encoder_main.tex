@@ -1,0 +1,21 @@
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lll rrr rrr@{}}
+\toprule
+ &  &  & \multicolumn{3}{c}{Standard CLIP} & \multicolumn{3}{c}{FARE-4} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+Set & Input & Readout & clean & oracle & label-free & clean & oracle & label-free \\
+\midrule
+\multirow{3}{*}{GQA} & \multirow{3}{*}{336} & P(IK) & 0.741 & 0.041 & 0.397 & 0.683 & 0.325 & 0.587 \\
+ &  & SAPLMA & 0.694 & 0.046 & 0.430 & 0.722 & 0.365 & 0.613 \\
+ &  & TokProb & 0.782 & 0.050 & 0.349 & 0.747 & 0.321 & 0.578 \\
+\midrule
+\multirow{3}{*}{GQA} & \multirow{3}{*}{224} & P(IK) & 0.720 & 0.075 & 0.460 & 0.704 & 0.314 & 0.575 \\
+ &  & SAPLMA & 0.715 & 0.021 & 0.370 & 0.718 & 0.435 & 0.637 \\
+ &  & TokProb & 0.747 & 0.039 & 0.370 & 0.744 & 0.291 & 0.539 \\
+\midrule
+\multirow{3}{*}{POPE} & \multirow{3}{*}{336} & P(IK) & 0.774 & 0.002 & 0.284 & 0.740 & 0.168 & 0.552 \\
+ &  & SAPLMA & 0.622 & 0.003 & 0.354 & 0.781 & 0.209 & 0.533 \\
+ &  & TokProb & 0.797 & 0.000 & 0.320 & 0.729 & 0.105 & 0.548 \\
+\bottomrule
+\end{tabular}
